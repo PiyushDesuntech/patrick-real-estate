@@ -31,9 +31,9 @@ export default function LatestProperties() {
         width: "100%",
         maxWidth: 360,
         backgroundColor: "#fff",
-        borderRadius: "8px",
-        boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.1)",
-        padding: "16px",
+        borderRadius: "7.83px",
+        padding: "20px 24px",
+        border: "1.5px solid #ebebeb",
       }}
     >
       <Typography

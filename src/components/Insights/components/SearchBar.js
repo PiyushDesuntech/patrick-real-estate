@@ -13,11 +13,11 @@ export default function SearchBar() {
   return (
     <Box
       sx={{
-        padding: "24px",
+        padding: "20px 24px",
         backgroundColor: "#fff",
-        borderRadius: "8px",
-        boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.1)",
+        borderRadius: "7.83px",
         width: "100%",
+        border: "1.5px solid #ebebeb",
       }}
     >
       <Box
@@ -25,11 +25,10 @@ export default function SearchBar() {
           display: "flex",
           alignItems: "center",
           border: "1px solid #EAEAEA",
-          borderRadius: "16px",
+          borderRadius: "7.83px",
           width: "100%",
           backgroundColor: "#fff",
           overflow: "hidden",
-          boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.04)",
         }}
       >
         <InputBase
