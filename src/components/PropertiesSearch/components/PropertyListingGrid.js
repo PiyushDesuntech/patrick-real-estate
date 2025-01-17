@@ -22,6 +22,8 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SyncAltOutlinedIcon from "@mui/icons-material/SyncAltOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import CalculateOutlinedIcon from '@mui/icons-material/CalculateOutlined';
+
 const PropertyListingGrid = () => {
   const [sort, setSort] = useState("Relevance");
   const [currentPage, setCurrentPage] = useState(1);
@@ -435,6 +437,19 @@ const PropertyListingGrid = () => {
                         }}
                       >
                         <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
+                      </IconButton>
+                      <IconButton
+                        sx={{
+                          borderRadius: "3px",
+                          background: "rgba(32, 32, 32, 0.3)",
+                          color: "#fff",
+                          "&:hover": {
+                            background: "#E0D8C3",
+                            color: "#4D4D4D",
+                          },
+                        }}
+                      >
+                        <CalculateOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
                       </IconButton>
                     </Box>
                   </Box>

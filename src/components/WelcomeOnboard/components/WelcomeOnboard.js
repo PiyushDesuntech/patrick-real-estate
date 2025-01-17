@@ -54,7 +54,7 @@ export default function WelcomeOnboard() {
   ];
 
   return (
-    <Box>
+    <Box sx={{p: {xs: 1, sm: 0}}}>
       <Grid container spacing={2}>
         <Grid
           item

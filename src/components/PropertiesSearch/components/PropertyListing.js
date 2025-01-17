@@ -17,6 +17,7 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SyncAltOutlinedIcon from "@mui/icons-material/SyncAltOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
+import CalculateOutlinedIcon from '@mui/icons-material/CalculateOutlined';
 
 const PropertyListing = () => {
   const [sort, setSort] = useState("Default");
@@ -332,6 +333,19 @@ const PropertyListing = () => {
                       }}
                     >
                       <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
+                    </IconButton>
+                    <IconButton
+                      sx={{
+                        borderRadius: "3px",
+                        background: "rgba(32, 32, 32, 0.3)",
+                        color: "#fff",
+                        "&:hover": {
+                          background: "#E0D8C3",
+                          color: "#4D4D4D",
+                        },
+                      }}
+                    >
+                      <CalculateOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
                     </IconButton>
                   </Box>
                 </Box>
