@@ -99,7 +99,7 @@ const PropertyListView = ({ properties }) => {
                         fontSize: "14px",
                       }}
                     />
-                    <Chip
+                    {/* <Chip
                       label="Featured"
                       sx={{
                         bgcolor: "#E8E1C4",
@@ -108,7 +108,7 @@ const PropertyListView = ({ properties }) => {
                         borderRadius: 1,
                         fontSize: "14px",
                       }}
-                    />
+                    /> */}
                   </Box>
                 </Box>
 

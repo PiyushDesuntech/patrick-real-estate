@@ -94,7 +94,7 @@ const Buyers = () => {
 
   return (
     <Box sx={{ px: { xs: 1 }, mt: 3 }}>
-      <Box sx={{ position: "relative", padding: "20px" }}>
+      <Box sx={{ position: {xs:"unset", sm: "relative"}, padding: {xs: 1, sm: "20px"} }}>
         <Typography
           sx={{ fontSize: "26px", fontWeight: 700, color: "#484848" }}
         >
@@ -108,12 +108,13 @@ const Buyers = () => {
 
         <Box
           sx={{
-            position: "absolute",
-            top: "10px",
+            position: {xs: "unset", sm: "absolute"},
+            top: {xs: "40%", sm: "10px"},
             right: "10px",
             display: "flex",
             alignItems: "center",
             zIndex: 2,
+            mt: {xs: 2, sm: 0},
           }}
         >
           <CustomArrow
@@ -129,7 +130,7 @@ const Buyers = () => {
         {/* Slider */}
         <Slider {...settings} ref={sliderRef}>
           {buyers.map((buyer, index) => (
-            <Box key={index} sx={{ p: { xs: 0, md: 2 }, mt: 3 }}>
+            <Box key={index} sx={{ p: { xs: 0, sm: 2 }, mt: 3 }}>
               <Card
                 sx={{
                   p: 2,
@@ -137,11 +138,11 @@ const Buyers = () => {
                   //   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
                   boxShadow: "none",
                   border: "2px solid #D5D5D5",
-                  "&:hover": {
-                    border: "none",
-                    boxShadow: 6,
-                    background: "#E8E1C4",
-                  },
+                  // "&:hover": {
+                  //   border: "none",
+                  //   // boxShadow: 6,
+                  //   // background: "#E8E1C4",
+                  // },
                 }}
               >
                 <CardContent>

@@ -1,6 +1,7 @@
 {
   "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/welcome-onboard/page": "app/welcome-onboard/page.js",
-  "/property-list/page": "app/property-list/page.js"
+  "/agents/page": "app/agents/page.js",
+  "/property-list/page": "app/property-list/page.js",
+  "/property-list/property-details/[id]/page": "app/property-list/property-details/[id]/page.js"
 }
