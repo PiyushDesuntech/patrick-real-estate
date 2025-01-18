@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { Box, InputBase, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
@@ -13,11 +14,12 @@ export default function SearchBar() {
   return (
     <Box
       sx={{
-        padding: "20px 24px",
+        padding: { xs: "16px", sm: "20px 24px" },
         backgroundColor: "#fff",
-        borderRadius: "7.83px",
+        borderRadius: "7.38px",
         width: "100%",
         border: "1.5px solid #ebebeb",
+        boxSizing: "border-box",
       }}
     >
       <Box
@@ -25,7 +27,7 @@ export default function SearchBar() {
           display: "flex",
           alignItems: "center",
           border: "1px solid #EAEAEA",
-          borderRadius: "7.83px",
+          borderRadius: "7.38px",
           width: "100%",
           backgroundColor: "#fff",
           overflow: "hidden",
@@ -36,11 +38,10 @@ export default function SearchBar() {
             flex: 1,
             padding: "16px 20px",
             fontSize: "16px",
-            color: "#333",
-            "::placeholder": {
+            color: "#484848",
+            "&::placeholder": {
               color: "#666",
-              opacity: 1,
-              fontSize: "20px",
+              fontSize: "16px", // Standardized font-size
               fontWeight: 400,
             },
             "& input": {
@@ -55,7 +56,7 @@ export default function SearchBar() {
           onClick={handleSearch}
           sx={{
             padding: "12px 16px",
-            color: "#666",
+            color: "#484848",
             "&:hover": {
               backgroundColor: "transparent",
             },

@@ -116,14 +116,14 @@ export default function BlogCards() {
 
   return (
     <>
-      <Box sx={{ padding: "24px 0" }}>
+      <Box sx={{ padding: "24px 0", backgroundColor: "#F7F7F7" }}>
         <Grid container spacing={3}>
           {currentCards.map((card, index) => (
             <Grid item xs={12} sm={6} key={index}>
               <Box
                 sx={{
                   backgroundColor: "white",
-                  borderRadius: "7.83px",
+                  borderRadius: "7.38px",
                   padding: "16px",
                   border: "1.5px solid #ebebeb",
                 }}
@@ -133,7 +133,7 @@ export default function BlogCards() {
                     width: "100%",
                     height: "220px",
                     position: "relative",
-                    borderRadius: "7.83px",
+                    borderRadius: "7.38px",
                     overflow: "hidden",
                     marginBottom: "16px",
                   }}
@@ -146,7 +146,7 @@ export default function BlogCards() {
                     fill
                     style={{
                       objectFit: "cover",
-                      borderRadius: "12px",
+                      borderRadius: "8px",
                     }}
                     priority={index < 2}
                     unoptimized
@@ -159,7 +159,7 @@ export default function BlogCards() {
                     fontSize: "18px",
                     fontWeight: "600",
                     marginBottom: "12px",
-                    color: "#2d3436",
+                    color: "#484848",
                     lineHeight: 1.4,
                     height: "50px",
                     overflow: "hidden",
@@ -169,20 +169,15 @@ export default function BlogCards() {
                 </Typography>
 
                 <Box sx={{ display: "flex", alignItems: "center", marginBottom: "12px" }}>
-                  <CalendarTodayIcon sx={{ fontSize: 16, color: "#a0a0a0", marginRight: "8px" }} />
-                  <Typography
-                    sx={{
-                      color: "#a0a0a0",
-                      fontSize: "14px",
-                    }}
-                  >
+                  <CalendarTodayIcon sx={{ fontSize: 16, color: "#777777", marginRight: "8px" }} />
+                  <Typography sx={{ color: "#777777", fontSize: "14px" }}>
                     {card.date}
                   </Typography>
                 </Box>
 
                 <Typography
                   sx={{
-                    color: "#636e72",
+                    color: "#484848",
                     fontSize: "14px",
                     lineHeight: 1.6,
                     marginBottom: "16px",
@@ -193,13 +188,7 @@ export default function BlogCards() {
                   {card.description}
                 </Typography>
 
-                <Box 
-                  sx={{
-                    margin: "0 -16px",
-                    padding: "16px 16px 0",
-                    borderTop: "1px solid #EBEBEB",
-                  }}
-                >
+                <Box sx={{ marginTop: "auto", borderTop: "1px solid #EBEBEB", paddingTop: "12px" }}>
                   <Box
                     sx={{
                       display: "flex",
@@ -212,13 +201,7 @@ export default function BlogCards() {
                         src={card.avatarUrl}
                         sx={{ width: 32, height: 32 }}
                       />
-                      <Typography
-                        sx={{
-                          marginLeft: "12px",
-                          fontSize: "14px",
-                          color: "#2d3436",
-                        }}
-                      >
+                      <Typography sx={{ marginLeft: "12px", fontSize: "14px", color: "#777777" }}>
                         {card.author}
                       </Typography>
                     </Box>
@@ -231,24 +214,10 @@ export default function BlogCards() {
                         cursor: "pointer",
                       }}
                     >
-                      <Typography
-                        sx={{
-                          fontSize: "14px",
-                          fontWeight: "500",
-                          lineHeight: 1,
-                        }}
-                      >
+                      <Typography sx={{ fontSize: "14px", fontWeight: "500", lineHeight: 1 }}>
                         Read More
                       </Typography>
-                      <KeyboardArrowRightIcon 
-                        sx={{ 
-                          fontSize: 17,
-                          marginLeft: "-5px",
-                          display: "flex",
-                          alignItems: "center",
-                          color: "#00000099"
-                        }} 
-                      />
+                      <KeyboardArrowRightIcon sx={{ fontSize: 17, color: "#777777" }} />
                     </Box>
                   </Box>
                 </Box>
@@ -258,13 +227,8 @@ export default function BlogCards() {
         </Grid>
       </Box>
 
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "40px",
-        }}
-      >
+      {/* Pagination */}
+      <Box sx={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
         <Box
           sx={{
             display: "flex",
@@ -335,3 +299,4 @@ export default function BlogCards() {
     </>
   );
 }
+
