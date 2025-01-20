@@ -7,7 +7,7 @@ import LatestProperties from "./components/LatestProperties";
 import CategoriesSidebar from "./components/CategoriesSidebar";
 import Heading from "./components/Heading";
 
-export default function HomeIndex() {
+export default function Insights() {
   return (
     <Box sx={{ backgroundColor: "#F7F7F7", minHeight: "100vh" }}>
       <Container
@@ -17,18 +17,17 @@ export default function HomeIndex() {
         }}
       >
         <Heading />
-
         <Box
           sx={{
             display: "grid",
             gridTemplateColumns: { xs: "1fr", md: "2.5fr 1fr" },
-            gap: { xs: 4, md: 6 },
+            gap: { xs: 4, md: 3 },
             mt: 5,
           }}
         >
           {/* Main Content */}
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 5 }}>
-            <BlogCard sx={{ height: 320 }} />
+          <Box>
+            <BlogCard />
           </Box>
 
           {/* Sidebar */}
@@ -36,82 +35,23 @@ export default function HomeIndex() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              gap: 3,
-              mt: 4,
+              gap: 4,
+              mt: 3,
             }}
           >
             {/* Search */}
             <Box>
-              <SearchBar
-                sx={{
-                  "& input": {
-                    padding: "16px 20px",
-                    borderRadius: 2,
-                    border: "1px solid #ccc",
-                    fontSize: "1.1rem",
-                    width: "100%",
-                    backgroundColor: "#fff",
-                  },
-                }}
-              />
+              <SearchBar />
             </Box>
 
             {/* Categories */}
-            <CategoriesSidebar
-              sx={{
-                "& ul": {
-                  listStyle: "none",
-                  padding: 0,
-                  margin: 0,
-                },
-                "& li": {
-                  display: "flex",
-                  justifyContent: "space-between",
-                  py: 1.5,
-                  fontSize: "1.1rem",
-                },
-              }}
-            />
+            <CategoriesSidebar />
 
             {/* Latest Properties */}
-            <LatestProperties
-              sx={{
-                "& .property-item": {
-                  display: "flex",
-                  gap: 3,
-                  mb: 3,
-                  pb: 3,
-                  borderBottom: "1px solid #ddd",
-                  "&:last-child": {
-                    borderBottom: "none",
-                  },
-                },
-                "& img": {
-                  height: 90,
-                  width: 90,
-                  borderRadius: 1,
-                },
-                "& .details": {
-                  fontSize: "1rem",
-                },
-              }}
-            />
+            <LatestProperties />
 
             {/* Tags */}
-            <Tags
-              sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 1.5,
-                "& .tag": {
-                  padding: "8px 16px",
-                  borderRadius: 2,
-                  backgroundColor: "#fff",
-                  boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-                  fontSize: "1rem",
-                },
-              }}
-            />
+            <Tags />
           </Box>
         </Box>
       </Container>

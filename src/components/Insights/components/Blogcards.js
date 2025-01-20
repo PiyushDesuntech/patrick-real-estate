@@ -245,8 +245,8 @@ export default function BlogCards() {
               color: currentPage === 1 ? "#00000099" : "#00000099",
               borderRadius: "50%",
               border: "2.5px solid #EBEBEB",
-              minWidth: "70px",
-              height: "70px",
+              minWidth: "55.38px",
+              height: "55.38px",
               padding: "10px",
               fontSize: "22px",
               "&:hover": {
@@ -263,8 +263,8 @@ export default function BlogCards() {
               color: currentPage === 2 ? "#00000099" : "#00000099",
               borderRadius: "50%",
               border: "2.5px solid #EBEBEB",
-              minWidth: "70px",
-              height: "70px",
+              minWidth: "55.38px",
+              height: "55.38px",
               padding: "8px",
               fontSize: "22px",
               "&:hover": {
@@ -282,8 +282,8 @@ export default function BlogCards() {
                 color: "#00000099",
                 borderRadius: "50%",
                 border: "2.5px solid #EBEBEB",
-                minWidth: "70px",
-                height: "70px",
+                minWidth: "55.38px",
+                height: "55.38px",
                 padding: "8px",
                 fontSize: "22px",
                 "&:hover": {
