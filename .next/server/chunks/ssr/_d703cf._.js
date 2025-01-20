@@ -81,13 +81,13 @@ function Mortgage() {
                         },
                         gap: {
                             xs: 4,
-                            md: 6
+                            md: 3
                         },
                         mt: 5
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/Mortgage-cal/mortgage-cal.js",
-                    lineNumber: 16,
+                    lineNumber: 15,
                     columnNumber: 9
                 }, this)
             ]

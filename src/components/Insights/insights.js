@@ -16,7 +16,14 @@ export default function Insights() {
           py: 6,
         }}
       >
-        <Heading />
+        {/* Page Heading */}
+        <Box
+          sx={{
+            ml: { xs: 0, md: -15 },
+          }}
+        >
+          <Heading />
+        </Box>
         <Box
           sx={{
             display: "grid",
@@ -25,12 +32,12 @@ export default function Insights() {
             mt: 5,
           }}
         >
-          {/* Main Content */}
+          {/* Main Content left Side */ }
           <Box>
             <BlogCard />
           </Box>
 
-          {/* Sidebar */}
+          {/* Sidebar or right side*/}
           <Box
             sx={{
               display: "flex",
