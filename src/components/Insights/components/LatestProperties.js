@@ -31,7 +31,7 @@ export default function LatestProperties() {
       sx={{
         width: "100%",
         backgroundColor: "#fff",
-        borderRadius: "7.38px",  // Simplified border-radius
+        borderRadius: "7.38px",
         padding: { xs: "16px", sm: "20px 24px" },
         border: "1.5px solid #ebebeb",
         boxSizing: "border-box",
@@ -103,7 +103,7 @@ export default function LatestProperties() {
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     maxWidth: "220px",
-                    fontWeight: "700",  // Bolder title
+                    fontWeight: "700",
                   }}
                 >
                   {property.title}
