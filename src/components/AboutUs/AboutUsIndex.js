@@ -6,6 +6,7 @@ import AboutHeading from "./components/AboutHeading";
 import ClientTestimonials from "../Home/compoments/ClientTestimonials";
 import OurAgents from "./components/OurAgents";
 import JoinUs from "../Home/compoments/JoinUs";
+import HomeIndex from "../Home/HomeIndex";
 
 export default function AboutUsIndex() {
   return (
