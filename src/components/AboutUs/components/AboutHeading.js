@@ -59,6 +59,19 @@ function AboutHeading() {
         maxWidth="xl"
         sx={{ px: { xs: 1, lg: 7 }, position: "relative", height: "100%" }}
       >
+        <Box  sx={{
+            position: "absolute",
+            top: "30%",
+            // left: 50,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 2,
+          }}>
+            <Typography sx={{fontSize: "55px", fontWeight: 700, color: "#ffffff"}}>
+              About
+            </Typography>
+        </Box>
         <Box
           sx={{
             position: "absolute",
