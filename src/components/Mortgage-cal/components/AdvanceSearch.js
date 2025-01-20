@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Grid, Box, Typography } from "@mui/material";
-import EastIcon from '@mui/icons-material/East';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function AdvancedSearch() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,7 @@ export default function AdvancedSearch() {
               transform: isOpen ? "rotate(180deg)" : "rotate(0deg)"
             }}
           >
-            <EastIcon 
+            <ExpandMoreIcon 
               sx={{ 
                 fontSize: { xs: "16px", sm: "24px", md: "24px" },
                 color: "#666666"

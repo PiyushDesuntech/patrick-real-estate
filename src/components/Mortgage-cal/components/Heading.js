@@ -6,14 +6,13 @@ import Link from "next/link";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function Heading() {
-  const pathname = usePathname(); // Get the current path
-  const pathSegments = pathname.split("/").filter(Boolean); // Split and filter empty segments
+  const pathname = usePathname();
+  const pathSegments = pathname.split("/").filter(Boolean);
 
   const breadcrumbLinks = pathSegments.map((segment, index) => {
     const isLast = index === pathSegments.length - 1;
     const routePath = "/" + pathSegments.slice(0, index + 1).join("/");
 
-    // Capitalize the segment for display
     const displayName = segment
       .replace(/-/g, " ") 
       .replace(/\b\w/g, (char) => char.toUpperCase()); 

@@ -9,15 +9,15 @@ export default function LoanInformation() {
       sx={{
         width: "100%",
         backgroundColor: "#F8F9FA",
-        padding: { xs: "16px", sm: "32px", md: "40px" }, // Reduced padding for mobile view
+        padding: { xs: "16px", sm: "32px", md: "40px" },
       }}
     >
       <Grid container spacing={4} sx={{ width: "100%" }}>
         {/* First Section */}
-        <Grid item xs={12} sm={7.5}> {/* Adjusted for mobile grid */}
+        <Grid item xs={12} sm={7.5}>
           <Typography
             sx={{
-              fontSize: { xs: "18px", sm: "24px" }, // Adjust font size for mobile
+              fontSize: { xs: "18px", sm: "24px" },
               fontWeight: "600",
               color: "#1A2038",
               marginBottom: "24px",
@@ -28,7 +28,7 @@ export default function LoanInformation() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "12px", sm: "16px" }, // Reduced font size for mobile view
+              fontSize: { xs: "12px", sm: "16px" },
               color: "#6B7280",
               lineHeight: "2",
               fontFamily: "'Inter', sans-serif",
@@ -55,10 +55,10 @@ export default function LoanInformation() {
         </Grid>
 
         {/* Second Section */}
-        <Grid item xs={12} sm={7.5}> {/* Adjusted for mobile grid */}
+        <Grid item xs={12} sm={7.5}>
           <Typography
             sx={{
-              fontSize: { xs: "18px", sm: "24px" }, // Adjust font size for mobile
+              fontSize: { xs: "18px", sm: "24px" },
               fontWeight: "600",
               color: "#1A2038",
               marginBottom: "24px",
@@ -69,7 +69,7 @@ export default function LoanInformation() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "12px", sm: "16px" }, // Reduced font size for mobile view
+              fontSize: { xs: "12px", sm: "16px" },
               color: "#6B7280",
               lineHeight: "2",
               fontFamily: "'Inter', sans-serif",
