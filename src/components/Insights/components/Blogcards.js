@@ -1,123 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Box, Grid, Typography, Avatar, Button } from "@mui/material";
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import EastIcon from '@mui/icons-material/East';
 import Image from 'next/image';
 
-export default function BlogCards() {
-  const allBlogCardsData = [
-    {
-      title: "Redfin Ranks the Most Competitive Neighborhoods of 2020",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar1.jpg",
-    },
-    {
-      title: "Housing Markets That Changed the Most This Decade",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar2.jpg",
-    },
-    {
-      title: "Redfin Unveils the Best Canadian Cities for Biking",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar3.jpg", 
-    },
-    {
-      title: "You Can Buy The Piano Teacher's Home from Groundhog Day",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar4.jpg", 
-    },
-    {
-      title: "Why We Should All Support Clear Cooperation",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar5.jpg", 
-    },
-    {
-      title: "12 Walkable Cities Where You Can Live Affordably",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar6.jpg", 
-    },
-    // Page 2 cards
-    {
-      title: "The Future of Remote Work in Real Estate",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar1.jpg",
-    },
-    {
-      title: "Top 10 Emerging Real Estate Markets in 2020",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar2.jpg",
-    },
-    {
-      title: "Sustainable Housing Trends to Watch",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar3.jpg",
-    },
-    {
-      title: "Guide to First-Time Home Buying in 2020",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar4.jpg",
-    },
-    {
-      title: "Impact of Technology on Real Estate Sales",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar5.jpg",
-    },
-    {
-      title: "Understanding Property Market Cycles",
-      date: "February 28, 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis et",
-      author: "Admin",
-      image: "/Images/Figure1.webp",
-      avatarUrl: "/Images/avatar6.jpg",
-    },
-  ];
-
-  const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 6;
-  const indexOfLastCard = currentPage * cardsPerPage;
-  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
-  const currentCards = allBlogCardsData.slice(indexOfFirstCard, indexOfLastCard);
-
+const BlogCards = ({ currentCards, currentPage, setCurrentPage }) => {
   return (
     <>
       <Box sx={{ padding: "24px 0", backgroundColor: "#F7F7F7" }}>
-        <Grid container spacing={4}>
+        <Grid container spacing={3}>
           {currentCards.map((card, index) => (
             <Grid item xs={12} sm={6} key={index}>
               <Box
@@ -154,13 +48,14 @@ export default function BlogCards() {
                 </Box>
 
                 <Typography
+                  variant="h2"
                   sx={{
-                    fontSize: "22.15px",
-                    fontWeight: 700,
+                    fontSize: "18px",
+                    fontWeight: "600",
                     marginBottom: "12px",
                     color: "#484848",
                     lineHeight: 1.4,
-                    // height: "50px",
+                    height: "50px",
                     overflow: "hidden",
                   }}
                 >
@@ -168,8 +63,8 @@ export default function BlogCards() {
                 </Typography>
 
                 <Box sx={{ display: "flex", alignItems: "center", marginBottom: "12px" }}>
-                  <CalendarTodayIcon sx={{ fontSize: "17.23px", color: "#777777", marginRight: "8px" }} />
-                  <Typography sx={{ color: "#777777", fontSize: "17.23px" }}>
+                  <CalendarTodayIcon sx={{ fontSize: 16, color: "#777777", marginRight: "8px" }} />
+                  <Typography sx={{ color: "#777777", fontSize: "14px" }}>
                     {card.date}
                   </Typography>
                 </Box>
@@ -177,10 +72,10 @@ export default function BlogCards() {
                 <Typography
                   sx={{
                     color: "#484848",
-                    fontSize: "17.23px",
+                    fontSize: "14px",
                     lineHeight: 1.6,
                     marginBottom: "16px",
-                    // height: "44px",
+                    height: "44px",
                     overflow: "hidden",
                   }}
                 >
@@ -200,7 +95,7 @@ export default function BlogCards() {
                         src={card.avatarUrl}
                         sx={{ width: 32, height: 32 }}
                       />
-                      <Typography sx={{ marginLeft: "12px", fontSize: "17.23px", color: "#777777" }}>
+                      <Typography sx={{ marginLeft: "12px", fontSize: "14px", color: "#777777" }}>
                         {card.author}
                       </Typography>
                     </Box>
@@ -213,7 +108,7 @@ export default function BlogCards() {
                         cursor: "pointer",
                       }}
                     >
-                      <Typography sx={{ fontSize: "17.23px", fontWeight: "500", lineHeight: 1 }}>
+                      <Typography sx={{ fontSize: "14px", fontWeight: "500", lineHeight: 1 }}>
                         Read More
                       </Typography>
                       <KeyboardArrowRightIcon sx={{ fontSize: 17, color: "#777777" }} />
@@ -297,5 +192,6 @@ export default function BlogCards() {
       </Box>
     </>
   );
-}
+};
 
+export default BlogCards;
