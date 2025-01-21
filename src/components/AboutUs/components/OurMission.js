@@ -166,7 +166,7 @@ export default function OurMission() {
                   sm: "400px",
                   md: "100%",
                 },
-                backgroundImage: "url(/images/ourmissions.svg)",
+                backgroundImage: "url(/Images/ourmissions.svg)",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 display: "flex",

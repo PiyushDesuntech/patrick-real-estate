@@ -21,21 +21,21 @@ const testimonials = [
     name: "John Doe",
     role: "Sales Manager",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat leo nisi, in elementum mi feugiat equat. In nisi urna, pretium in congue in, ultrices in turpisesent semper nulla vestibulum, pellentesque odio a, finibus auguespendisse potenti. ",
-    avatar: "/images/client1.svg",
+    avatar: "/Images/client1.svg",
     rating: 5,
   },
   {
     name: "Elin SkoGlund",
     role: "Sales Manager",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat leo nisi, in elementum mi feugiat equat. In nisi urna, pretium in congue in, ultrices in turpisesent semper nulla vestibulum, pellentesque odio a, finibus auguespendisse potenti. ",
-    avatar: "/images/client2.svg",
+    avatar: "/Images/client2.svg",
     rating: 5,
   },
   {
     name: "Tor Myhrman",
     role: "Sales Manager",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat leo nisi, in elementum mi feugiat equat. In nisi urna, pretium in congue in, ultrices in turpisesent semper nulla vestibulum, pellentesque odio a, finibus auguespendisse potenti. ",
-    avatar: "/images/client3.svg",
+    avatar: "/Images/client3.svg",
     rating: 5,
   },
 ];
@@ -135,7 +135,7 @@ const ClientTestimonials = () => {
           >
             <CardContent>
                 <Image
-                  src="/images/comma.svg"
+                  src="/Images/comma.svg"
                   alt="Colonial Realty Associates"
                   width={100}
                   height={100}

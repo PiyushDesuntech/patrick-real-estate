@@ -17,7 +17,7 @@ const properties = [
     dateAvailable: "12/10/2025",
     price: 3000,
     homeType: "Apartment",
-    image: "/images/mapview1.svg",
+    image: "/Images/mapview1.svg",
     locationSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.550029100468!2d-71.0940433240291!3d42.373427971191546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b41ff4d93d%3A0xd01743bec9a431df!2s145%20Willow%20St%20%232%2C%20Cambridge%2C%20MA%2002141%2C%20USA!5e0!3m2!1sen!2sin!4v1737012416802!5m2!1sen!2sin",
   },
@@ -31,7 +31,7 @@ const properties = [
     sqft: 150,
     price: 500000,
     homeType: "Condo",
-    image: "/images/mapview2.svg",
+    image: "/Images/mapview2.svg",
     locationSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d736.8877161996699!2d-71.09211213039339!3d42.373410164426055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b41fb83f01%3A0xa59eb07b5f4331e6!2s137%20Willow%20St%2C%20Cambridge%2C%20MA%2002141%2C%20USA!5e0!3m2!1sen!2sin!4v1737013795316!5m2!1sen!2sin",
   },
@@ -46,7 +46,7 @@ const properties = [
     dateAvailable: "12/10/2025",
     price: 3000,
     homeType: "Apartment",
-    image: "/images/mapview3.svg",
+    image: "/Images/mapview3.svg",
     locationSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.550029100468!2d-71.0940433240291!3d42.373427971191546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b41ff4d93d%3A0xd01743bec9a431df!2s145%20Willow%20St%20%232%2C%20Cambridge%2C%20MA%2002141%2C%20USA!5e0!3m2!1sen!2sin!4v1737012416802!5m2!1sen!2sin",
   },
@@ -60,7 +60,7 @@ const properties = [
     sqft: 150,
     price: 500000,
     homeType: "Condo",
-    image: "/images/mapview4.svg",
+    image: "/Images/mapview4.svg",
     locationSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.550029100468!2d-71.0940433240291!3d42.373427971191546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b41ff4d93d%3A0xd01743bec9a431df!2s145%20Willow%20St%20%232%2C%20Cambridge%2C%20MA%2002141%2C%20USA!5e0!3m2!1sen!2sin!4v1737012416802!5m2!1sen!2sin",
   },
@@ -75,7 +75,7 @@ const properties = [
     dateAvailable: "12/10/2025",
     price: 3000,
     homeType: "Apartment",
-    image: "/images/mapview5.svg",
+    image: "/Images/mapview5.svg",
     locationSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.550029100468!2d-71.0940433240291!3d42.373427971191546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b41ff4d93d%3A0xd01743bec9a431df!2s145%20Willow%20St%20%232%2C%20Cambridge%2C%20MA%2002141%2C%20USA!5e0!3m2!1sen!2sin!4v1737012416802!5m2!1sen!2sin",
   },
@@ -89,7 +89,7 @@ const properties = [
     sqft: 150,
     price: 500000,
     homeType: "Condo",
-    image: "/images/mapview6.svg",
+    image: "/Images/mapview6.svg",
     locationSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.550029100468!2d-71.0940433240291!3d42.373427971191546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b41ff4d93d%3A0xd01743bec9a431df!2s145%20Willow%20St%20%232%2C%20Cambridge%2C%20MA%2002141%2C%20USA!5e0!3m2!1sen!2sin!4v1737012416802!5m2!1sen!2sin",
   },
@@ -104,7 +104,7 @@ const properties = [
     dateAvailable: "12/10/2025",
     price: 3000,
     homeType: "Apartment",
-    image: "/images/mapview3.svg",
+    image: "/Images/mapview3.svg",
     locationSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.550029100468!2d-71.0940433240291!3d42.373427971191546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b41ff4d93d%3A0xd01743bec9a431df!2s145%20Willow%20St%20%232%2C%20Cambridge%2C%20MA%2002141%2C%20USA!5e0!3m2!1sen!2sin!4v1737012416802!5m2!1sen!2sin",
   },
@@ -118,7 +118,7 @@ const properties = [
     sqft: 150,
     price: 500000,
     homeType: "Condo",
-    image: "/images/mapview4.svg",
+    image: "/Images/mapview4.svg",
     locationSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.550029100468!2d-71.0940433240291!3d42.373427971191546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b41ff4d93d%3A0xd01743bec9a431df!2s145%20Willow%20St%20%232%2C%20Cambridge%2C%20MA%2002141%2C%20USA!5e0!3m2!1sen!2sin!4v1737012416802!5m2!1sen!2sin",
   },

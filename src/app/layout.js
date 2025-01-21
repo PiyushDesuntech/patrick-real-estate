@@ -1,5 +1,6 @@
 "use client";
-import { Lato } from "next/font/google";
+import React from "react";
+// import { Lato } from "next/font/google";
 import Box from "@mui/material/Box";
 import "./globals.css";
 import Script from "next/script";
@@ -8,21 +9,36 @@ import { useEffect, useState } from "react";
 import FooterIndex from "@/components/Footer/FooterIndex";
 import PropertyNavbar from "@/components/PropertyNavbar/PropertyNavbar";
 import { usePathname } from "next/navigation";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-// Load Inter font
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"], // Specify available weights
+
+
+// const lato = Lato({
+//   subsets: ["latin"],
+//   weight: ["100", "300", "400", "700", "900"], 
+// });
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Lato, Arial, sans-serif",
+  },
 });
 
-// export const metadata = {
-//   title: "Merit Pathshala",
-//   description: "Merit Pathshala",
-// };
 
 export default function RootLayout({ children }) {
   const [isMounted, setIsMounted] = useState(false);
-  const pathname = usePathname(); // Get the current route path
+  const pathname = usePathname(); 
+
+  React.useEffect(() => {
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+  
+    return () => {
+      document.head.removeChild(link); 
+    };
+  }, []);
 
   useEffect(() => {
     setIsMounted(true);
@@ -30,11 +46,15 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body
+      //  className={lato.className}
+       >
+        <ThemeProvider theme={theme}>
         {isMounted && pathname === "/" && <NavbarIndex />}
         {isMounted && pathname !== "/" && <PropertyNavbar />}
         <Box suppressHydrationWarning>{children}</Box>
         {isMounted && <FooterIndex />}
+        </ThemeProvider>
       </body>
     </html>
   );

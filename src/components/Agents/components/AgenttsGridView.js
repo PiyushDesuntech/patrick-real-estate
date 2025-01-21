@@ -24,7 +24,7 @@ const agents = [
     role: "Marketing",
     phone: "91 456 9***",
     email: "infoagent@example.com",
-    image: "/images/agentList1.svg", 
+    image: "/Images/agentList1.svg", 
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const agents = [
     role: "Sales",
     phone: "981 123 ***",
     email: "infoagent@example.com",
-    image: "/images/agentList2.svg", 
+    image: "/Images/agentList2.svg", 
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const agents = [
     role: "Marketing",
     phone: "91 456 9***",
     email: "infoagent@example.com",
-    image: "/images/agentList1.svg", 
+    image: "/Images/agentList1.svg", 
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const agents = [
     role: "Sales",
     phone: "981 123 ***",
     email: "infoagent@example.com",
-    image: "/images/agentList2.svg", 
+    image: "/Images/agentList2.svg", 
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const agents = [
     role: "Marketing",
     phone: "91 456 9***",
     email: "infoagent@example.com",
-    image: "/images/agentList1.svg", 
+    image: "/Images/agentList1.svg", 
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const agents = [
     role: "Sales",
     phone: "981 123 ***",
     email: "infoagent@example.com",
-    image: "/images/agentList2.svg", 
+    image: "/Images/agentList2.svg", 
   },
 ];
 

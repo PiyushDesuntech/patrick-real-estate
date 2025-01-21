@@ -14,7 +14,7 @@ export default function WantCall() {
   return (
     <Box
       sx={{
-        backgroundImage: "url(/images/WantCallBG.svg)", // Path to your image
+        backgroundImage: "url(/Images/WantCallBG.svg)", // Path to your image
         backgroundSize: "cover", // Ensures the image covers the entire area
         backgroundRepeat: "no-repeat", // Prevents the image from repeating
         backgroundPosition: "center", // Centers the image
@@ -42,7 +42,7 @@ export default function WantCall() {
                   }}
                 >
                   <Image
-                    src="/images/WantCall1.svg"
+                    src="/Images/WantCall1.svg"
                     alt="Colonial Realty Associates"
                     layout="responsive"
                     width={650}
@@ -63,7 +63,7 @@ export default function WantCall() {
                   }}
                 >
                   <Image
-                    src="/images/WantCall2.svg"
+                    src="/Images/WantCall2.svg"
                     alt="Colonial Realty Associates"
                     layout="responsive"
                     width={650}
@@ -71,7 +71,7 @@ export default function WantCall() {
                     style={{ objectFit: "contain" }}
                   />
                   <Image
-                    src="/images/WantCall3.svg"
+                    src="/Images/WantCall3.svg"
                     alt="Colonial Realty Associates"
                     layout="responsive"
                     width={650}

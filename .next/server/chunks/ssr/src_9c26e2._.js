@@ -1391,7 +1391,7 @@ const FeatureProperties = ()=>{
                                     },
                                     width: {
                                         xs: "100%",
-                                        lg: "339px"
+                                        lg: "325px"
                                     },
                                     display: "flex",
                                     flexDirection: "column",

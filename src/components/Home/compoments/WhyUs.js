@@ -11,19 +11,19 @@ import {
 
 const data = [
   {
-    icon: "/images/financing.svg",
+    icon: "/Images/financing.svg",
     title: "Trusted By Thousands",
     description:
       "Curabitur viverra, risus non laoreet molestie, erat justo porta urna, quis consequat ante augue commodo eros. Fusce convallis sodales lacus.",
   },
   {
-    icon: "/images/Trusted.svg", 
+    icon: "/Images/Trusted.svg", 
     title: "Wide Range Of Properties",
     description:
       "Morbi nec scelerisque metus, vel iaculis dolor. Vivamus consequat felis quam, nec fringilla leo finibus in. Duis pulvinar nisi nec ultricies aliquet.",
   },
   {
-    icon: "/images/wideRange.svg",
+    icon: "/Images/wideRange.svg",
     title: "Financing Made Easy",
     description:
       "Praesent eleifend nunc in luctus ultrices. Pellentesque sed mauris sed felis consectetur mollis non nec tortor. In sit amet semper nibh.",

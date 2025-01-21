@@ -79,7 +79,7 @@ const PropertyNavbar = (properties) => {
         >
           <Box>
           <Image
-            src="/images/logo2.svg"
+            src="/Images/logo2.svg"
             alt="Colonial Realty Associates"
             layout="responsive"
             width={269}
@@ -211,7 +211,7 @@ const PropertyNavbar = (properties) => {
               }}
             >
               <Image
-                src="/images/LogIn.svg"
+                src="/Images/LogIn.svg"
                 alt="Colonial Realty Associates"
                 layout="responsive"
                 width={200}

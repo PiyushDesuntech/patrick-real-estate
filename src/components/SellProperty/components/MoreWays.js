@@ -95,7 +95,7 @@ const MoreWays = () => {
                       }}
                     >
                       <Image
-                        src="/images/housekey.png"
+                        src="/Images/housekey.png"
                         alt="House key"
                         layout="responsive"
                         width={150}
@@ -124,7 +124,7 @@ const MoreWays = () => {
                       }}
                     >
                       <Image
-                        src="/images/househand.png"
+                        src="/Images/househand.png"
                         alt="House Hand"
                         layout="responsive"
                         width={150}

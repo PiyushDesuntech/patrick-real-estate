@@ -20,7 +20,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const data = [
   {
-    images: ["/images/Feature1.svg", "/images/Feature2.svg"],
+    images: ["/Images/Feature1.svg", "/Images/Feature2.svg"],
     title: "Luxury Family Home",
     price: "$1350/mo",
     beds: 2,
@@ -30,7 +30,7 @@ const data = [
     feature: "Feature",
   },
   {
-    images: ["/images/Feature2.svg", "/images/Feature3.svg"],
+    images: ["/Images/Feature2.svg", "/Images/Feature3.svg"],
     title: "House Hollywood",
     price: "$2250/mo",
     beds: 4,
@@ -40,7 +40,7 @@ const data = [
     feature: "Feature",
   },
   {
-    images: ["/images/Feature3.svg", "/images/Feature1.svg"],
+    images: ["/Images/Feature3.svg", "/Images/Feature1.svg"],
     title: "Selway Apartment",
     price: "$1550/mo",
     beds: 1,
@@ -50,7 +50,7 @@ const data = [
     feature: "Feature",
   },
   {
-    images: ["/images/Feature1.svg", "/images/Feature2.svg"],
+    images: ["/Images/Feature1.svg", "/Images/Feature2.svg"],
     title: "Arlo Apartment",
     price: "$2150/mo",
     beds: 4,
@@ -209,7 +209,7 @@ const FeatureProperties = () => {
                   overflow: "hidden",
                   boxShadow: 3,
                   height: { xs: "280px", md: "340px", lg: "385px" },
-                  width: { xs: "100%", lg: "339px" },
+                  width: { xs: "100%", lg: "325px" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",

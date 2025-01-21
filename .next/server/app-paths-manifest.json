@@ -5,5 +5,8 @@
   "/insight-inner/page": "app/insight-inner/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/insights/page": "app/insights/page.js",
-  "/contact-us/page": "app/contact-us/page.js"
+  "/contact-us/page": "app/contact-us/page.js",
+  "/subscription/page": "app/subscription/page.js",
+  "/property-list/property-details/[id]/page": "app/property-list/property-details/[id]/page.js",
+  "/property-list/page": "app/property-list/page.js"
 }

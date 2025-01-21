@@ -480,10 +480,10 @@ function Hero() {
     const [currentImageIndex, setCurrentImageIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [blur, setBlur] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const backgroundImages = [
-        "/images/HomeBg.svg",
-        "/images/HomeBg.svg",
-        "/images/HomeBg.svg",
-        "/images/HomeBg.svg"
+        "/Images/HomeBg.svg",
+        "/Images/HomeBg.svg",
+        "/Images/HomeBg.svg",
+        "/Images/HomeBg.svg"
     ];
     const handleBackgroundChange = (index)=>{
         if (index !== currentImageIndex) {
@@ -724,8 +724,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 const data = [
     {
         images: [
-            "/images/Feature1.svg",
-            "/images/Feature2.svg"
+            "/Images/Feature1.svg",
+            "/Images/Feature2.svg"
         ],
         title: "Luxury Family Home",
         price: "$1350/mo",
@@ -737,8 +737,8 @@ const data = [
     },
     {
         images: [
-            "/images/Feature2.svg",
-            "/images/Feature3.svg"
+            "/Images/Feature2.svg",
+            "/Images/Feature3.svg"
         ],
         title: "House Hollywood",
         price: "$2250/mo",
@@ -750,8 +750,8 @@ const data = [
     },
     {
         images: [
-            "/images/Feature3.svg",
-            "/images/Feature1.svg"
+            "/Images/Feature3.svg",
+            "/Images/Feature1.svg"
         ],
         title: "Selway Apartment",
         price: "$1550/mo",
@@ -763,8 +763,8 @@ const data = [
     },
     {
         images: [
-            "/images/Feature1.svg",
-            "/images/Feature2.svg"
+            "/Images/Feature1.svg",
+            "/Images/Feature2.svg"
         ],
         title: "Arlo Apartment",
         price: "$2150/mo",
@@ -1003,7 +1003,7 @@ const FeatureProperties = ()=>{
                                     },
                                     width: {
                                         xs: "100%",
-                                        lg: "339px"
+                                        lg: "325px"
                                     },
                                     display: "flex",
                                     flexDirection: "column",
@@ -1323,21 +1323,21 @@ const ClientStories = ()=>{
             description: "Nullam consectetur blandit risus eu accumsan. Fusce finibus tellus id justo maximus, non vulputate erat sollicitudin. Vestibulum at lectus sed enim volutpat blandit id non sapien. Sed non ullamcorper leo, ac interdum elit. Sed eget hendrerit nisi. Mauris porttitor eros in magna semper, at fringilla nulla luctus. Vivamus facilisis tortor sed nisl eleifend, vitae mollis velit auctor. Fusce suscipit neque nisi, gravida sollicitudin urna viverra eu.",
             clientName: "John Doe",
             clientRole: "Sales Manager",
-            image: "/images/holdingHouse.svg"
+            image: "/Images/holdingHouse.svg"
         },
         {
             title: "Your Trusted Real Estate Partner",
             description: "Donec venenatis, arcu nec rhoncus congue, nisl elit varius ligula, vel scelerisque libero neque nec justo.",
             clientName: "Jane Smith",
             clientRole: "Real Estate Consultant",
-            image: "/images/holdingHouse.svg"
+            image: "/Images/holdingHouse.svg"
         },
         {
             title: "Helping You Find Your Dream Home",
             description: "Praesent fermentum elit non eros euismod, sed auctor odio viverra. Pellentesque et turpis et risus consequat auctor.",
             clientName: "Michael Johnson",
             clientRole: "Home Buyer",
-            image: "/images/holdingHouse.svg"
+            image: "/Images/holdingHouse.svg"
         }
     ];
     const [currentSlide, setCurrentSlide] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
@@ -1350,7 +1350,7 @@ const ClientStories = ()=>{
     const current = slides[currentSlide];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            backgroundImage: "url(/images/clientBG.svg)",
+            backgroundImage: "url(/Images/clientBG.svg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat"
@@ -1734,21 +1734,21 @@ const testimonials = [
         name: "John Doe",
         role: "Sales Manager",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat leo nisi, in elementum mi feugiat equat. In nisi urna, pretium in congue in, ultrices in turpisesent semper nulla vestibulum, pellentesque odio a, finibus auguespendisse potenti. ",
-        avatar: "/images/client1.svg",
+        avatar: "/Images/client1.svg",
         rating: 5
     },
     {
         name: "Elin SkoGlund",
         role: "Sales Manager",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat leo nisi, in elementum mi feugiat equat. In nisi urna, pretium in congue in, ultrices in turpisesent semper nulla vestibulum, pellentesque odio a, finibus auguespendisse potenti. ",
-        avatar: "/images/client2.svg",
+        avatar: "/Images/client2.svg",
         rating: 5
     },
     {
         name: "Tor Myhrman",
         role: "Sales Manager",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat leo nisi, in elementum mi feugiat equat. In nisi urna, pretium in congue in, ultrices in turpisesent semper nulla vestibulum, pellentesque odio a, finibus auguespendisse potenti. ",
-        avatar: "/images/client3.svg",
+        avatar: "/Images/client3.svg",
         rating: 5
     }
 ];
@@ -1901,7 +1901,7 @@ const ClientTestimonials = ()=>{
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CardContent$2f$CardContent$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CardContent$3e$__["CardContent"], {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/images/comma.svg",
+                                            src: "/Images/comma.svg",
                                             alt: "Colonial Realty Associates",
                                             width: 100,
                                             height: 100,

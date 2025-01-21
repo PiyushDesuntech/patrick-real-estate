@@ -47,7 +47,7 @@ export default function PopularBoston() {
               }}
             >
               <Image
-                src="/images/Popular1.svg"
+                src="/Images/Popular1.svg"
                 alt="Allston"
                 layout="responsive"
                 width={650}
@@ -66,7 +66,7 @@ export default function PopularBoston() {
               }}
             >
               <Image
-                src="/images/Popular2.svg"
+                src="/Images/Popular2.svg"
                 alt="Back Bay"
                 layout="responsive"
                 width={650}
@@ -85,7 +85,7 @@ export default function PopularBoston() {
               }}
             >
               <Image
-                src="/images/Popular3.svg"
+                src="/Images/Popular3.svg"
                 alt="Beacon Hills"
                 layout="responsive"
                 width={650}

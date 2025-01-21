@@ -50,7 +50,7 @@ function AboutHeading() {
           sm: "290px",
           md: "290px",
         },
-        backgroundImage: "url(/images/aboutbg.svg)",
+        backgroundImage: "url(/Images/aboutbg.svg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

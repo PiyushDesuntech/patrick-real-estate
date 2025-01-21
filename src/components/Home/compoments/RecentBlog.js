@@ -8,7 +8,7 @@ export default function RecentBlog() {
   return (
     <Box
       sx={{
-        backgroundImage: "url(/images/Join.svg)",
+        backgroundImage: "url(/Images/Join.svg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
@@ -43,7 +43,7 @@ export default function RecentBlog() {
                   }}
                 >
                   <Image
-                    src="/images/RecentBlog.svg"
+                    src="/Images/RecentBlog.svg"
                     alt="Colonial Realty Associates"
                     layout="intrinsic"
                     width={250}

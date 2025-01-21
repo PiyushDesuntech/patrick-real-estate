@@ -19,22 +19,22 @@ const agents = [
   {
     name: "Agent Pakulla",
     role: "Marketing",
-    image: "/images/agent1.svg", // Replace with actual images
+    image: "/Images/agent1.svg", // Replace with actual images
   },
   {
     name: "Nina Walker",
     role: "Accountant",
-    image: "/images/agent1.svg",
+    image: "/Images/agent1.svg",
   },
   {
     name: "Tom Wilson",
     role: "Marketing",
-    image: "/images/agent1.svg",
+    image: "/Images/agent1.svg",
   },
   {
     name: "Samuel Smith",
     role: "Accountant",
-    image: "/images/agent1.svg",
+    image: "/Images/agent1.svg",
   },
 ];
 

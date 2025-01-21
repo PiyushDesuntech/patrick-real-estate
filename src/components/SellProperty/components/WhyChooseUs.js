@@ -11,19 +11,19 @@ import {
 
 const data = [
   {
-    icon: "/images/localexpert.svg",
+    icon: "/Images/localexpert.svg",
     title: "Work with a local expert",
     description:
       "Redfin agents rank in the top 1% of agents working at any nationwide brokerage.",
   },
   {
-    icon: "/images/savethousands.svg", 
+    icon: "/Images/savethousands.svg", 
     title: "Save thousands in fees",
     description:
       "When you buy and sell with us, you’ll payhalf the fee other brokerages often charge.",
   },
   {
-    icon: "/images/reachmore.svg",
+    icon: "/Images/reachmore.svg",
     title: "Reach more buyers",
     description:
       "Redfin is the #1 brokerage website, with five times more traffic than the next closest",
@@ -95,7 +95,7 @@ const WhyChooseUs = () => {
                   <Box>
                   <Typography sx={{fontSize: "17.92px", fontWeight: 400, }} >
                     {item.description} <Image
-                      src="/images/starWhy.svg"
+                      src="/Images/starWhy.svg"
                       alt="star"
                       width={14}
                       height={14}
