@@ -21,7 +21,7 @@ export default function LoanAmount() {
       sx={{
         width: "100%",
         maxWidth: { xs: "80%", sm: "400px", md: "650px" },
-        height: { xs: "auto", sm: "auto", md: "350px" }, 
+        height: { xs: "auto", sm: "auto", md: "350px" },
         minHeight: { xs: "470px", md: "350px" },
         backgroundColor: "#fff",
         borderRadius: "8px",
@@ -30,7 +30,6 @@ export default function LoanAmount() {
         margin: "auto",
       }}
     >
-      {/* Loan Amount Section */}
       <Box sx={{ marginBottom: { xs: "20px", sm: "40px" } }}>
         <Typography
           sx={{
@@ -49,7 +48,6 @@ export default function LoanAmount() {
             alignItems: "center",
           }}
         >
-          {/* Rupee Box */}
           <Typography
             sx={{
               fontSize: { xs: "14px", sm: "15px", md: "16px" },
@@ -71,7 +69,6 @@ export default function LoanAmount() {
           >
             ₹
           </Typography>
-          {/* Loan Amount Input */}
           <input
             type="number"
             value={loanAmount}
@@ -91,7 +88,6 @@ export default function LoanAmount() {
         </Box>
       </Box>
 
-      {/* Interest Rate Section */}
       <Box sx={{ marginBottom: { xs: "20px", sm: "40px" } }}>
         <Typography
           sx={{
@@ -111,7 +107,6 @@ export default function LoanAmount() {
             gap: 2,
           }}
         >
-          {/* Interest Rate Slider */}
           <Slider
             value={interestRate}
             onChange={(event, value) => setInterestRate(value)}
@@ -160,7 +155,6 @@ export default function LoanAmount() {
         </Box>
       </Box>
 
-      {/* Loan Duration Section */}
       <Box>
         <Typography
           sx={{
@@ -180,7 +174,6 @@ export default function LoanAmount() {
             gap: 2,
           }}
         >
-          {/* Loan Duration Slider */}
           <Slider
             value={duration}
             onChange={(event, value) => setDuration(value)}

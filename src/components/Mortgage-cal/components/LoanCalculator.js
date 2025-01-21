@@ -46,8 +46,8 @@ const LoanDoughnutChart = ({ principal, interest }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: "230px", // chart size
-        height: "140px", // height for semicircle
+        width: "230px",
+        height: "140px",
         margin: "0 auto",
         gap: "3px",
       }}
@@ -69,11 +69,11 @@ export default function LoanCalculator() {
     <Box
       sx={{
         width: "100%",
-        maxWidth: { xs: "90%", sm: "500px", md: "500px" }, // maxWidth
+        maxWidth: { xs: "90%", sm: "500px", md: "500px" },
         height: "auto",
         backgroundColor: "#fff",
         borderRadius: "8px",
-        padding: { xs: "24px", sm: "32px" }, // padding
+        padding: { xs: "24px", sm: "32px" },
         boxSizing: "border-box",
         display: "flex",
         flexDirection: "column",
@@ -85,23 +85,21 @@ export default function LoanCalculator() {
         },
       }}
     >
-
       <Box sx={{ flex: 1 }}>
         <LoanDoughnutChart
           principal={loanDetails.principal}
           interest={loanDetails.interest}
         />
 
-        {/* Legend */}
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
             gap: "24px",
-            marginTop: "40px", // top margin
+            marginTop: "40px",
             marginBottom: "70px",
-            marginLeft: { xs: "0", md: "16px" }, // left margin for desktop
-            marginRight: { xs: "0", md: "16px" }, // right margin for desktop
+            marginLeft: { xs: "0", md: "16px" },
+            marginRight: { xs: "0", md: "16px" },
           }}
         >
           <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -133,7 +131,6 @@ export default function LoanCalculator() {
         </Box>
       </Box>
 
-      {/* Financial Details */}
       <Box sx={{ display: "flex", flexDirection: "column", gap: "24px" }}>
         <Box
           sx={{
@@ -142,16 +139,14 @@ export default function LoanCalculator() {
             alignItems: "center",
             borderBottom: "1px solid #ebebeb",
             paddingBottom: "20px",
-            marginLeft: { xs: "0", md: "18px" }, // left margin for desktop
-            marginRight: { xs: "0", md: "18px" }, // right margin for desktop
+            marginLeft: { xs: "0", md: "18px" },
+            marginRight: { xs: "0", md: "18px" },
           }}
         >
           <Typography sx={{ color: "#314259", fontSize: "14px" }}>
             Monthly EMI Is
           </Typography>
-          <Typography
-            sx={{ color: "#314259", fontSize: "16px"}}
-          >
+          <Typography sx={{ color: "#314259", fontSize: "16px" }}>
             ₹{loanDetails.monthlyEMI.toLocaleString("en-IN")}
           </Typography>
         </Box>
@@ -163,16 +158,14 @@ export default function LoanCalculator() {
             alignItems: "center",
             borderBottom: "1px solid #ebebeb",
             paddingBottom: "20px",
-            marginLeft: { xs: "0", md: "18px" }, // left margin for desktop
-            marginRight: { xs: "0", md: "18px" }, // right margin for desktop
+            marginLeft: { xs: "0", md: "18px" },
+            marginRight: { xs: "0", md: "18px" },
           }}
         >
           <Typography sx={{ color: "#314259", fontSize: "14px" }}>
             Total Amount Payable Is
           </Typography>
-          <Typography
-            sx={{ color: "#314259", fontSize: "16px"}}
-          >
+          <Typography sx={{ color: "#314259", fontSize: "16px" }}>
             ₹{loanDetails.totalAmount.toLocaleString("en-IN")}
           </Typography>
         </Box>
@@ -182,16 +175,14 @@ export default function LoanCalculator() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            marginLeft: { xs: "0", md: "18px" }, // left margin for desktop
-            marginRight: { xs: "0", md: "18px" }, // right margin for desktop
+            marginLeft: { xs: "0", md: "18px" },
+            marginRight: { xs: "0", md: "18px" },
           }}
         >
           <Typography sx={{ color: "#314259", fontSize: "14px" }}>
             Interest Component
           </Typography>
-          <Typography
-            sx={{ color: "#314259", fontSize: "16px"}}
-          >
+          <Typography sx={{ color: "#314259", fontSize: "16px" }}>
             ₹{loanDetails.interest.toLocaleString("en-IN")}
           </Typography>
         </Box>

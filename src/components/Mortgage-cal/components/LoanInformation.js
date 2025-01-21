@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
 
@@ -13,7 +12,6 @@ export default function LoanInformation() {
       }}
     >
       <Grid container spacing={4} sx={{ width: "100%" }}>
-        {/* First Section */}
         <Grid item xs={12} sm={7.5}>
           <Typography
             sx={{
@@ -53,8 +51,6 @@ export default function LoanInformation() {
             property EMI will remain constant across the tenure of the loan.
           </Typography>
         </Grid>
-
-        {/* Second Section */}
         <Grid item xs={12} sm={7.5}>
           <Typography
             sx={{

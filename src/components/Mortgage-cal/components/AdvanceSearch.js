@@ -1,12 +1,11 @@
 "use client"
-
 import React, { useState } from "react";
 import { Grid, Box, Typography } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function AdvancedSearch() {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
     <Box
       sx={{
@@ -17,9 +16,7 @@ export default function AdvancedSearch() {
         padding: { xs: "17px", sm: "24px", md: "20px" },
         boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.1)",
         cursor: "pointer",
-        transition: "all 0.2s ease-in-out",
-        '&:hover': {
-        }
+        transition: "all 0.2s ease-in-out"
       }}
       onClick={() => setIsOpen(!isOpen)}
     >
@@ -50,8 +47,8 @@ export default function AdvancedSearch() {
               transition: "transform 0.2s ease-in-out",
             }}
           >
-            <ExpandMoreIcon 
-              sx={{ 
+            <ExpandMoreIcon
+              sx={{
                 fontSize: { xs: "16px", sm: "24px", md: "24px" },
                 color: "#666666"
               }}
