@@ -10,7 +10,7 @@ export default function AdvancedSearch() {
   return (
     <Box
       sx={{
-        width: { xs: "85%", sm: "340px", md: "360px" },
+        width: { xs: "85%", sm: "340px", md: "440px" },
         height: "50px",
         backgroundColor: "#fff",
         borderRadius: "8.12px",
@@ -27,9 +27,9 @@ export default function AdvancedSearch() {
         <Grid item>
           <Typography
             sx={{
-              fontSize: { xs: "16px", sm: "24px" },
+              fontSize: { xs: "16px", sm: "24.37px" },
               fontWeight: "400",
-              color: "#333333",
+              color: "#314259",
               fontFamily: "system-ui, -apple-system, sans-serif",
               letterSpacing: "-0.5px"
             }}
@@ -48,7 +48,6 @@ export default function AdvancedSearch() {
               borderRadius: "50%",
               border: "1.5px solid #E5E5E5",
               transition: "transform 0.2s ease-in-out",
-              transform: isOpen ? "rotate(180deg)" : "rotate(0deg)"
             }}
           >
             <ExpandMoreIcon 

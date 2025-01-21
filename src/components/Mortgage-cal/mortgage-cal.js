@@ -10,17 +10,13 @@ export default function Mortgage() {
   return (
     <Box sx={{ backgroundColor: "#F7F7F7", minHeight: "100vh" }}>
       <Container
-        maxWidth="lg"
+        maxWidth="xl"
         sx={{
-          py: 6,
+          padding: { xs: "48px 16px", md: "48px 32px" },
         }}
       >
         {/* Page Heading */}
-        <Box
-          sx={{
-            ml: { xs: 0, md: -15 },
-          }}
-        >
+        <Box sx={{ marginBottom: { xs: 3, md: 4 } }}>
           <Heading />
         </Box>
 
@@ -28,36 +24,29 @@ export default function Mortgage() {
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: { xs: "1fr", md: "2fr 1fr" },
-            gap: { xs: 4, md: 3 },
-            mt: 5,
+            gridTemplateColumns: {
+              xs: "1fr",
+              md: "minmax(600px, 2fr) minmax(300px, 1fr)"
+            },
+            gap: { xs: 3, md: 4 },
+            marginBottom: { xs: 4, md: 6 }
           }}
         >
           {/* Left Column: Loan Amount */}
-          <Box
-            sx={{
-              ml: { xs: 0, md: 3 },
-            }}
-          >
+          <Box>
             <LoanAmount />
           </Box>
 
-          {/* Right Column: LoanCalculator */}
-          <Box>
-            <Box
-              sx={{
-                ml: { xs: 0, md: 25 },
-              }}
-            >
-              <LoanCalculator />
-            </Box>
-
-            <Box
-              sx={{
-                ml: { xs: 3, md: 25 },
-                mt: 4,
-              }}
-            >
+          {/* Right Column: Calculator and Advanced Search */}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 3
+            }}
+          >
+            <LoanCalculator />
+            <Box sx={{ marginLeft: { xs: "24px", md: 0 } }}>
               <AdvancedSearch />
             </Box>
           </Box>
@@ -66,9 +55,11 @@ export default function Mortgage() {
         {/* Loan Information Section */}
         <Box
           sx={{
-            mt: { xs: 5, md: -7 },
-            ml: { xs: 0, md: -2 }, 
-            textAlign: { xs: "center", md: "left" },
+            width: "100%",
+            maxWidth: { md: "calc(100% - 130px)" },
+            marginTop: { xs: 4, md: -10 },
+            marginLeft: { xs: 0, md: "70px" },
+            paddingRight: { md: "45px" }
           }}
         >
           <LoanInformation />

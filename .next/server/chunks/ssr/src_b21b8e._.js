@@ -220,10 +220,7 @@ function LoanCalculator() {
             flexDirection: "column",
             justifyContent: "space-between",
             boxShadow: "0px 6px 24px rgb(230, 230, 230)",
-            margin: "auto",
-            "@media (min-width: 960px)": {
-                height: "auto"
-            }
+            margin: "auto"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -236,7 +233,7 @@ function LoanCalculator() {
                         interest: loanDetails.interest
                     }, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                        lineNumber: 90,
+                        lineNumber: 87,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -245,15 +242,7 @@ function LoanCalculator() {
                             justifyContent: "center",
                             gap: "24px",
                             marginTop: "40px",
-                            marginBottom: "70px",
-                            marginLeft: {
-                                xs: "0",
-                                md: "16px"
-                            },
-                            marginRight: {
-                                xs: "0",
-                                md: "16px"
-                            }
+                            marginBottom: "12px"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -272,24 +261,24 @@ function LoanCalculator() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                        lineNumber: 108,
+                                        lineNumber: 103,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                         sx: {
-                                            color: "#314259",
-                                            fontSize: "12px"
+                                            color: "#484848",
+                                            fontSize: "14px"
                                         },
                                         children: "Principal"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                        lineNumber: 116,
+                                        lineNumber: 111,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                lineNumber: 107,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -308,36 +297,36 @@ function LoanCalculator() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                        lineNumber: 121,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                         sx: {
-                                            color: "#314259",
-                                            fontSize: "12px"
+                                            color: "#484848",
+                                            fontSize: "14px"
                                         },
                                         children: "Interest"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                        lineNumber: 129,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                lineNumber: 120,
+                                lineNumber: 115,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                        lineNumber: 96,
+                        lineNumber: 93,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                lineNumber: 89,
+                lineNumber: 86,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -353,32 +342,25 @@ function LoanCalculator() {
                             justifyContent: "space-between",
                             alignItems: "center",
                             borderBottom: "1px solid #ebebeb",
-                            paddingBottom: "20px",
-                            marginLeft: {
-                                xs: "0",
-                                md: "18px"
-                            },
-                            marginRight: {
-                                xs: "0",
-                                md: "18px"
-                            }
+                            paddingBottom: "20px"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
-                                    color: "#314259",
-                                    fontSize: "14px"
+                                    color: "#484848",
+                                    fontSize: "16px"
                                 },
                                 children: "Monthly EMI Is"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                lineNumber: 149,
+                                lineNumber: 142,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
-                                    color: "#314259",
-                                    fontSize: "16px"
+                                    color: "#484848",
+                                    fontSize: "18px",
+                                    fontWeight: "600"
                                 },
                                 children: [
                                     "₹",
@@ -386,13 +368,13 @@ function LoanCalculator() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                lineNumber: 152,
+                                lineNumber: 145,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                        lineNumber: 138,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -401,32 +383,25 @@ function LoanCalculator() {
                             justifyContent: "space-between",
                             alignItems: "center",
                             borderBottom: "1px solid #ebebeb",
-                            paddingBottom: "20px",
-                            marginLeft: {
-                                xs: "0",
-                                md: "18px"
-                            },
-                            marginRight: {
-                                xs: "0",
-                                md: "18px"
-                            }
+                            paddingBottom: "20px"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
-                                    color: "#314259",
-                                    fontSize: "14px"
+                                    color: "#484848",
+                                    fontSize: "16px"
                                 },
                                 children: "Total Amount Payable Is"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                lineNumber: 170,
+                                lineNumber: 161,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
-                                    color: "#314259",
-                                    fontSize: "16px"
+                                    color: "#484848",
+                                    fontSize: "18px",
+                                    fontWeight: "600"
                                 },
                                 children: [
                                     "₹",
@@ -434,45 +409,38 @@ function LoanCalculator() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                lineNumber: 173,
+                                lineNumber: 164,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                        lineNumber: 159,
+                        lineNumber: 152,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
                             display: "flex",
                             justifyContent: "space-between",
-                            alignItems: "center",
-                            marginLeft: {
-                                xs: "0",
-                                md: "18px"
-                            },
-                            marginRight: {
-                                xs: "0",
-                                md: "18px"
-                            }
+                            alignItems: "center"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
-                                    color: "#314259",
-                                    fontSize: "14px"
+                                    color: "#484848",
+                                    fontSize: "16px"
                                 },
                                 children: "Interest Component"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                lineNumber: 189,
+                                lineNumber: 178,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
-                                    color: "#314259",
-                                    fontSize: "16px"
+                                    color: "#484848",
+                                    fontSize: "18px",
+                                    fontWeight: "600"
                                 },
                                 children: [
                                     "₹",
@@ -480,19 +448,19 @@ function LoanCalculator() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                                lineNumber: 192,
+                                lineNumber: 181,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                        lineNumber: 180,
+                        lineNumber: 171,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Mortgage-cal/components/LoanCalculator.js",
-                lineNumber: 137,
+                lineNumber: 132,
                 columnNumber: 7
             }, this)
         ]
@@ -540,15 +508,7 @@ function LoanAmount() {
                 sm: "400px",
                 md: "650px"
             },
-            height: {
-                xs: "auto",
-                sm: "auto",
-                md: "350px"
-            },
-            minHeight: {
-                xs: "470px",
-                md: "350px"
-            },
+            height: "auto",
             backgroundColor: "#fff",
             borderRadius: "8px",
             padding: {
@@ -575,13 +535,13 @@ function LoanAmount() {
                                 sm: "16px"
                             },
                             fontWeight: "590",
-                            color: "#314259",
+                            color: "#37474F",
                             marginBottom: "16px"
                         },
                         children: "What Is The Amount Of Loan You Want To Borrow?"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                        lineNumber: 35,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -602,7 +562,7 @@ function LoanAmount() {
                                         md: "16px"
                                     },
                                     fontWeight: "600",
-                                    color: "#314259",
+                                    color: "#37474F",
                                     backgroundColor: "#EEEEEE",
                                     width: {
                                         xs: "100%",
@@ -629,7 +589,7 @@ function LoanAmount() {
                                 children: "₹"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                lineNumber: 53,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -644,24 +604,24 @@ function LoanAmount() {
                                     border: "1px solid #E0E7EB",
                                     borderRadius: borderRadius,
                                     outline: "none",
-                                    color: "#314259",
+                                    color: "#37474F",
                                     boxSizing: "border-box"
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                lineNumber: 75,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                        lineNumber: 45,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                lineNumber: 34,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -679,13 +639,13 @@ function LoanAmount() {
                                 sm: "16px"
                             },
                             fontWeight: "500",
-                            color: "#314259",
+                            color: "#37474F",
                             marginBottom: "16px"
                         },
                         children: "Rate Of Interest (P.A)"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                        lineNumber: 96,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -707,7 +667,7 @@ function LoanAmount() {
                                     color: "#E1E5EE",
                                     height: 8,
                                     "& .MuiSlider-rail": {
-                                        backgroundColor: "#E1E5EE",
+                                        backgroundColor: "#EDF2F7",
                                         height: 8
                                     },
                                     "& .MuiSlider-track": {
@@ -726,61 +686,59 @@ function LoanAmount() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                lineNumber: 115,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 sx: {
-                                    padding: "20px 35px",
+                                    padding: "8px 16px",
                                     borderRadius: "4px",
                                     border: "1px solid #E1E5EE",
                                     display: "flex",
                                     alignItems: "center",
-                                    position: "relative",
+                                    justifyContent: "space-between",
                                     minWidth: "80px",
                                     backgroundColor: "#FFFFFF"
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         sx: {
-                                            color: "#314259",
-                                            position: "absolute",
-                                            left: "10px"
+                                            color: "#37474F",
+                                            left: "12px"
                                         },
                                         children: interestRate
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                        lineNumber: 153,
+                                        lineNumber: 152,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         sx: {
-                                            color: "#314259",
-                                            position: "absolute",
-                                            right: "10px"
+                                            color: "#37474F",
+                                            right: "12px"
                                         },
                                         children: "%"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                        lineNumber: 156,
+                                        lineNumber: 153,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                lineNumber: 141,
+                                lineNumber: 140,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                        lineNumber: 106,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                lineNumber: 95,
+                lineNumber: 94,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -792,13 +750,13 @@ function LoanAmount() {
                                 sm: "16px"
                             },
                             fontWeight: "500",
-                            color: "#314259",
+                            color: "#37474F",
                             marginBottom: "16px"
                         },
                         children: "Duration Of The Loan"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                        lineNumber: 165,
+                        lineNumber: 160,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -820,7 +778,7 @@ function LoanAmount() {
                                     color: "#E1E5EE",
                                     height: 8,
                                     "& .MuiSlider-rail": {
-                                        backgroundColor: "#E1E5EE",
+                                        backgroundColor: "#EDF2F7",
                                         height: 8
                                     },
                                     "& .MuiSlider-track": {
@@ -839,188 +797,65 @@ function LoanAmount() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                lineNumber: 184,
+                                lineNumber: 179,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 sx: {
-                                    padding: "20px 35px",
+                                    padding: "8px 16px",
                                     borderRadius: "4px",
                                     border: "1px solid #E1E5EE",
                                     display: "flex",
                                     alignItems: "center",
-                                    position: "relative",
+                                    justifyContent: "space-between",
                                     minWidth: "80px",
                                     backgroundColor: "#FFFFFF"
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         sx: {
-                                            color: "#314259",
-                                            position: "absolute",
+                                            color: "#37474F",
                                             left: "12px"
                                         },
                                         children: duration
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                        lineNumber: 222,
+                                        lineNumber: 217,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         sx: {
-                                            color: "#314259",
-                                            position: "absolute",
+                                            color: "#37474F",
                                             right: "12px"
                                         },
                                         children: "Years"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                        lineNumber: 225,
+                                        lineNumber: 218,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                                lineNumber: 210,
+                                lineNumber: 205,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                        lineNumber: 175,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
-                lineNumber: 164,
+                lineNumber: 159,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Mortgage-cal/components/LoanAmount.js",
         lineNumber: 20,
-        columnNumber: 5
-    }, this);
-}
-}}),
-"[project]/src/components/Mortgage-cal/components/AdvanceSearch.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
-{
-__turbopack_esm__({
-    "default": (()=>AdvancedSearch)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-ssr] (ecmascript) <export default as Box>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Grid/Grid.js [app-ssr] (ecmascript) <export default as Grid>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Typography/Typography.js [app-ssr] (ecmascript) <export default as Typography>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/icons-material/esm/ExpandMore.js [app-ssr] (ecmascript)");
-"use client";
-;
-;
-;
-;
-function AdvancedSearch() {
-    const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-        sx: {
-            width: {
-                xs: "85%",
-                sm: "340px",
-                md: "440px"
-            },
-            height: "50px",
-            backgroundColor: "#fff",
-            borderRadius: "8.12px",
-            padding: {
-                xs: "17px",
-                sm: "24px",
-                md: "20px"
-            },
-            boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.1)",
-            cursor: "pointer",
-            transition: "all 0.2s ease-in-out",
-            '&:hover': {}
-        },
-        onClick: ()=>setIsOpen(!isOpen),
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
-            container: true,
-            justifyContent: "space-between",
-            alignItems: "center",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
-                    item: true,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                        sx: {
-                            fontSize: {
-                                xs: "16px",
-                                sm: "24.37px"
-                            },
-                            fontWeight: "400",
-                            color: "#314259",
-                            fontFamily: "system-ui, -apple-system, sans-serif",
-                            letterSpacing: "-0.5px"
-                        },
-                        children: "Advanced Search"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Mortgage-cal/components/AdvanceSearch.js",
-                        lineNumber: 28,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Mortgage-cal/components/AdvanceSearch.js",
-                    lineNumber: 27,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
-                    item: true,
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
-                        sx: {
-                            width: "48px",
-                            height: "48px",
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            borderRadius: "50%",
-                            border: "1.5px solid #E5E5E5",
-                            transition: "transform 0.2s ease-in-out"
-                        },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ExpandMore$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            sx: {
-                                fontSize: {
-                                    xs: "16px",
-                                    sm: "24px",
-                                    md: "24px"
-                                },
-                                color: "#666666"
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Mortgage-cal/components/AdvanceSearch.js",
-                            lineNumber: 53,
-                            columnNumber: 13
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Mortgage-cal/components/AdvanceSearch.js",
-                        lineNumber: 41,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Mortgage-cal/components/AdvanceSearch.js",
-                    lineNumber: 40,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/Mortgage-cal/components/AdvanceSearch.js",
-            lineNumber: 26,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
-        fileName: "[project]/src/components/Mortgage-cal/components/AdvanceSearch.js",
-        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
@@ -1072,7 +907,7 @@ function LoanInformation() {
                                     sm: "24px"
                                 },
                                 fontWeight: "600",
-                                color: "#314259",
+                                color: "#1A2038",
                                 marginBottom: "24px",
                                 fontFamily: "'Inter', sans-serif"
                             },
@@ -1088,7 +923,7 @@ function LoanInformation() {
                                     xs: "12px",
                                     sm: "16px"
                                 },
-                                color: "#314259",
+                                color: "#6B7280",
                                 lineHeight: "2",
                                 fontFamily: "'Inter', sans-serif",
                                 marginBottom: "24px"
@@ -1117,7 +952,7 @@ function LoanInformation() {
                                     sm: "24px"
                                 },
                                 fontWeight: "600",
-                                color: "#314259",
+                                color: "#1A2038",
                                 marginBottom: "24px",
                                 fontFamily: "'Inter', sans-serif"
                             },
@@ -1133,7 +968,7 @@ function LoanInformation() {
                                     xs: "12px",
                                     sm: "16px"
                                 },
-                                color: "#314259",
+                                color: "#6B7280",
                                 lineHeight: "2",
                                 fontFamily: "'Inter', sans-serif",
                                 marginBottom: "24px"
@@ -1171,4 +1006,4 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
 
 };
 
-//# sourceMappingURL=src_f05ed5._.js.map
+//# sourceMappingURL=src_b21b8e._.js.map

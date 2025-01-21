@@ -19,7 +19,7 @@ export default function LoanInformation() {
             sx={{
               fontSize: { xs: "18px", sm: "24px" },
               fontWeight: "600",
-              color: "#1A2038",
+              color: "#314259",
               marginBottom: "24px",
               fontFamily: "'Inter', sans-serif",
             }}
@@ -29,7 +29,7 @@ export default function LoanInformation() {
           <Typography
             sx={{
               fontSize: { xs: "12px", sm: "16px" },
-              color: "#6B7280",
+              color: "#314259",
               lineHeight: "2",
               fontFamily: "'Inter', sans-serif",
               marginBottom: "24px"
@@ -60,7 +60,7 @@ export default function LoanInformation() {
             sx={{
               fontSize: { xs: "18px", sm: "24px" },
               fontWeight: "600",
-              color: "#1A2038",
+              color: "#314259",
               marginBottom: "24px",
               fontFamily: "'Inter', sans-serif",
             }}
@@ -70,7 +70,7 @@ export default function LoanInformation() {
           <Typography
             sx={{
               fontSize: { xs: "12px", sm: "16px" },
-              color: "#6B7280",
+              color: "#314259",
               lineHeight: "2",
               fontFamily: "'Inter', sans-serif",
               marginBottom: "24px"

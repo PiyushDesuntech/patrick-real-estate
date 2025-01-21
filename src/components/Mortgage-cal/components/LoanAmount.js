@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "@mui/material/Slider";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -8,17 +8,25 @@ export default function LoanAmount() {
   const [loanAmount, setLoanAmount] = useState(100000);
   const [interestRate, setInterestRate] = useState(10);
   const [duration, setDuration] = useState(10);
+  const [borderRadius, setBorderRadius] = useState("0 8px 8px 0");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setBorderRadius(window.innerWidth < 600 ? "0 0 4px 4px" : "0 8px 8px 0");
+    }
+  }, []);
 
   return (
     <Box
       sx={{
         width: "100%",
         maxWidth: { xs: "80%", sm: "400px", md: "650px" },
-        height: "auto",
+        height: { xs: "auto", sm: "auto", md: "350px" }, 
+        minHeight: { xs: "470px", md: "350px" },
         backgroundColor: "#fff",
         borderRadius: "8px",
         padding: { xs: "15px", sm: "25px", md: "48px" },
-        boxShadow: "0px 4px 20px rgb(235, 235, 235)",
+        boxShadow: "0px 6px 24px rgb(230, 230, 230)",
         margin: "auto",
       }}
     >
@@ -28,28 +36,37 @@ export default function LoanAmount() {
           sx={{
             fontSize: { xs: "14px", sm: "16px" },
             fontWeight: "590",
-            color: "#37474F",
+            color: "#314259",
             marginBottom: "16px",
           }}
         >
           What Is The Amount Of Loan You Want To Borrow?
         </Typography>
-        <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, alignItems: "center" }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
+            alignItems: "center",
+          }}
+        >
           {/* Rupee Box */}
           <Typography
             sx={{
-              fontSize: "16px",
+              fontSize: { xs: "14px", sm: "15px", md: "16px" },
               fontWeight: "600",
-              color: "#37474F",
+              color: "#314259",
               backgroundColor: "#EEEEEE",
-              width: "48px",
-              height: "48px",
+              width: { xs: "100%", sm: "48px" },
+              minHeight: { xs: "40px", sm: "48px", md: "47px" },
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              borderRadius: "8px 0 0 8px",
+              borderRadius: {
+                xs: "4px 4px 0 0",
+                sm: "8px 0 0 8px",
+              },
               border: "1px solid #E0E7EB",
-              marginBottom: { xs: "10px", sm: "0" }, 
+              borderBottom: { xs: "none", sm: "1px solid #E0E7EB" },
             }}
           >
             ₹
@@ -65,9 +82,9 @@ export default function LoanAmount() {
               padding: "8px 16px",
               fontSize: "16px",
               border: "1px solid #E0E7EB",
-              borderRadius: "0 8px 8px 0",
+              borderRadius: borderRadius,
               outline: "none",
-              color: "#37474F",
+              color: "#314259",
               boxSizing: "border-box",
             }}
           />
@@ -80,13 +97,20 @@ export default function LoanAmount() {
           sx={{
             fontSize: { xs: "14px", sm: "16px" },
             fontWeight: "500",
-            color: "#37474F",
+            color: "#314259",
             marginBottom: "16px",
           }}
         >
           Rate Of Interest (P.A)
         </Typography>
-        <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, alignItems: "center", gap: 2 }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
+            alignItems: "center",
+            gap: 2,
+          }}
+        >
           {/* Interest Rate Slider */}
           <Slider
             value={interestRate}
@@ -96,7 +120,7 @@ export default function LoanAmount() {
               color: "#E1E5EE",
               height: 8,
               "& .MuiSlider-rail": {
-                backgroundColor: "#EDF2F7",
+                backgroundColor: "#E1E5EE",
                 height: 8,
               },
               "& .MuiSlider-track": {
@@ -116,18 +140,22 @@ export default function LoanAmount() {
           />
           <Box
             sx={{
-              padding: "8px 16px",
+              padding: "20px 35px",
               borderRadius: "4px",
               border: "1px solid #E1E5EE",
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
+              position: "relative",
               minWidth: "80px",
               backgroundColor: "#FFFFFF",
             }}
           >
-            <Typography sx={{ color: "#37474F", left: "12px" }}>{interestRate}</Typography>
-            <Typography sx={{ color: "#37474F", right: "12px" }}>%</Typography>
+            <Typography sx={{ color: "#314259", position: "absolute", left: "10px" }}>
+              {interestRate}
+            </Typography>
+            <Typography sx={{ color: "#314259", position: "absolute", right: "10px" }}>
+              %
+            </Typography>
           </Box>
         </Box>
       </Box>
@@ -138,13 +166,20 @@ export default function LoanAmount() {
           sx={{
             fontSize: { xs: "14px", sm: "16px" },
             fontWeight: "500",
-            color: "#37474F",
+            color: "#314259",
             marginBottom: "16px",
           }}
         >
           Duration Of The Loan
         </Typography>
-        <Box sx={{ display: "flex", flexDirection: { xs: "column", sm: "row" }, alignItems: "center", gap: 2 }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
+            alignItems: "center",
+            gap: 2,
+          }}
+        >
           {/* Loan Duration Slider */}
           <Slider
             value={duration}
@@ -154,7 +189,7 @@ export default function LoanAmount() {
               color: "#E1E5EE",
               height: 8,
               "& .MuiSlider-rail": {
-                backgroundColor: "#EDF2F7",
+                backgroundColor: "#E1E5EE",
                 height: 8,
               },
               "& .MuiSlider-track": {
@@ -174,18 +209,22 @@ export default function LoanAmount() {
           />
           <Box
             sx={{
-              padding: "8px 16px",
+              padding: "20px 35px",
               borderRadius: "4px",
               border: "1px solid #E1E5EE",
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
+              position: "relative",
               minWidth: "80px",
               backgroundColor: "#FFFFFF",
             }}
           >
-            <Typography sx={{ color: "#37474F", left: "12px" }}>{duration}</Typography>
-            <Typography sx={{ color: "#37474F", right: "12px" }}>Years</Typography>
+            <Typography sx={{ color: "#314259", position: "absolute", left: "12px" }}>
+              {duration}
+            </Typography>
+            <Typography sx={{ color: "#314259", position: "absolute", right: "12px" }}>
+              Years
+            </Typography>
           </Box>
         </Box>
       </Box>
