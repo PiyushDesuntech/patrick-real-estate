@@ -8,10 +8,10 @@ export default function Hero() {
   const [blur, setBlur] = useState(false);
 
   const backgroundImages = [
-    "/images/HomeBg.svg",
-    "/images/HomeBg.svg",
-    "/images/HomeBg.svg",
-    "/images/HomeBg.svg",
+    "/Images/HomeBg.svg",
+    "/Images/HomeBg.svg",
+    "/Images/HomeBg.svg",
+    "/Images/HomeBg.svg",
   ];
 
   const handleBackgroundChange = (index) => {

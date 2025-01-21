@@ -47,7 +47,7 @@ const PropertyListing = () => {
       sqft: 150,
       price: 6500,
       yearsAgo: 4,
-      image: "/images/property1.svg",
+      image: "/Images/property1.svg",
       tag: "For Sale",
     },
     {
@@ -60,7 +60,7 @@ const PropertyListing = () => {
       sqft: 120,
       price: 8000,
       yearsAgo: 5,
-      image: "/images/porperty2.svg",
+      image: "/Images/porperty2.svg",
       tag: "For Sale",
     },
     {
@@ -73,7 +73,7 @@ const PropertyListing = () => {
       sqft: 330,
       price: 150,
       yearsAgo: 5,
-      image: "/images/porperty3.svg",
+      image: "/Images/porperty3.svg",
       tag: "For Sale",
     },
     {
@@ -86,7 +86,7 @@ const PropertyListing = () => {
       sqft: 3300,
       price: 150,
       yearsAgo: 5,
-      image: "/images/porperty4.svg",
+      image: "/Images/porperty4.svg",
       tag: "For Sale",
     },
     {
@@ -99,7 +99,7 @@ const PropertyListing = () => {
       sqft: 200,
       price: 8500,
       yearsAgo: 3,
-      image: "/images/porperty5.svg",
+      image: "/Images/porperty5.svg",
       tag: "For Sale",
     },
     {
@@ -112,7 +112,7 @@ const PropertyListing = () => {
       sqft: 350,
       price: 9500,
       yearsAgo: 1,
-      image: "/images/porperty6.svg",
+      image: "/Images/porperty6.svg",
       tag: "For Sale",
     },
     {
@@ -125,7 +125,7 @@ const PropertyListing = () => {
       sqft: 350,
       price: 9500,
       yearsAgo: 1,
-      image: "/images/porperty7.svg",
+      image: "/Images/porperty7.svg",
       tag: "For Sale",
     },
     {
@@ -138,7 +138,7 @@ const PropertyListing = () => {
       sqft: 350,
       price: 9500,
       yearsAgo: 1,
-      image: "/images/porperty2.svg",
+      image: "/Images/porperty2.svg",
       tag: "For Sale",
     },
     {
@@ -151,7 +151,7 @@ const PropertyListing = () => {
       sqft: 350,
       price: 9500,
       yearsAgo: 1,
-      image: "/images/porperty4.svg",
+      image: "/Images/porperty4.svg",
       tag: "For Sale",
     },
     {
@@ -164,7 +164,7 @@ const PropertyListing = () => {
       sqft: 350,
       price: 9500,
       yearsAgo: 1,
-      image: "/images/porperty4.svg",
+      image: "/Images/porperty4.svg",
       tag: "For Sale",
     },
     {
@@ -177,7 +177,7 @@ const PropertyListing = () => {
       sqft: 350,
       price: 9500,
       yearsAgo: 1,
-      image: "/images/porperty6.svg",
+      image: "/Images/porperty6.svg",
       tag: "For Sale",
     },
   ];

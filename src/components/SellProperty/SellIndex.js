@@ -8,10 +8,12 @@ import HomeIndex from "../Home/HomeIndex";
 import MoreWays from "./components/MoreWays";
 import WhyChooseUs from "./components/WhyChooseUs";
 import ReadyToSell from "./components/ReadyToSell";
+import SellPropertyForm from "./components/SellPropertyForm";
 
 export default function SellIndex() {
   return (
-    <Container maxWidth="xl" sx={{ px: { xs: 1, lg: 6 } }}>
+    <Box>
+      <Container maxWidth="xl" sx={{ px: { xs: 1, lg: 6 } }}>
       <SellHeading />
       <SellYourHome />
       <MostExperience />
@@ -43,5 +45,11 @@ export default function SellIndex() {
       <WhyChooseUs/>
       <ReadyToSell/>
     </Container>
+    <Box sx={{background: "#F7F7F7"}}>
+      <Container  maxWidth="xl" sx={{ px: { xs: 1, lg: 6 } }}>
+      <SellPropertyForm/>
+      </Container>
+    </Box>
+    </Box>
   );
 }

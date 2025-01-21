@@ -13,7 +13,7 @@ export default function PropertyHero() {
   return (
     <Box
       sx={{
-        backgroundImage: "url(/images/PropertyDetailsBG.svg)",
+        backgroundImage: "url(/Images/PropertyDetailsBG.svg)",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",

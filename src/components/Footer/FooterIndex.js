@@ -34,7 +34,7 @@ const FooterIndex = () => {
             <Grid item xs={12} sm={6} md={3.5}>
               <Box sx={{ py: { md: 3 } }}>
                 <Image
-                  src="/images/logo.svg"
+                  src="/Images/logo.svg"
                   alt="Colonial Realty Associates"
                   width={200}
                   height={100}

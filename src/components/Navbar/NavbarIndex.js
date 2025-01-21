@@ -103,7 +103,7 @@ const NavbarIndex = () => {
           }}
         >
           <Image
-            src="/images/logo.svg"
+            src="/Images/logo.svg"
             alt="Colonial Realty Associates"
             width={269}
             height={66}
@@ -258,7 +258,7 @@ const NavbarIndex = () => {
               }}
             >
               <Image
-                src="/images/LogIn.svg"
+                src="/Images/LogIn.svg"
                 alt="Colonial Realty Associates"
                 layout="responsive"
                 width={200}

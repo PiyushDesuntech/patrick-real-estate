@@ -50,7 +50,7 @@ function ContactUsHeading() {
           sm: "290px",
           md: "290px",
         },
-        backgroundImage: "url(/images/contactus.svg)",
+        backgroundImage: "url(/Images/contactus.svg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

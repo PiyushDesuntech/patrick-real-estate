@@ -19,7 +19,7 @@ export default function FindLocalAgent() {
             }}
           >
             <Image
-              src="/images/LocalAgent.svg"
+              src="/Images/LocalAgent.svg"
               alt="Colonial Realty Associates"
               layout="responsive"
               width={890}

@@ -23,7 +23,7 @@ export default function LookingFor() {
             sm: "40%", // 40% of the box height on medium screens
             md: "70%", // 50% of the box height on larger screens
           },
-          backgroundImage: "url(/images/LookingFor.svg)",
+          backgroundImage: "url(/Images/LookingFor.svg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           zIndex: 1,

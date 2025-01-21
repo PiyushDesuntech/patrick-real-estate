@@ -5,7 +5,7 @@ export default function JoinUs() {
   return (
     <Box
       sx={{
-        backgroundImage: "url(/images/Join.svg)",
+        backgroundImage: "url(/Images/Join.svg)",
         mt: 10,
       }}
     >

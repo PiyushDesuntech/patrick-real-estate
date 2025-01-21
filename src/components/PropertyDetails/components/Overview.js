@@ -314,7 +314,7 @@ export default function Overview() {
                     }}
                   >
                     <Image
-                      src="/images/Floor1.svg"
+                      src="/Images/Floor1.svg"
                       alt="Floor1"
                       layout="responsive"
                       width={890}
@@ -397,7 +397,7 @@ export default function Overview() {
                     }}
                   >
                     <Image
-                      src="/images/Floor1.svg"
+                      src="/Images/Floor1.svg"
                       alt="Floor1"
                       layout="responsive"
                       width={890}
@@ -467,7 +467,7 @@ export default function Overview() {
                 }}
               >
                 <Image
-                  src="/images/youtube.svg"
+                  src="/Images/youtube.svg"
                   alt="Floor1"
                   layout="responsive"
                   width={890}
@@ -489,7 +489,7 @@ export default function Overview() {
                 }}
               >
                 <Image
-                  src="/images/youtube.svg"
+                  src="/Images/youtube.svg"
                   alt="Floor1"
                   layout="responsive"
                   width={890}

@@ -24,7 +24,7 @@ const ClientStories = () => {
         "Nullam consectetur blandit risus eu accumsan. Fusce finibus tellus id justo maximus, non vulputate erat sollicitudin. Vestibulum at lectus sed enim volutpat blandit id non sapien. Sed non ullamcorper leo, ac interdum elit. Sed eget hendrerit nisi. Mauris porttitor eros in magna semper, at fringilla nulla luctus. Vivamus facilisis tortor sed nisl eleifend, vitae mollis velit auctor. Fusce suscipit neque nisi, gravida sollicitudin urna viverra eu.",
       clientName: "John Doe",
       clientRole: "Sales Manager",
-      image: "/images/holdingHouse.svg",
+      image: "/Images/holdingHouse.svg",
     },
     {
       title: "Your Trusted Real Estate Partner",
@@ -32,7 +32,7 @@ const ClientStories = () => {
         "Donec venenatis, arcu nec rhoncus congue, nisl elit varius ligula, vel scelerisque libero neque nec justo.",
       clientName: "Jane Smith",
       clientRole: "Real Estate Consultant",
-      image: "/images/holdingHouse.svg",
+      image: "/Images/holdingHouse.svg",
     },
     {
       title: "Helping You Find Your Dream Home",
@@ -40,7 +40,7 @@ const ClientStories = () => {
         "Praesent fermentum elit non eros euismod, sed auctor odio viverra. Pellentesque et turpis et risus consequat auctor.",
       clientName: "Michael Johnson",
       clientRole: "Home Buyer",
-      image: "/images/holdingHouse.svg",
+      image: "/Images/holdingHouse.svg",
     },
   ];
 
@@ -59,7 +59,7 @@ const ClientStories = () => {
   return (
     <Box
       sx={{
-        backgroundImage: "url(/images/clientBG.svg)",
+        backgroundImage: "url(/Images/clientBG.svg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

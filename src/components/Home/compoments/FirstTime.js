@@ -5,7 +5,7 @@ export default function FirstTime() {
   return (
     <Container maxWidth="xl"sx={{
       backgroundImage:
-        "linear-gradient(to top, rgba(251, 251, 251, 0.69) 0%, rgba(255, 255, 255, 0) 100%), url(/images/FirstTimeBG.svg)",
+        "linear-gradient(to top, rgba(251, 251, 251, 0.69) 0%, rgba(255, 255, 255, 0) 100%), url(/Images/FirstTimeBG.svg)",
       backgroundSize: "cover",
       // backgroundPosition: "center",
       // pb: 4,

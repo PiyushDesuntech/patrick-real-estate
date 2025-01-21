@@ -13,7 +13,7 @@ export default function SellYourHome() {
     <Box sx={{px: {xs: 1, md: 3}}}>
       <Box
         sx={{
-          backgroundImage: "url(/images/sellBG.svg)",
+          backgroundImage: "url(/Images/sellBG.svg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           width: "100%",

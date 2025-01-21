@@ -44,7 +44,7 @@ export default function MostExperience() {
               }}
             >
               <Image
-                src="/images/MostExperience.svg"
+                src="/Images/MostExperience.svg"
                 alt="MostExperience"
                 layout="responsive"
                 width={650}

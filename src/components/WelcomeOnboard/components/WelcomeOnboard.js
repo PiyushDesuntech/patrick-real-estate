@@ -96,7 +96,7 @@ export default function WelcomeOnboard() {
             }}
           >
             <Image
-              src="/images/WelcomOnboard.svg"
+              src="/Images/WelcomOnboard.svg"
               alt="agent"
               layout="responsive"
               width={406}
@@ -125,7 +125,7 @@ export default function WelcomeOnboard() {
                     }}
                   >
                     <Image
-                      src="/images/step1.svg"
+                      src="/Images/step1.svg"
                       alt="agent"
                       layout="responsive"
                       width={406}

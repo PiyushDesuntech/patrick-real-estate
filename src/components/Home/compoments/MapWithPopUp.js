@@ -14,7 +14,7 @@ const MapWithPopup = () => {
       baths: 1,
       sqft: 500,
       coordinates: [-73.912, 40.774],
-      image: "/images/map.svg", // Replace with actual image path
+      image: "/Images/map.svg", // Replace with actual image path
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const MapWithPopup = () => {
       baths: 2,
       sqft: 750,
       coordinates: [-73.699, 40.723],
-      image: "/images/map.svg",
+      image: "/Images/map.svg",
     },
   ];
 
