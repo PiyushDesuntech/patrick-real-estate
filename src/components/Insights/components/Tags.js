@@ -20,9 +20,9 @@ export default function Tags() {
       <Typography
         variant="h6"
         sx={{
-          fontWeight: "600",
+          fontWeight: 700,
           marginBottom: "16px",
-          fontSize: "18px",
+          fontSize: "22.15px",
           color: "#484848",
         }}
       >
@@ -40,7 +40,7 @@ export default function Tags() {
             key={index}
             label={tag}
             sx={{
-              fontSize: "14px",
+              fontSize: "17.23px",
               backgroundColor: "#f5f5f5",
               color: "#484848",
               borderRadius: "8px",
@@ -49,6 +49,7 @@ export default function Tags() {
               "&:hover": {
                 backgroundColor: "#e0e0e0",
               },
+              height: "49px"
             }}
           />
         ))}

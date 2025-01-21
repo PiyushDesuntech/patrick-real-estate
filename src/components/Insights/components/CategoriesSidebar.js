@@ -1,7 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
-import { Box, Grid, Typography, ListItem, ListItemButton, ListItemText } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 export default function CategoriesSidebar() {
@@ -27,15 +34,15 @@ export default function CategoriesSidebar() {
       <Typography
         variant="h6"
         sx={{
-          fontWeight: "600",
+          fontWeight: 700,
           marginBottom: "16px",
-          fontSize: "18px",
-          color: "#333",
+          fontSize: "23.08px",
+          color: "#484848",
         }}
       >
         Categories
       </Typography>
-      <Grid container spacing={2}>
+      <Grid container>
         {categories.map((category, index) => (
           <Grid item xs={12} key={index}>
             <ListItem disablePadding>
@@ -53,20 +60,24 @@ export default function CategoriesSidebar() {
                 }}
               >
                 <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <ArrowRightIcon sx={{ fontSize: 20, color: "#484848" }} />
+                  <ArrowRightIcon
+                    sx={{ fontSize: 24, color: "#484848", fontWeight: 900 }}
+                  />
                   <ListItemText
                     primary={category.name}
                     sx={{
+                      fontSize: "17.95px",
+                      color: "#484848",
                       "& span": {
-                        fontSize: "15px",
+                        fontSize: "17.95px",
                       },
                     }}
                   />
                 </Box>
                 <Typography
                   sx={{
-                    fontSize: "14px",
-                    color: "#888",
+                    fontSize: "17.95px",
+                    color: "#484848",
                   }}
                 >
                   ({category.count})

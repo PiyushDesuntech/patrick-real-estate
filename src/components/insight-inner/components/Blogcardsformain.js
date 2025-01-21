@@ -24,7 +24,11 @@ export default function BlogCard() {
         boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.08)",
         width: "100%",
         maxWidth: "400px",
-        margin: "0 auto",
+      
+        textAlign: "left", // Align text to the left for a clean layout
+        overflow: "hidden", // Prevent overflow issues
+        display: "flex",
+        flexDirection: "column", // Ensure the card elements stack vertically
       }}
     >
       {/* Image Container with rounded corners */}
@@ -57,13 +61,14 @@ export default function BlogCard() {
       <Typography
         variant="h2"
         sx={{
-          fontSize: "18px",
+          fontSize: { xs: "16px", sm: "18px" },  // Adjust font size based on screen size
           fontWeight: "600",
           marginBottom: "12px",
           color: "#2d3436",
           lineHeight: 1.4,
           height: "50px",
-          overflow: "hidden",
+          overflow: "hidden",  // Prevent text overflow
+          textOverflow: "ellipsis",
         }}
       >
         {card.title}
@@ -92,7 +97,7 @@ export default function BlogCard() {
           lineHeight: 1.6,
           marginBottom: "16px",
           height: "44px",
-          overflow: "hidden",
+          overflow: "hidden",  // Prevent text overflow
         }}
       >
         {card.description}
@@ -104,10 +109,17 @@ export default function BlogCard() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          flexDirection: { xs: "column", sm: "row" }, // Stack vertically on mobile, horizontally on larger screens
         }}
       >
-        <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Avatar src={card.avatarUrl} sx={{ width: 32, height: 32 }} />
+        <Box  display="flex" alignItems="center" sx={{ display: "flex", alignItems: "center", marginBottom: { xs: "12px", sm: "0px" } }}>
+          <Image
+                       src="../Images/icon-for-admin.svg.svg"
+                       alt="Admin Icon"
+                       width={49.23}
+                       height={49.23}
+                       style={{ marginRight: '8px', borderRadius: "24.62px" }}
+                     />
           <Typography
             sx={{
               marginLeft: "12px",
@@ -124,6 +136,7 @@ export default function BlogCard() {
             color: "#2d3436",
             fontSize: "14px",
             fontWeight: "500",
+            cursor: "pointer",
           }}
         >
           Read More →

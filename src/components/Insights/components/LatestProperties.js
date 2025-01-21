@@ -40,9 +40,9 @@ export default function LatestProperties() {
       <Typography
         variant="h6"
         sx={{
-          fontWeight: "600",
+          fontWeight: 700,
           marginBottom: "16px",
-          fontSize: "18px",
+          fontSize: "26.8px",
           color: "#484848",
         }}
       >
@@ -94,26 +94,25 @@ export default function LatestProperties() {
                 }}
               >
                 <Typography
-                  variant="body1"
                   sx={{
-                    fontSize: "16px",
+                    fontSize: "20.52px",
                     color: "#484848",
                     marginBottom: "8px",
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
                     maxWidth: "220px",
-                    fontWeight: "700",
+                    fontWeight: 700,
                   }}
                 >
                   {property.title}
                 </Typography>
                 <Typography
-                  variant="body2"
                   sx={{
-                    fontSize: "14px",
-                    color: "#000",
+                    fontSize: "20px",
+                    color: "#E8E1C4",
                     marginBottom: "4px",
+                    fontWeight: 700,
                   }}
                 >
                   {property.price}
@@ -121,8 +120,9 @@ export default function LatestProperties() {
                 <Typography
                   variant="body2"
                   sx={{
-                    fontSize: "12px",
+                    fontSize: "17.95px",
                     color: "#484848",
+                    fontWeight: 400,
                   }}
                 >
                   {property.details}

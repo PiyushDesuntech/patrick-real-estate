@@ -14,7 +14,7 @@ export default function SearchBar() {
   return (
     <Box
       sx={{
-        padding: { xs: "16px", sm: "20px 24px" },
+        padding: { xs: "16px", sm: "39px" },
         backgroundColor: "#fff",
         borderRadius: "7.38px",
         width: "100%",
@@ -26,7 +26,7 @@ export default function SearchBar() {
         sx={{
           display: "flex",
           alignItems: "center",
-          border: "1px solid #EAEAEA",
+          border: "2px solid #D8D8D8",
           borderRadius: "7.38px",
           width: "100%",
           backgroundColor: "#fff",

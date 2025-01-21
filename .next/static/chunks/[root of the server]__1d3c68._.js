@@ -1546,11 +1546,18 @@ const PropertyNavbar = (properties)=>{
                         boxShadow: '0px 4px 26px rgba(0, 0, 0, 0.1)'
                     },
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            src: "/images/logo2.svg",
-                            alt: "Colonial Realty Associates",
-                            width: 269,
-                            height: 66
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/images/logo2.svg",
+                                alt: "Colonial Realty Associates",
+                                layout: "responsive",
+                                width: 269,
+                                height: 66
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
+                                lineNumber: 81,
+                                columnNumber: 11
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
                             lineNumber: 80,
@@ -1582,13 +1589,18 @@ const PropertyNavbar = (properties)=>{
                                                 children: item
                                             }, index, false, {
                                                 fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                lineNumber: 94,
+                                                lineNumber: 97,
                                                 columnNumber: 17
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
                                             color: "inherit",
                                             sx: {
-                                                textTransform: "none"
+                                                textTransform: "none",
+                                                display: "flex",
+                                                flexDirection: {
+                                                    md: "column",
+                                                    lg: "row"
+                                                }
                                             },
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$PersonOutlineOutlined$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1597,20 +1609,20 @@ const PropertyNavbar = (properties)=>{
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 103,
+                                                    lineNumber: 106,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Landlords"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                            lineNumber: 102,
+                                            lineNumber: 105,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                    lineNumber: 87,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1639,12 +1651,13 @@ const PropertyNavbar = (properties)=>{
                                         py: "10px",
                                         // mr: 3,
                                         width: "fit-content",
-                                        whiteSpace: "nowrap"
+                                        whiteSpace: "nowrap",
+                                        height: "50px"
                                     },
                                     children: "Login/Register"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                    lineNumber: 108,
+                                    lineNumber: 111,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
@@ -1660,18 +1673,18 @@ const PropertyNavbar = (properties)=>{
                                     onClick: toggleDrawer(true),
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                        lineNumber: 140,
+                                        lineNumber: 144,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                    lineNumber: 133,
+                                    lineNumber: 137,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                            lineNumber: 86,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this)
                     ]
@@ -1703,17 +1716,17 @@ const PropertyNavbar = (properties)=>{
                                         primary: text
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                        lineNumber: 157,
+                                        lineNumber: 161,
                                         columnNumber: 17
                                     }, this)
                                 }, index, false, {
                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                    lineNumber: 156,
+                                    lineNumber: 160,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                            lineNumber: 154,
+                            lineNumber: 158,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1742,18 +1755,18 @@ const PropertyNavbar = (properties)=>{
                             children: "Login/Register"
                         }, void 0, false, {
                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                            lineNumber: 161,
+                            lineNumber: 165,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                    lineNumber: 148,
+                    lineNumber: 152,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                lineNumber: 147,
+                lineNumber: 151,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Dialog$2f$Dialog$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Dialog$3e$__["Dialog"], {
@@ -1771,17 +1784,17 @@ const PropertyNavbar = (properties)=>{
                                 onClick: handleDialogToggle,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Close$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                    lineNumber: 196,
+                                    lineNumber: 200,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                lineNumber: 195,
+                                lineNumber: 199,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                            lineNumber: 194,
+                            lineNumber: 198,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1807,12 +1820,12 @@ const PropertyNavbar = (properties)=>{
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                        lineNumber: 209,
+                                        lineNumber: 213,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                    lineNumber: 200,
+                                    lineNumber: 204,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1825,7 +1838,7 @@ const PropertyNavbar = (properties)=>{
                                             children: isLoginView ? "Login" : "Register"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                            lineNumber: 219,
+                                            lineNumber: 223,
                                             columnNumber: 15
                                         }, this),
                                         isLoginView ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1835,13 +1848,13 @@ const PropertyNavbar = (properties)=>{
                                                     variant: "outlined",
                                                     startIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                        lineNumber: 227,
+                                                        lineNumber: 231,
                                                         columnNumber: 32
                                                     }, void 0),
                                                     children: "Login with Facebook"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 224,
+                                                    lineNumber: 228,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1849,7 +1862,7 @@ const PropertyNavbar = (properties)=>{
                                                     variant: "outlined",
                                                     startIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Google$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                        lineNumber: 234,
+                                                        lineNumber: 238,
                                                         columnNumber: 32
                                                     }, void 0),
                                                     sx: {
@@ -1858,7 +1871,7 @@ const PropertyNavbar = (properties)=>{
                                                     children: "Login with Google"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 231,
+                                                    lineNumber: 235,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1867,7 +1880,7 @@ const PropertyNavbar = (properties)=>{
                                                     children: "Or"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 239,
+                                                    lineNumber: 243,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
@@ -1876,7 +1889,7 @@ const PropertyNavbar = (properties)=>{
                                                     margin: "normal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 242,
+                                                    lineNumber: 246,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
@@ -1886,19 +1899,19 @@ const PropertyNavbar = (properties)=>{
                                                     margin: "normal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 247,
+                                                    lineNumber: 251,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$FormControlLabel$2f$FormControlLabel$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FormControlLabel$3e$__["FormControlLabel"], {
                                                     control: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Checkbox$2f$Checkbox$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Checkbox$3e$__["Checkbox"], {}, void 0, false, {
                                                         fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                        lineNumber: 254,
+                                                        lineNumber: 258,
                                                         columnNumber: 30
                                                     }, void 0),
                                                     label: "I agree to Terms & Conditions"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 253,
+                                                    lineNumber: 257,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1910,7 +1923,7 @@ const PropertyNavbar = (properties)=>{
                                                     children: "Login"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 257,
+                                                    lineNumber: 261,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1927,13 +1940,13 @@ const PropertyNavbar = (properties)=>{
                                                             children: "Register"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                            lineNumber: 262,
+                                                            lineNumber: 266,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 260,
+                                                    lineNumber: 264,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
@@ -1945,7 +1958,7 @@ const PropertyNavbar = (properties)=>{
                                                     margin: "normal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 269,
+                                                    lineNumber: 273,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
@@ -1954,7 +1967,7 @@ const PropertyNavbar = (properties)=>{
                                                     margin: "normal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 270,
+                                                    lineNumber: 274,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
@@ -1964,7 +1977,7 @@ const PropertyNavbar = (properties)=>{
                                                     margin: "normal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 271,
+                                                    lineNumber: 275,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
@@ -1974,7 +1987,7 @@ const PropertyNavbar = (properties)=>{
                                                     margin: "normal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 277,
+                                                    lineNumber: 281,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -1986,7 +1999,7 @@ const PropertyNavbar = (properties)=>{
                                                     children: "Register"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 283,
+                                                    lineNumber: 287,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2003,13 +2016,13 @@ const PropertyNavbar = (properties)=>{
                                                             children: "Login"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                            lineNumber: 288,
+                                                            lineNumber: 292,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                                    lineNumber: 286,
+                                                    lineNumber: 290,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
@@ -2017,24 +2030,24 @@ const PropertyNavbar = (properties)=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                                    lineNumber: 218,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                            lineNumber: 199,
+                            lineNumber: 203,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                    lineNumber: 193,
+                    lineNumber: 197,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/PropertyNavbar/PropertyNavbar.js",
-                lineNumber: 186,
+                lineNumber: 190,
                 columnNumber: 7
             }, this)
         ]

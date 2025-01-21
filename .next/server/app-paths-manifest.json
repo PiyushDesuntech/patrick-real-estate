@@ -1,8 +1,9 @@
 {
-  "/page": "app/page.js",
   "/sell/page": "app/sell/page.js",
+  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/insight-inner/page": "app/insight-inner/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/contact-us/page": "app/contact-us/page.js",
-  "/about-us/page": "app/about-us/page.js"
+  "/insights/page": "app/insights/page.js",
+  "/contact-us/page": "app/contact-us/page.js"
 }

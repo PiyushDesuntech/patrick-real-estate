@@ -117,7 +117,7 @@ export default function BlogCards() {
   return (
     <>
       <Box sx={{ padding: "24px 0", backgroundColor: "#F7F7F7" }}>
-        <Grid container spacing={3}>
+        <Grid container spacing={4}>
           {currentCards.map((card, index) => (
             <Grid item xs={12} sm={6} key={index}>
               <Box
@@ -154,14 +154,13 @@ export default function BlogCards() {
                 </Box>
 
                 <Typography
-                  variant="h2"
                   sx={{
-                    fontSize: "18px",
-                    fontWeight: "600",
+                    fontSize: "22.15px",
+                    fontWeight: 700,
                     marginBottom: "12px",
                     color: "#484848",
                     lineHeight: 1.4,
-                    height: "50px",
+                    // height: "50px",
                     overflow: "hidden",
                   }}
                 >
@@ -169,8 +168,8 @@ export default function BlogCards() {
                 </Typography>
 
                 <Box sx={{ display: "flex", alignItems: "center", marginBottom: "12px" }}>
-                  <CalendarTodayIcon sx={{ fontSize: 16, color: "#777777", marginRight: "8px" }} />
-                  <Typography sx={{ color: "#777777", fontSize: "14px" }}>
+                  <CalendarTodayIcon sx={{ fontSize: "17.23px", color: "#777777", marginRight: "8px" }} />
+                  <Typography sx={{ color: "#777777", fontSize: "17.23px" }}>
                     {card.date}
                   </Typography>
                 </Box>
@@ -178,10 +177,10 @@ export default function BlogCards() {
                 <Typography
                   sx={{
                     color: "#484848",
-                    fontSize: "14px",
+                    fontSize: "17.23px",
                     lineHeight: 1.6,
                     marginBottom: "16px",
-                    height: "44px",
+                    // height: "44px",
                     overflow: "hidden",
                   }}
                 >
@@ -201,7 +200,7 @@ export default function BlogCards() {
                         src={card.avatarUrl}
                         sx={{ width: 32, height: 32 }}
                       />
-                      <Typography sx={{ marginLeft: "12px", fontSize: "14px", color: "#777777" }}>
+                      <Typography sx={{ marginLeft: "12px", fontSize: "17.23px", color: "#777777" }}>
                         {card.author}
                       </Typography>
                     </Box>
@@ -214,7 +213,7 @@ export default function BlogCards() {
                         cursor: "pointer",
                       }}
                     >
-                      <Typography sx={{ fontSize: "14px", fontWeight: "500", lineHeight: 1 }}>
+                      <Typography sx={{ fontSize: "17.23px", fontWeight: "500", lineHeight: 1 }}>
                         Read More
                       </Typography>
                       <KeyboardArrowRightIcon sx={{ fontSize: 17, color: "#777777" }} />

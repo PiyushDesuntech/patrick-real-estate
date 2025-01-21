@@ -77,12 +77,15 @@ const PropertyNavbar = (properties) => {
             boxShadow: '0px 4px 26px rgba(0, 0, 0, 0.1)',
           }}
         >
+          <Box>
           <Image
             src="/images/logo2.svg"
             alt="Colonial Realty Associates"
+            layout="responsive"
             width={269}
             height={66}
           />
+          </Box>
           <Box sx={{display: "flex"}}>
             <Box
               sx={{
@@ -99,7 +102,7 @@ const PropertyNavbar = (properties) => {
                   {item}
                 </Button>
               ))}
-              <Button color="inherit" sx={{ textTransform: "none" }}>
+              <Button color="inherit" sx={{ textTransform: "none", display: "flex", flexDirection: {md:  "column", lg: "row"} }}>
                 <PersonOutlineOutlinedIcon sx={{ mr: 1 }} />
                 Landlords
               </Button>
@@ -124,6 +127,7 @@ const PropertyNavbar = (properties) => {
                 // mr: 3,
                 width: "fit-content",
                 whiteSpace: "nowrap",
+                height: "50px"
               }}
             >
               Login/Register
