@@ -1,6 +1,6 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/mortgage-cal/page": "app/mortgage-cal/page.js"
+  "/mortgage-cal/page": "app/mortgage-cal/page.js",
+  "/mortgage-cal-rent/page": "app/mortgage-cal-rent/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
