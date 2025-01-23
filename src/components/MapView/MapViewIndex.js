@@ -155,7 +155,8 @@ const MapViewIndex = () => {
   };
 
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 4, xs: 1 }, py: 3 }}>
+    <Box sx={{background: "#F7F7F7"}}>
+      <Container maxWidth="xl" sx={{ px: { lg: 4, xs: 1 }, py: 3 }}>
       <Filter filters={filters} setFilters={setFilters} />
       <Grid container spacing={3} sx={{display: "flex", flexWrap: "wrap-reverse"}}>
         <Grid item xs={12} sm={12} md={6}>
@@ -172,6 +173,7 @@ const MapViewIndex = () => {
         </Grid>
       </Grid>
     </Container>
+    </Box>
   );
 };
 

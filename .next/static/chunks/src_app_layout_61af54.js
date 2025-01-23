@@ -8,8 +8,8 @@
     "static/chunks/src_b1f47d._.js",
     "static/chunks/node_modules_next_8bc4ce._.js",
     "static/chunks/node_modules_@mui_system_esm_eea6ac._.js",
-    "static/chunks/node_modules_@mui_material_f51369._.js",
-    "static/chunks/node_modules_23c7bc._.js",
+    "static/chunks/node_modules_@mui_material_93e2ab._.js",
+    "static/chunks/node_modules_44e977._.js",
     "static/chunks/src_app_globals_b80590.css"
   ],
   "source": "dynamic"

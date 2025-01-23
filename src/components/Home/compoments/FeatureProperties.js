@@ -15,12 +15,19 @@ import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShareIcon from "@mui/icons-material/Share";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import { Icon } from "@iconify/react";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const data = [
   {
-    images: ["/Images/Feature1.svg", "/Images/Feature2.svg"],
+    images: [
+      "/Images/Feature1.svg",
+      "/Images/Feature2.svg",
+      "/Images/Feature3.svg",
+    ],
     title: "Luxury Family Home",
     price: "$1350/mo",
     beds: 2,
@@ -30,7 +37,11 @@ const data = [
     feature: "Feature",
   },
   {
-    images: ["/Images/Feature2.svg", "/Images/Feature3.svg"],
+    images: [
+      "/Images/Feature2.svg",
+      "/Images/Feature3.svg",
+      "/Images/Feature1.svg",
+    ],
     title: "House Hollywood",
     price: "$2250/mo",
     beds: 4,
@@ -40,7 +51,11 @@ const data = [
     feature: "Feature",
   },
   {
-    images: ["/Images/Feature3.svg", "/Images/Feature1.svg"],
+    images: [
+      "/Images/Feature3.svg",
+      "/Images/Feature1.svg",
+      "/Images/Feature2.svg",
+    ],
     title: "Selway Apartment",
     price: "$1550/mo",
     beds: 1,
@@ -50,7 +65,11 @@ const data = [
     feature: "Feature",
   },
   {
-    images: ["/Images/Feature1.svg", "/Images/Feature2.svg"],
+    images: [
+      "/Images/Feature1.svg",
+      "/Images/Feature2.svg",
+      "/Images/Feature3.svg",
+    ],
     title: "Arlo Apartment",
     price: "$2150/mo",
     beds: 4,
@@ -74,13 +93,13 @@ const PrevArrow = ({ onClick }) => (
       color: "#D9D9D9",
       border: "2px solid #D9D9D9",
       "&:hover": {
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "#fff",
         border: "2px solid #BAAE78",
         color: "#BAAE78",
       },
     }}
   >
-    <ArrowBackIos />
+    <ArrowBackIosNewIcon />
   </IconButton>
 );
 const PrevArrow1 = ({ onClick }) => (
@@ -91,7 +110,7 @@ const PrevArrow1 = ({ onClick }) => (
       left: 1,
       top: "50%",
       transform: "translateY(-50%)",
-      zIndex: 10,
+      zIndex: 100,
       backgroundColor: "#fff",
       color: "#D9D9D9",
       backgroundColor: "rgba(252, 250, 250, 0.43)",
@@ -119,7 +138,7 @@ const NextArrow = ({ onClick }) => (
       color: "#D9D9D9",
       border: "2px solid #D9D9D9",
       "&:hover": {
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "#fff",
         border: "2px solid #BAAE78",
         color: "#BAAE78",
       },
@@ -136,7 +155,7 @@ const NextArrow1 = ({ onClick }) => (
       right: 1,
       top: "50%",
       transform: "translateY(-50%)",
-      zIndex: 10,
+      zIndex: 100,
       backgroundColor: "rgba(252, 250, 250, 0.43)",
       color: "#D9D9D9",
       // border: "2px solid #D9D9D9",
@@ -180,173 +199,216 @@ const FeatureProperties = () => {
   };
 
   const cardSliderSettings = {
-    infinite: true,
+    infinite: false,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // arrows: false,
-    // autoplay: true,
-    // autoplaySpeed: 3000,
     prevArrow: <PrevArrow1 />,
     nextArrow: <NextArrow1 />,
   };
 
   return (
-    <Container maxWidth="xl">
-      <Box sx={{ mt: 4, mb: 2, px: { lg: 4 } }}>
-        <Typography sx={{ textAlign: "center" }} variant="h4">
-          Featured Properties.
-        </Typography>
-        <Typography sx={{ textAlign: "center" }}>
-          Handpicked properties by our team.
-        </Typography>
-        <Slider {...settings}>
-          {data.map((item, index) => (
-            <Box key={index} mt={3} sx={{ p: { xs: 4, lg: 0.5 } }}>
-              <Card
-                sx={{
-                  borderRadius: 2,
-                  overflow: "hidden",
-                  boxShadow: 3,
-                  height: { xs: "280px", md: "340px", lg: "385px" },
-                  width: { xs: "100%", lg: "325px" },
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  "&:hover  .slick-active  .image-container": {
-                    transform: "scale(1.2)",
-                  },
-                }}
-              >
-                <Box sx={{ position: "relative", overflow: "hidden" }}>
-                  <Slider {...cardSliderSettings}>
-                    {item.images.map((img, imgIndex) => (
-                      <Box
-                        key={imgIndex}
-                        className="image-container" 
-                        sx={{
-                          height: { xs: "280px", md: "340px", lg: "387px" },
-                          width: { xs: "100%", lg: "339px" },
-                          backgroundImage: `url(${img})`,
-                          backgroundSize: "cover",
-                          backgroundPosition: "center",
-                          transition: "transform 0.3s ease-in-out",
-                        }}
-                      />
-                    ))}
-                  </Slider>
-                </Box>
-                <Box
+    <Box
+      // sx={{
+      //   backgroundImage:
+      //     "linear-gradient(to top, rgba(251, 251, 251, 0.69) 0%, rgba(255, 255, 255, 0) 100%), url(/Images/FirstTimeBG.svg)",
+      //     backgroundSize: "cover",
+      //     backgroundRepeat: "no-repeat",
+      //     backgroundPosition: "center",
+      //     height: "100%",
+      //     width: "100%",
+      //   // mt: -4, 
+      //   pt: 10
+      // }}
+    >
+      <Container maxWidth="xl">
+        <Box sx={{ mb: 2, px: { lg: 4 },  backgroundImage:
+          "linear-gradient(to top, rgba(251, 251, 251, 0.69) 0%, rgba(255, 255, 255, 0) 100%), url(/Images/FirstTimeBG.svg)",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "100%",
+          width: "100%",
+        // mt: -4, 
+        pt: 10 }}>
+          <Typography sx={{ textAlign: "center", fontSize: "40px", fontWeight: 500 }} >
+            Featured Properties.
+          </Typography>
+          <Typography sx={{ textAlign: "center", fontSize: "16px", fontWeight: 400,color: "#585858" }}>
+            Handpicked properties by our team.
+          </Typography>
+          <Slider {...settings}>
+            {data.map((item, index) => (
+              <Box key={index} mt={3} sx={{ p: { xs: 4, lg: 0.5 } }}>
+                <Card
                   sx={{
-                    position: "absolute",
+                    borderRadius: 2,
+                    overflow: "hidden",
+                    boxShadow: 3,
+                    height: { xs: "280px", md: "387px", lg: "387px" },
+                    width: { xs: "100%", lg: "339px" },
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    width: "100%",
-                    height: { xs: "80%", md: "95%" },
+                    "&:hover  .slick-active  .image-container": {
+                      transform: "scale(1.2)",
+                      zIndex: 0,
+                    },
                   }}
                 >
-                  <Box sx={{ display: "flex", gap: 1, m: 2 }}>
-                    <Chip
-                      label={item.tag}
-                      sx={{
-                        bgcolor: "#3E4C66",
-                        color: "#fff",
-                        width: "fit-content",
-                        borderRadius: 1,
-                        fontSize: "14px",
-                      }}
-                    />
-                    <Chip
-                      label={item.feature}
-                      sx={{
-                        bgcolor: "#E8E1C4",
-                        color: "#4D4D4D",
-                        width: "fit-content",
-                        borderRadius: 1,
-                        fontSize: "14px",
-                      }}
-                    />
+                  <Box sx={{ position: "relative", overflow: "hidden" }}>
+                    <Slider {...cardSliderSettings}>
+                      {item.images.map((img, imgIndex) => (
+                        <Box
+                          key={imgIndex}
+                          className="image-container"
+                          sx={{
+                            height: { xs: "280px", md: "387px", lg: "387px" },
+                            width: { xs: "100%", lg: "339px" },
+                            backgroundImage: `url(${img})`,
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            transition: "transform 0.3s ease-in-out",
+                          }}
+                        />
+                      ))}
+                    </Slider>
                   </Box>
-                  <CardContent sx={{ color: "#fff" }}>
-                    <Typography variant="h6" fontWeight="bold">
-                      {item.title}
-                    </Typography>
-                    <Typography variant="body1" mt={1}>
-                      {item.price}
-                    </Typography>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Typography
-                        variant="body2"
-                        mt={1}
-                        sx={{ fontSize: "12px" }}
-                      >
-                        Beds: {item.beds} • Baths: {item.baths} • Sqft:{" "}
-                        {item.sqft}
-                      </Typography>
-                      <Box sx={{ display: "flex", gap: "8px" }}>
-                        <IconButton
-                          sx={{
-                            borderRadius: "3px",
-                            background: "rgba(255, 255, 255, 0.1)",
-                            color: "#fff",
-                            "&:hover": {
-                              background: "rgba(255, 255, 255, 0.48)",
-                              color: "#4D4D4D",
-                            },
-                          }}
-                        >
-                          <FavoriteBorderIcon />
-                        </IconButton>
-                        <IconButton
-                          sx={{
-                            borderRadius: "3px",
-                            background: "rgba(255, 255, 255, 0.1)",
-                            color: "#fff",
-                            "&:hover": {
-                              background: "rgba(255, 255, 255, 0.48)",
-                              color: "#4D4D4D",
-                            },
-                          }}
-                        >
-                          <ShareIcon />
-                        </IconButton>
-                      </Box>
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "space-between",
+                      width: "100%",
+                      height: { xs: "80%", md: "85%", lg: "95%" },
+                    }}
+                  >
+                    <Box sx={{ display: "flex", gap: 1, m: 2 }}>
+                      <Chip
+                        label={item.tag}
+                        sx={{
+                          bgcolor: "#3E4C66",
+                          color: "#fff",
+                          width: "fit-content",
+                          borderRadius: 1,
+                          fontSize: "14px",
+                          "&:hover": {bgcolor: "#fff", color: "#3E4C66"}
+                        }}
+                      />
+                      <Chip
+                        label={item.feature}
+                        sx={{
+                          bgcolor: "#E8E1C4",
+                          color: "#3E4C66",
+                          width: "fit-content",
+                          borderRadius: 1,
+                          fontSize: "14px",
+                          "&:hover": {bgcolor: "#3E4C66", color: "#fff"}
+                        }}
+                      />
                     </Box>
-                  </CardContent>
-                </Box>
-              </Card>
-            </Box>
-          ))}
-        </Slider>
-        <Box sx={{ display: "flex", justifyContent: "center", mt: "38px" }}>
-          <Button
-            variant="contained"
-            sx={{
-              backgroundColor: "#fff",
-              boxShadow: "none",
-              "&:hover": {
-                backgroundColor: "#4D4D4D",
-                color: "#fff",
-              },
-              color: "#000",
-              border: "2px solid #000",
-              textTransform: "none",
-              px: 5,
-              py: 1,
-            }}
-          >
-            View More
-          </Button>
+                    <CardContent sx={{ color: "#fff" }}>
+                      <Typography sx={{fontSize: "25px", fontWeight: 700}} mt={1}>
+                        {item.price}
+                      </Typography>
+                      <Typography sx={{fontSize: "24px", fontWeight: 700}}>
+                        {item.title}
+                      </Typography>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          // justifyContent: "space-between",
+                          alignItems: "center",
+                          gap: {xs: 1, md: 4}
+                        }}
+                      >
+                       <Box sx={{display: "flex", gap: {xs: 1, md: 2}}}>
+                       <Typography
+                          mt={1}
+                          sx={{ fontSize: "14px", fontWeight: 400 }}
+                        >
+                          Beds: {item.beds}
+                        </Typography>
+                        <Typography
+                          mt={1}
+                          sx={{ fontSize: "14px", fontWeight: 400 }}
+                        >
+                          Baths: {item.baths} 
+                        </Typography>
+                        <Typography
+                          mt={1}
+                          sx={{ fontSize: "14px", fontWeight: 400 }}
+                        >
+                          Sqft:{" "}
+                          {item.sqft}
+                        </Typography>
+                        
+                       </Box>
+                        <Box sx={{ display: "flex", gap: "8px" }}>
+                          <IconButton
+                            sx={{
+                              borderRadius: "3px",
+                              background: "rgba(255, 255, 255, 0.1)",
+                              color: "#fff",
+                              "&:hover": {
+                                background: "rgba(255, 255, 255, 0.48)",
+                                // color: "#4D4D4D",
+                              },
+                            }}
+                          >
+                            <FavoriteBorderIcon />
+                          </IconButton>
+                          <IconButton
+                            sx={{
+                              borderRadius: "3px",
+                              background: "rgba(255, 255, 255, 0.1)",
+                              color: "#fff",
+                              "&:hover": {
+                                background: "rgba(255, 255, 255, 0.48)",
+                                // color: "#4D4D4D",
+                              },
+                            }}
+                          >
+                            {/* <ShareIcon /> */}
+                            <Icon icon="tabler:transfer" style={{ fontSize: "24px", transform: "scaleX(-1)", }} />
+                          </IconButton>
+                        </Box>
+                      </Box>
+                    </CardContent>
+                  </Box>
+                </Card>
+              </Box>
+            ))}
+          </Slider>
+          <Box sx={{ display: "flex", justifyContent: "center", mt: "38px" }}>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "#fff",
+                boxShadow: "none",
+                "&:hover": {
+                  backgroundColor: "#4D4D4D",
+                  color: "#fff",
+                },
+                color: "#4D4D4D",
+                border: "1px solid #000",
+                textTransform: "none",
+                px: 5,
+                py: 1,
+                width: "215px",
+                height: "53px",
+                borderRadius: "7px",
+                fontSize: "16px",
+                fontWeight: 600,
+              }}
+            >
+              View More
+            </Button>
+          </Box>
         </Box>
-      </Box>
-    </Container>
+      </Container>
+    </Box>
   );
 };
 

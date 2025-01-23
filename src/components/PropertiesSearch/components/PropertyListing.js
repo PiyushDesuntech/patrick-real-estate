@@ -259,8 +259,8 @@ const PropertyListing = () => {
                 backgroundColor: "#fff",
                 p: "14px",
                 justifyContent: "space-between",
-                transition: "transform 0.3s ease-in-out",
-                "&:hover": { transform: "scale(1.02)" },
+                // transition: "transform 0.3s ease-in-out",
+                // "&:hover": { transform: "scale(1.02)" },
               }}
             >
               <Box
@@ -437,7 +437,10 @@ const PropertyListing = () => {
             "& .MuiPaginationItem-root": {
               color: "#484848",
               border: "2px solid #E6E6E6",
-              fontSize: "17px",
+              fontSize: "17.68px",
+              width: "56.84px", 
+              height: "56.84px", 
+               borderRadius: "50%"
             },
             "& .MuiPaginationItem-page.Mui-selected": {
               backgroundColor: "#E8E1C4",
@@ -447,7 +450,10 @@ const PropertyListing = () => {
             "& .MuiPaginationItem-previousNext": {
               color: "#484848",
               border: "2px solid #E6E6E6",
-              fontSize: "17px",
+              fontSize: "17.68px",
+              width: "56.84px",
+              height: "56.84px",
+              borderRadius: "50%"
             },
             "& .MuiPaginationItem-root:hover": {
               backgroundColor: "#E8E1C4",

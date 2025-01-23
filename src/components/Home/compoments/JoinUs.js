@@ -6,6 +6,8 @@ export default function JoinUs() {
     <Box
       sx={{
         backgroundImage: "url(/Images/Join.svg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         mt: 10,
       }}
     >
@@ -21,10 +23,10 @@ export default function JoinUs() {
                 gap: 2,
               }}
             >
-              <Typography variant="h4" sx={{ fontSize: "40px" }}>
+              <Typography sx={{ fontSize: "40px", fontWeight: 600 }}>
                 Interested in a career in real estate{" "}
               </Typography>
-              <Typography variant="body2" sx={{ fontSize: "16px" }}>
+              <Typography sx={{ fontSize: "16px", fontWeight: 500 }}>
                 Maecenas pharetra neque maximus nunc semper, in faucibus quam
                 facilisis.
               </Typography>
@@ -47,7 +49,7 @@ export default function JoinUs() {
                 justifyContent: { xs: "center", md: "flex-end" },
                 alignItems: "center",
                 py: 9,
-                flexWrap: "wrap",
+                flexWrap: {xs: "wrap", lg: "nowrap"},
               }}
             >
               <Button
@@ -55,13 +57,15 @@ export default function JoinUs() {
                 sx={{
                   backgroundColor: "#E0D8C3",
                   "&:hover": {
-                    backgroundColor: "#4D4D4D",
+                    backgroundColor: "#3E4C66",
                     color: "#fff",
                   },
-                  color: "#000",
+                  color: "#4D4D4D",
                   minWidth: "233px",
                   height: "53px",
                   textTransform: "none",
+                  fontSize: "16px",
+                  fontWeight: 500
                 }}
               >
                 Contact With Us
@@ -72,12 +76,14 @@ export default function JoinUs() {
                   textTransform: "none",
                   backgroundColor: "#fff",
                   "&:hover": {
-                    backgroundColor: "#4D4D4D",
+                    backgroundColor: "#3E4C66",
                     color: "#fff",
                   },
-                  color: "#000",
+                  color: "#4D4D4D",
                   minWidth: "233px",
                   height: "53px",
+                  fontSize: "16px",
+                  fontWeight: 500
                 }}
               >
                 Know More
