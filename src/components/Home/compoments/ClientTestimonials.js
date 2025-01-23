@@ -92,10 +92,10 @@ const ClientTestimonials = () => {
   return (
    <Container maxWidth="xl" sx={{px: {lg: 7, xs: 1}}}>
      <Box sx={{ position: "relative", padding: "20px" }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography sx={{fontSize: "40px", fontWeight: 600 , width: {xs: "70%", sm: "100%"}}} gutterBottom>
         Client Testimonials
       </Typography>
-      <Typography variant="body1" gutterBottom>
+      <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858"}} gutterBottom>
         Morbi at felis ullamcorper ipsum.
       </Typography>
 
@@ -130,7 +130,7 @@ const ClientTestimonials = () => {
             //   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
             boxShadow: "none",
             border: "2px solid #D5D5D5",
-            "&:hover":{border: "none", boxShadow: 6, background: "#E8E1C4"},
+            "&:hover":{  background: "#E8E1C4", boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",  border: "2px solid #E8E1C4",},
             }}
           >
             <CardContent>
@@ -141,10 +141,10 @@ const ClientTestimonials = () => {
                   height={100}
                   style={{ objectFit: "contain" }}
                 />
-              <Typography variant="body2" color="text.secondary" gutterBottom>
+              <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858"}}  gutterBottom>
                 {testimonial.text}
               </Typography>
-              <Button size="small" sx={{textTransform: "none", }}>Read full story</Button>
+              {/* <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858", textDecoration: "underline", }}>Read full story</Typography> */}
               <Box sx={{ display: "flex", alignItems: "center", mt: 2, }}>
                 <Avatar src={testimonial.avatar} alt={testimonial.name} sx={{ width: 80, height: 80 }}/>
                 <Box ml={2} sx={{display: "flex", flexDirection: "column",}}>

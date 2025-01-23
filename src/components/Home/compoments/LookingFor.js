@@ -1,7 +1,13 @@
+"use client"
 import { Box, Button, Container, Typography } from "@mui/material";
-import React from "react";
+import { useState } from "react";
 
 export default function LookingFor() {
+  const [activeTab, setActiveTab] = useState("rent"); // Default active tab is "rent"
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
   return (
     <Box
       sx={{
@@ -76,32 +82,37 @@ export default function LookingFor() {
         <Box sx={{display: "flex", justifyContent: "center", gap: "21px", mb: "41px"}}>
           <Button
             variant="contained"
+            onClick={() => handleTabChange("rent")}
             sx={{
               textTransform: "none",
-              backgroundColor: "#fff",
+              backgroundColor: activeTab === "rent" ? "#E0D8C3": "#fff",
               "&:hover": {
-                backgroundColor: "#4D4D4D",
-                color: "#fff",
+                backgroundColor: "#E0D8C3",
               },
-              color: "#000",
+              color: "#4D4D4D",
+              //  color: activeTab === "rent" ? "#fff" : "#000",
               minWidth: "122px",
               height: "48px",
+              fontSize: "16px",
+              fontWeight: 500
             }}
           >
             Rent
           </Button>
           <Button
             variant="contained"
+            onClick={() => handleTabChange("buy")}
             sx={{
-              backgroundColor: "#E0D8C3",
+              backgroundColor: activeTab === "buy" ?"#E0D8C3": "#fff",
               "&:hover": {
-                backgroundColor: "#4D4D4D",
-                color: "#fff",
-              },
-              color: "#000",
+                backgroundColor: "#E0D8C3",
+              },  
+              color: "#4D4D4D",
               minWidth: "122px",
               height: "48px",
               textTransform: "none",
+              fontSize: "16px",
+              fontWeight: 500
             }}
           >
             Buy
@@ -123,7 +134,8 @@ export default function LookingFor() {
             mb: 2,
           }}
         >
-          <iframe
+           {activeTab === "rent" && (
+            <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.312110584377!2d-73.92965166949828!3d40.703572024094804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25eab37fd60ef%3A0x1ff34649b0a304c9!2sHouse%20of%20Yes!5e0!3m2!1sen!2sin!4v1736509838444!5m2!1sen!2sin"
             width="100%"
             height="100%"
@@ -136,6 +148,22 @@ export default function LookingFor() {
             loading="lazy"
             allowFullScreen
           ></iframe>
+           )}
+           {activeTab === "buy" && (
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.312110584377!2d-73.92965166949828!3d40.703572024094804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25eab37fd60ef%3A0x1ff34649b0a304c9!2sHouse%20of%20Yes!5e0!3m2!1sen!2sin!4v1736509838444!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              border: 0,
+            }}
+            loading="lazy"
+            allowFullScreen
+          ></iframe>
+           )}
         </Box>
       </Container>
     </Box>

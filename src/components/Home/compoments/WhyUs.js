@@ -34,10 +34,10 @@ const WhyUs = () => {
   return (
     <Container maxWidth="xl">
       <Box sx={{ padding: {md: 7}, mt: 2 }}>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography sx={{fontSize: "40px", fontWeight: 600}} align="center" gutterBottom>
           Why Choose Us
         </Typography>
-        <Typography variant="subtitle1" align="center" gutterBottom>
+        <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858"}} align="center" gutterBottom>
           We provide full service at every step
         </Typography>
         <Grid container spacing={4} mt={2}>
@@ -51,7 +51,7 @@ const WhyUs = () => {
                   borderRadius: "8px",
                   transition: "background-color 0.5s ease, color 0.5s ease",
                   "&:hover": {
-                    backgroundColor: "#343433",
+                    backgroundColor: "#3E4C66",
                     color: "#fff",
                   },
                  

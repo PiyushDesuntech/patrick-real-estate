@@ -27,9 +27,9 @@ export default function WantCall() {
         flexDirection: "column",
       }}
     >
-      <Container maxWidth="xl" sx={{px: {lg: "94px"}, py: 4}}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
+      <Container maxWidth="xl" sx={{ px: { lg: "94px", xs: 0 }, py: 5 }}>
+        <Grid container>
+          <Grid item xs={12} md={6.5}>
             <Grid container spacing={2}>
               <Grid item sm={6} xs={12}>
                 <Box
@@ -37,8 +37,8 @@ export default function WantCall() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "100%",
-                    padding: "1rem",
+                    width: { xs: "95%", sm: "100%" },
+                    // padding: "1rem",
                   }}
                 >
                   <Image
@@ -57,8 +57,8 @@ export default function WantCall() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    width: "100%",
-                    padding: "1rem",
+                    width: { xs: "95%", sm: "100%" },
+                    // padding: "1rem",
                     flexDirection: "column",
                   }}
                 >
@@ -68,7 +68,7 @@ export default function WantCall() {
                     layout="responsive"
                     width={650}
                     height={500}
-                    style={{ objectFit: "contain" }}
+                    style={{ objectFit: "contain", transform: "scaleX(-1)" }}
                   />
                   <Image
                     src="/Images/WantCall3.svg"
@@ -82,7 +82,7 @@ export default function WantCall() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={5.5} sx={{ px: { xs: 2, md: 6 } }}>
             <Box
               sx={{
                 display: "flex",
@@ -90,24 +90,27 @@ export default function WantCall() {
                 justifyContent: "center",
                 // alignItems: "center",
                 py: { xs: 2, md: 15 },
-                px: 2,
+                px: { xs: 0, md: 2 },
                 gap: 3,
-                width: {md: "500px"}
+                width: { lg: "500px", md: "100%" },
               }}
             >
               <Typography
-                variant="h4"
                 sx={{
                   textAlign: "start",
-                  fontWeight: "bold",
-                  fontSize: "40px",
+                  fontWeight: 700,
+                  fontSize: { xs: "26px", md: "40px" },
                 }}
               >
                 Request a Call Back from One of Our Agents
               </Typography>
               <Typography
-                variant="body1"
-                sx={{ textAlign: "start", fontSize: "16px" }}
+                sx={{
+                  textAlign: "start",
+                  fontSize: "16px",
+                  fontWeight: 500,
+                  color: "#585858",
+                }}
               >
                 Real people, Real answers. Real quick. Let one of our Client
                 Conciergeshelp you get started on your home search. Enter your
@@ -125,15 +128,18 @@ export default function WantCall() {
                         sx={{
                           backgroundColor: "#E0D8C3",
                           "&:hover": {
-                            backgroundColor: "#4D4D4D",
+                            backgroundColor: "#3E4C66",
                             color: "#fff",
                           },
-                          color: "#000",
+                          color: "#4D4D4D",
                           minWidth: "118px",
                           height: "55px",
                           mr: -1.7,
                           borderRadius: "0px 4px 4px 0px",
-                          boxShadow: "none"
+                          boxShadow: "none",
+                          textTransform: "none",
+                          fontSize: "16px",
+                          fontWeight: 500,
                         }}
                       >
                         Call Back
@@ -143,6 +149,24 @@ export default function WantCall() {
                   style: {
                     backgroundColor: "#fff",
                     borderRadius: "4px",
+                  },
+                }}
+                sx={{
+                  "& .MuiOutlinedInput-root": {
+                    borderRadius: "8px",
+                    border: "1px solid #D9D9D9",
+                    "&:hover fieldset": {
+                      border: "1px solid #D9D9D9",
+                    },
+                    "&.Mui-focused fieldset": {
+                      border: "1px solid #D9D9D9",
+                    },
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
                   },
                 }}
               />

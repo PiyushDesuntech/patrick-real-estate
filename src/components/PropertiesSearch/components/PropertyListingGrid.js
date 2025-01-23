@@ -22,7 +22,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SyncAltOutlinedIcon from "@mui/icons-material/SyncAltOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import CalculateOutlinedIcon from '@mui/icons-material/CalculateOutlined';
+import CalculateOutlinedIcon from "@mui/icons-material/CalculateOutlined";
 
 const PropertyListingGrid = () => {
   const [sort, setSort] = useState("Relevance");
@@ -334,11 +334,11 @@ const PropertyListingGrid = () => {
                 backgroundColor: "#fff",
                 // p: "14px",
                 justifyContent: "space-between",
-                transition: "transform 0.3s ease-in-out",
-                "&:hover": {
-                  transform: "scale(1.02)",
-                //   boxShadow: "0px 4px 16px rgba(0, 0, 0, 0.1)",
-                },
+                // transition: "transform 0.3s ease-in-out",
+                // "&:hover": {
+                //   transform: "scale(1.02)",
+                // //   boxShadow: "0px 4px 16px rgba(0, 0, 0, 0.1)",
+                // },
                 height: "100%",
               }}
             >
@@ -449,7 +449,9 @@ const PropertyListingGrid = () => {
                           },
                         }}
                       >
-                        <CalculateOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
+                        <CalculateOutlinedIcon
+                          sx={{ transform: "scaleX(-1)" }}
+                        />
                       </IconButton>
                     </Box>
                   </Box>
@@ -544,7 +546,10 @@ const PropertyListingGrid = () => {
             "& .MuiPaginationItem-root": {
               color: "#484848",
               border: "2px solid #E6E6E6",
-              fontSize: "17px",
+              fontSize: "17.68px",
+              width: "56.84px", 
+              height: "56.84px", 
+               borderRadius: "50%"
             },
             "& .MuiPaginationItem-page.Mui-selected": {
               backgroundColor: "#E8E1C4",
@@ -554,14 +559,17 @@ const PropertyListingGrid = () => {
             "& .MuiPaginationItem-previousNext": {
               color: "#484848",
               border: "2px solid #E6E6E6",
-              fontSize: "17px",
+              fontSize: "17.68px",
+              width: "56.84px",
+              height: "56.84px",
+              borderRadius: "50%"
             },
             "& .MuiPaginationItem-root:hover": {
               backgroundColor: "#E8E1C4",
               border: "2px solid #E6E6E6",
             },
           }}
-        />{" "}
+        />
       </Box>
     </Box>
   );

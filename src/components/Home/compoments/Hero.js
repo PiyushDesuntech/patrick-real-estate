@@ -67,21 +67,20 @@ export default function Hero() {
           color: "#fff",
           textAlign: "center",
           height: "100%",
-          pt: {xs: 15, sm: 30},
+          pt: {xs: 15, sm: 20,md: 20, lg: 33},
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column", gap: {xs:"10px", lg: "100px"},}}>
           <Box>
           <Typography
-            variant="h2"
             sx={{
               color: "white",
-              fontWeight: 600,
+              fontWeight: 800,
               fontSize: {
                 xs: "1.5rem",
                 sm: "2rem",
                 md: "2.5rem",
-                lg: "76px",
+                lg: "75px",
               },
             }}
           >
@@ -95,6 +94,7 @@ export default function Hero() {
                 md: "1.125rem",
                 lg: "26px",
               },
+              fontWeight: 500
             }}
           >
             from as low as $10 per day with limited time offer
@@ -108,7 +108,7 @@ export default function Hero() {
         sx={{
           position: "absolute",
           right: {sm: "20px"},
-          top: {xs: "97%",sm:  "50%"},
+          top: {xs: "97%",sm:  "35%", md: "50%"},
           transform: "translateY(-50%)",
           display: {xs: "none", sm: "flex"},
           flexDirection: {xs: "row", sm: "column"},

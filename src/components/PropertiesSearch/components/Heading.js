@@ -19,7 +19,7 @@ function Heading() {
       .replace(/\b\w/g, (char) => char.toUpperCase()); // Capitalize each word
 
     return isLast ? (
-      <Typography key={routePath} color="text.primary">
+      <Typography key={routePath} sx={{ color: "#B3A87A", fontWeight: 400, fontSize: "21.67px" }}>
         {displayName}
       </Typography>
     ) : (
@@ -38,7 +38,7 @@ function Heading() {
   return (
    <Box sx={{ mt: 4, px: 3}}>
      <Breadcrumbs aria-label="breadcrumb" separator={<ArrowForwardIosIcon sx={{fontSize: "10px"}}/>}>
-      <MuiLink component={Link} href="/" underline="hover" color="inherit">
+      <MuiLink component={Link} href="/" underline="hover" color="inherit" sx={{ fontWeight: 400, fontSize: "21.67px" }}>
         Home
       </MuiLink>
       {breadcrumbLinks}

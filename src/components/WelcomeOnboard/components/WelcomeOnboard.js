@@ -54,7 +54,7 @@ export default function WelcomeOnboard() {
   ];
 
   return (
-    <Box sx={{p: {xs: 1, sm: 0}}}>
+    <Box sx={{ p: { xs: 1, sm: 0 } }}>
       <Grid container spacing={2}>
         <Grid
           item
@@ -70,20 +70,37 @@ export default function WelcomeOnboard() {
               Welcome Onboard!
             </Typography>
             <Typography
-              sx={{ fontSize: "18px", fontWeight: 400, color: "#616161" }}
+              sx={{ fontSize: "18px", fontWeight: 500, color: "#616161" }}
             >
               {" "}
               50K Owners & 12 Lac Buyers are Waiting for You!
             </Typography>
-            <Button
+            {/* <Button
               endIcon={
                 <StraightIcon
                   sx={{ transform: "rotate(90deg)"}}
                 />
               }
+              sx={{color: "#BDB38B", textTransform: "none", fontSize: "18px", fontWeight: 500, textDecoration: "underline"}}
             >
               Go To My Dashboard
-            </Button>
+            </Button> */}
+            <Typography
+              sx={{
+                color: "#BDB38B",
+                textTransform: "none",
+                fontSize: "18px",
+                fontWeight: 500,
+                textDecoration: "underline",
+                display: "flex",
+                alignItems: "center",
+                gap: "11px",
+                mt: "26px"
+              }}
+            >
+              Go To My Dashboard{" "}
+              <StraightIcon sx={{ transform: "rotate(90deg)" }} />
+            </Typography>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
@@ -108,7 +125,14 @@ export default function WelcomeOnboard() {
         <Grid item xs={12} sm={6} md={4}></Grid>
       </Grid>
       <Box sx={{ flexGrow: 1, padding: "20px" }}>
-        <Typography sx={{ fontSize: "26px", fontWeight: 700, color: "#484848", mb: "40px" }}>
+        <Typography
+          sx={{
+            fontSize: "26px",
+            fontWeight: 700,
+            color: "#484848",
+            mb: "40px",
+          }}
+        >
           Maximize Your Leads With 4 Simple Steps
         </Typography>
         <Grid container spacing={3} justifyContent="center">
@@ -133,7 +157,7 @@ export default function WelcomeOnboard() {
                       style={{ objectFit: "contain" }}
                     />
                   </Box>
-                  <Box sx={{maxWidth: 350}}>
+                  <Box sx={{ maxWidth: 350 }}>
                     <Typography sx={{ fontSize: "18px", fontWeight: 600 }}>
                       {step.title}
                     </Typography>

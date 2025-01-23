@@ -60,11 +60,11 @@ const PropertyListView = ({ properties }) => {
                 backgroundColor: "#fff",
                 // p: "14px",
                 justifyContent: "space-between",
-                transition: "transform 0.3s ease-in-out",
-                "&:hover": {
-                  transform: "scale(1.02)",
-                  boxShadow: "0px 4px 16px rgba(0, 0, 0, 0.1)",
-                },
+                // transition: "transform 0.3s ease-in-out",
+                // "&:hover": {
+                //   transform: "scale(1.02)",
+                //   boxShadow: "0px 4px 16px rgba(0, 0, 0, 0.1)",
+                // },
                 height: "100%",
               }}
             >

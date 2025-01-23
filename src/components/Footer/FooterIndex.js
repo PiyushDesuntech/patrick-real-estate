@@ -15,7 +15,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GoogleIcon from "@mui/icons-material/Google";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import NorthIcon from '@mui/icons-material/North';
+import NorthIcon from "@mui/icons-material/North";
 import Image from "next/image";
 
 const FooterIndex = () => {
@@ -43,7 +43,7 @@ const FooterIndex = () => {
                   variant="body2"
                   sx={{
                     fontSize: "16px",
-                    fontWeight: "medium",
+                    fontWeight: 500,
                     lineHeight: "26px",
                   }}
                 >
@@ -63,72 +63,72 @@ const FooterIndex = () => {
                 }}
               >
                 <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "500", mb: 4, fontSize: "22px" }}
+                  sx={{ fontWeight: 700, mb: 4, fontSize: "22px" }}
                 >
                   Quick Links
                 </Typography>
                 <Typography
-                  variant="body2"
-                  component={Link}
-                  href="#"
                   sx={{
                     display: "block",
                     color: "inherit",
                     mb: 2,
                     fontSize: "16px",
-                    fontWeight: "medium",
+                    fontWeight: 500,
+                    "&:hover": {color: "#E8E1C4"},
+                    cursor: "pointer"
                   }}
                 >
                   About Us
                 </Typography>
                 <Typography
-                  variant="body2"
-                  component={Link}
-                  href="#"
                   sx={{
                     display: "block",
                     color: "inherit",
                     mb: 2,
                     fontSize: "16px",
-                    fontWeight: "medium",
+                    fontWeight: 500,
+                    "&:hover": {color: "#E8E1C4"},
+                    cursor: "pointer"
                   }}
                 >
                   Terms & Conditions
                 </Typography>
                 <Typography
-                  variant="body2"
-                  component={Link}
-                  href="#"
                   sx={{
                     display: "block",
                     color: "inherit",
                     mb: 2,
                     fontSize: "16px",
-                    fontWeight: "medium",
+                    fontWeight: 500,
+                    "&:hover": {color: "#E8E1C4"},
+                    cursor: "pointer"
                   }}
                 >
                   User's Guide
                 </Typography>
                 <Typography
-                  variant="body2"
-                  component={Link}
-                  href="#"
                   sx={{
                     display: "block",
                     color: "inherit",
                     mb: 2,
                     fontSize: "16px",
-                    fontWeight: "medium",
+                    fontWeight: 500,
+                    "&:hover": {color: "#E8E1C4"},
+                    cursor: "pointer"
                   }}
                 >
                   Support Center
                 </Typography>
                 <Typography
-                  variant="body2"
-                  component={Link}
-                  href="#"
-                  sx={{ display: "block", color: "inherit" }}
+                   sx={{
+                    display: "block",
+                    color: "inherit",
+                    mb: 2,
+                    fontSize: "16px",
+                    fontWeight: 500,
+                    "&:hover": {color: "#E8E1C4"},
+                    cursor: "pointer"
+                  }}
                 >
                   Press Info
                 </Typography>
@@ -144,18 +144,17 @@ const FooterIndex = () => {
                 }}
               >
                 <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "500", mb: 4, fontSize: "22px" }}
+                  sx={{ fontWeight: 700, mb: 4, fontSize: "22px" }}
                 >
                   Contact Us
                 </Typography>
-                <Typography sx={{ fontSize: "16px", mb: 2, fontWeight: "400" }}>
+                <Typography sx={{ fontSize: "16px", mb: 2, fontWeight: "500", "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}>
                   info@examplemail.com
                 </Typography>
-                <Typography sx={{ fontSize: "16px", mb: 2, fontWeight: "300" }}>
+                <Typography sx={{ fontSize: "16px", mb: 2, fontWeight: "500", "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}>
                   Collins Street West, Victoria 9007, Australia
                 </Typography>
-                <Typography variant="body2">+123 456 789</Typography>
+                <Typography sx={{ fontSize: "16px", mb: 2, fontWeight: "500", "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}>+123 456 789</Typography>
               </Box>
             </Grid>
 
@@ -168,28 +167,29 @@ const FooterIndex = () => {
                 }}
               >
                 <Typography
-                  variant="h6"
-                  sx={{ fontWeight: "500", mb: 2, fontSize: "22px" }}
+                  sx={{ fontWeight: 700, mb: 2, fontSize: "22px" }}
                 >
                   Follow Us
                 </Typography>
-                <Box sx={{ display: "flex", gap: 0.5, mb: 3, flexWrap: "wrap" }}>
-                  <IconButton sx={{ color: "white" }}>
+                <Box
+                  sx={{ display: "flex", gap: 0.5, mb: 3, flexWrap: "wrap" }}
+                >
+                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"}  }}>
                     <FacebookIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white" }}>
+                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
                     <XIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white" }}>
+                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
                     <TwitterIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white" }}>
+                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
                     <InstagramIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white" }}>
+                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
                     <PinterestIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white" }}>
+                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
                     <GoogleIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
                 </Box>
@@ -260,38 +260,77 @@ const FooterIndex = () => {
           >
             <Box
               sx={{
-                display: "flex",
-                gap: { xs: 1, md: "49px" },
+                display: {xs: "grid", sm: "flex"},
+                gap: { xs: 1, md: "30px" },
                 flexWrap: "wrap,",
+                gridTemplateColumns: "1fr, 1fr"
               }}
             >
-              <Typography variant="body2" sx={{ mb: 2, fontSize: {xs: "14px", sm: "16px"} }}>
+              <Typography
+                variant="body2"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+              >
                 Home
               </Typography>
-              <Typography variant="body2" sx={{ mb: 2, fontSize: {xs: "14px", sm: "16px"} }}>
-                Listing
+              <Typography
+                variant="body2"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+              >
+                Buy
               </Typography>
-              <Typography variant="body2" sx={{ mb: 2, fontSize: {xs: "14px", sm: "16px"} }}>
-                Property
+              <Typography
+                variant="body2"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+              >
+                Rent
               </Typography>
-              <Typography variant="body2" sx={{ mb: 2, fontSize: {xs: "14px", sm: "16px"} }}>
-                Pages
+              <Typography
+                variant="body2"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+              >
+                Sell
               </Typography>
-              <Typography variant="body2" sx={{ mb: 2, fontSize: {xs: "14px", sm: "16px"} }}>
-                Blog
+              <Typography
+                variant="body2"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+              >
+                Students
               </Typography>
-              <Typography variant="body2" sx={{ mb: 2, fontSize: {xs: "14px", sm: "16px"} }}>
-                Contact
+              <Typography
+                variant="body2"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+              >
+                Market Insights
+              </Typography>
+              <Typography
+                variant="body2"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+              >
+               Resources
+              </Typography>
+              <Typography
+                variant="body2"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+              >
+                About
               </Typography>
             </Box>
-            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2, alignItems: "center", mt: -2 }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 2,
+                alignItems: "center",
+                mt: -2,
+              }}
+            >
               <Typography variant="body2">
                 Copyright &copy; 2024 Colonial Realty. All rights reserved.
               </Typography>
               <IconButton
                 variant="contained"
                 sx={{
-                  backgroundColor: "#E0D8C3",
+                  backgroundColor: "#fff",
                   "&:hover": {
                     backgroundColor: "#4D4D4D",
                     color: "#fff",
@@ -300,6 +339,9 @@ const FooterIndex = () => {
                   minWidth: "50px",
                   height: "50px",
                   mr: -1,
+                }}
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
                 <NorthIcon />
