@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Typography, Button, useTheme, useMediaQuery } from '@mui/material';
 import Image from 'next/image';
 import CloseIcon from '@mui/icons-material/Close';
 
-const CompareProperty = () => {
+const TopSection = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
+  
+  const [projects, setProjects] = useState([
+    { name: 'ATS Pristine City', location: 'Sector 1, Any Street, Canada' },
+    { name: 'Mahagun Mantra', location: 'Sector 3, ABC, Canada' }
+  ]);
+
+  const handleRemoveProject = (index) => {
+    const newProjects = [...projects];
+    newProjects.splice(index, 1);
+    setProjects(newProjects);
+  };
 
   return (
     <Box sx={{ 
@@ -45,8 +56,8 @@ const CompareProperty = () => {
         flexDirection: { xs: 'column', md: 'row' },
         flex: { xs: '1', md: '3' }
       }}>
-        {['ATS Pristine City', 'Mahagun Mantra'].map((project, index) => (
-          <Box key={project} sx={{ 
+        {projects.map((project, index) => (
+          <Box key={project.name} sx={{ 
             flex: '1',
             borderLeft: { xs: 'none', md: '1px solid #e0e0e0' },
             borderBottom: { xs: '1px solid #e0e0e0', md: 'none' },
@@ -66,20 +77,23 @@ const CompareProperty = () => {
                 color: '#303030',
                 fontWeight: 500
               }}>
-                {project}
+                {project.name}
               </Typography>
-              <CloseIcon sx={{
-                fontSize: { xs: '20px', md: '25px' },
-                color: '#909090',
-                cursor: 'pointer',
-              }}/>
+              <CloseIcon 
+                onClick={() => handleRemoveProject(index)}
+                sx={{
+                  fontSize: { xs: '20px', md: '25px' },
+                  color: '#909090',
+                  cursor: 'pointer',
+                }}
+              />
             </Box>
             <Typography sx={{ 
               fontSize: '14px',
               color: '#666',
               mb: 2
             }}>
-              {index === 0 ? 'Sector 1, Any Street, Canada' : 'Sector 3, ABC, Canada'}
+              {project.location}
             </Typography>
             <Box sx={{ 
               width: '100%',
@@ -90,7 +104,7 @@ const CompareProperty = () => {
             }}>
               <Image
                 src={index === 0 ? "/Images/Propertycompare2.png" : "/Images/Propertycompare2.png"}
-                alt={project}
+                alt={project.name}
                 layout="fill"
                 objectFit="cover"
                 priority
@@ -184,4 +198,4 @@ const CompareProperty = () => {
   );
 };
 
-export default CompareProperty;
+export default TopSection;

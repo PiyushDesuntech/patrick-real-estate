@@ -3,6 +3,7 @@ import { Box, Typography, IconButton, useTheme, useMediaQuery } from '@mui/mater
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import DoneIcon from '@mui/icons-material/Done';
+import CloseIcon from '@mui/icons-material/Close';
 
 const TableRow = ({ label, value1, value2, isHeader = false, showDash = false, noBorder = false, isLastAmenity = false }) => {
   const theme = useTheme();
@@ -77,20 +78,26 @@ const TableRow = ({ label, value1, value2, isHeader = false, showDash = false, n
                     p: 2, 
                     borderBottom: isLastAmenity ? '1px solid #e0e0e0' : 'none',
                     display: 'flex',
-                    justifyContent: 'flex-start', // Changed from 'center' to 'flex-start'
+                    justifyContent: 'flex-start',
                     alignItems: 'center'
                   }}>
                     <Typography sx={{ 
                       fontSize: { xs: '18px', sm: index === 0 ? '20px' : '16px' },
-                      color: 'black',
+                      color: '#009681',
                       fontWeight: index === 0 ? 600 : 500,
-                      textAlign: 'left', // Changed from 'center' to 'left'
+                      textAlign: 'left',
                       width: '100%',
                       display: 'flex',
-                      justifyContent: 'flex-start', // Changed from 'center' to 'flex-start'
+                      justifyContent: 'flex-start',
                       alignItems: 'center'
                     }}>
-                      {typeof value === 'boolean' ? (value ? <DoneIcon /> : '✕') : value}
+                      {typeof value === 'boolean' ? (
+                        value ? (
+                          <DoneIcon sx={{ color: '#009681' }} />
+                        ) : (
+                          <CloseIcon sx={{ color: 'black' }} />
+                        )
+                      ) : value}
                     </Typography>
                   </Box>
                   {isLastAmenity && (
