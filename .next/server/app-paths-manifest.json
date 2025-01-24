@@ -1,3 +1,4 @@
 {
-  "/page": "app/page.js"
+  "/mortgage-cal/page": "app/mortgage-cal/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
