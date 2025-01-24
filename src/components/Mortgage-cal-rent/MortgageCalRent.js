@@ -7,14 +7,6 @@ import HeroSection from "./components/HeroContent";
 import RentalCostsSection from "./components/RentalCostsSection";
 
 export default function MortgageCalRent() {
-  React.useEffect(() => {
-    const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-    return () => document.head.removeChild(link);
-  }, []);
-
   return (
     <Box sx={{
       backgroundColor: '#F7F7F7',
