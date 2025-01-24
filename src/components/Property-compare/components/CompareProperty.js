@@ -3,7 +3,7 @@ import { Box, Typography, Button, useTheme, useMediaQuery } from '@mui/material'
 import Image from 'next/image';
 import CloseIcon from '@mui/icons-material/Close';
 
-const TopSection = () => {
+const CompareProperty = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
@@ -32,17 +32,17 @@ const TopSection = () => {
       mb: 3,
       border: '1px solid #000000'
     }}>
-      {/* Features Label */}
+      {/* Features Label - EDITED: Reduced padding and adjusted sizing */}
       <Box sx={{ 
-        flex: { xs: '0 0 auto', md: '1' },
+        flex: { xs: '0 0 auto', md: '0.8' }, // Slightly reduced flex value
         display: 'flex',
         alignItems: 'center',
-        p: 3,
+        p: 4.7, // Reduced padding from 3 to 2
         borderRight: { xs: 'none', md: '1px solid #e0e0e0' },
         borderBottom: { xs: '1px solid #e0e0e0', md: 'none' }
       }}>
         <Typography sx={{ 
-          fontSize: { xs: '18px', md: '20px' },
+          fontSize: { xs: '16px', md: '18px' }, // Slightly reduced font size
           color: '#303030',
           fontWeight: 400
         }}>
@@ -54,7 +54,7 @@ const TopSection = () => {
       <Box sx={{
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
-        flex: { xs: '1', md: '3' }
+        flex: { xs: '1', md: '3.2' } // Adjusted to compensate for features box reduction
       }}>
         {projects.map((project, index) => (
           <Box key={project.name} sx={{ 
@@ -198,4 +198,4 @@ const TopSection = () => {
   );
 };
 
-export default TopSection;
+export default CompareProperty;

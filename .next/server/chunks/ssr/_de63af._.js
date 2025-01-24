@@ -130,7 +130,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 ;
 ;
 ;
-const TopSection = ()=>{
+const CompareProperty = ()=>{
     const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
     const isMobile = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down('sm'));
     const isTablet = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down('md'));
@@ -175,11 +175,11 @@ const TopSection = ()=>{
                 sx: {
                     flex: {
                         xs: '0 0 auto',
-                        md: '1'
+                        md: '0.8'
                     },
                     display: 'flex',
                     alignItems: 'center',
-                    p: 3,
+                    p: 4.7,
                     borderRight: {
                         xs: 'none',
                         md: '1px solid #e0e0e0'
@@ -192,8 +192,8 @@ const TopSection = ()=>{
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                     sx: {
                         fontSize: {
-                            xs: '18px',
-                            md: '20px'
+                            xs: '16px',
+                            md: '18px'
                         },
                         color: '#303030',
                         fontWeight: 400
@@ -218,8 +218,8 @@ const TopSection = ()=>{
                     },
                     flex: {
                         xs: '1',
-                        md: '3'
-                    }
+                        md: '3.2'
+                    } // Adjusted to compensate for features box reduction
                 },
                 children: [
                     projects.map((project, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -479,7 +479,7 @@ const TopSection = ()=>{
         columnNumber: 5
     }, this);
 };
-const __TURBOPACK__default__export__ = TopSection;
+const __TURBOPACK__default__export__ = CompareProperty;
 }}),
 "[project]/src/components/Property-compare/components/ComparisonSection.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
