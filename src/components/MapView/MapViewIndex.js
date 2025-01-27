@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { Grid, Box, Container } from "@mui/material";
+import { Grid, Box, Container, Typography } from "@mui/material";
 import HomeCards from "./components/HomeCards";
 import Filter from "./components/Filter";
 import MapView from "./components/MapView";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import HomeOptions from "./components/HomeOptions";
 
 const properties = [
   {
@@ -133,6 +135,11 @@ const MapViewIndex = () => {
     homeType: "",
   });
   const [selectedLocation, setSelectedLocation] = useState(null);
+  const [currentView, setCurrentView] = useState({
+    sort: 'Recommended',
+    view: 'Photos',
+  });
+
   const filteredProperties = properties.filter((property) => {
     return (
       (filters.type === "" || property.type === filters.type) &&
@@ -153,26 +160,65 @@ const MapViewIndex = () => {
   const handleCardClick = (locationSrc) => {
     setSelectedLocation(locationSrc);
   };
+const handleSortChange = (sortType) => {
+    setCurrentView({ ...currentView, sort: sortType });
+  };
 
+  const handleViewChange = (viewType) => {
+    setCurrentView({ ...currentView, view: viewType });
+  };
   return (
-    <Box sx={{background: "#F7F7F7"}}>
+    <Box sx={{ background: "#F7F7F7" }}>
       <Container maxWidth="xl" sx={{ px: { lg: 4, xs: 1 }, py: 3 }}>
-      <Filter filters={filters} setFilters={setFilters} />
-      <Grid container spacing={3} sx={{display: "flex", flexWrap: "wrap-reverse"}}>
-        <Grid item xs={12} sm={12} md={6}>
-          <Grid container spacing={2}>
-            {filteredProperties.map((property) => (
-              <Grid item xs={12} sm={6} key={property.id}>
-                <HomeCards property={property} onCardClick={handleCardClick} />
-              </Grid>
-            ))}
+        <Filter filters={filters} setFilters={setFilters} />
+        <Grid
+          container
+          spacing={3}
+          sx={{ display: "flex", flexWrap: "wrap-reverse", mt: -5 }}
+        >
+          <Grid item xs={12} sm={12} md={6}>
+            <Box sx={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", mb: 2}}>
+              <Typography
+                sx={{ fontSize: "17.79px", fontWeight: 700, color: "#000" }}
+              >
+                Pleasant Hill, A
+              </Typography>
+              {/* <Box sx={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: 2}}>
+                <Typography sx={{ fontSize: "13.83px", fontWeight: 700, display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                  74{" "}
+                  <span style={{ color: "#676767", fontWeight: 400 }}> of </span>{" "}
+                  74 homes
+                </Typography>
+                <Typography sx={{ fontSize: "13.83px", fontWeight: 700, display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                  Sort: <span style={{color: "#15727A"}}> Recommended </span> <ArrowDropDownIcon sx={{color: "#15727A"}} />
+                </Typography>
+                <Typography sx={{ fontSize: "13.83px", fontWeight: 700, display: 'flex', alignItems: 'center', gap: 0.5 }}>
+                  View: <span style={{color: "#15727A"}}>Photos</span> <ArrowDropDownIcon sx={{color: "#15727A"}} />
+                </Typography>
+              </Box> */}
+             <HomeOptions
+              totalHomes={filteredProperties.length}
+              currentView={currentView}
+              onSortChange={handleSortChange}
+              onViewChange={handleViewChange}
+              />
+            </Box>
+            <Grid container spacing={2}>
+              {filteredProperties.map((property) => (
+                <Grid item xs={12} sm={6} key={property.id}>
+                  <HomeCards
+                    property={property}
+                    onCardClick={handleCardClick}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6}>
+            <MapView locationSrc={selectedLocation} />
           </Grid>
         </Grid>
-        <Grid item xs={12} sm={12} md={6}>
-          <MapView locationSrc={selectedLocation} />
-        </Grid>
-      </Grid>
-    </Container>
+      </Container>
     </Box>
   );
 };

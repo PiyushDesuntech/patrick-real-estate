@@ -36,13 +36,13 @@ const SellPropertyForm = () => {
   };
 
   return (
-    <Box sx={{ py: 3, px: 2 }}>
+    <Box sx={{ py: 3, px: {xs:1, md: 3} }}>
       <Box
         sx={{
           mx: "auto",
-          my: 4,
+          my: 1,
           py: 6,
-          px: 24,
+          px: {xs:2, md: 24},
           borderRadius: "10px",
           background: "#fff",
         }}
@@ -83,6 +83,21 @@ const SellPropertyForm = () => {
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8.63px",
+                    "&:hover fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#C0C0C0",
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
                   },
                 }}
               />
@@ -124,7 +139,10 @@ const SellPropertyForm = () => {
                             height: "55px",
                             mr: -1.7,
                             borderRadius: "0px 8.63px 8.63px 0px",
-                            boxShadow: "none"
+                            boxShadow: "none", 
+                            fontSize: "16px",
+                            fontWeight: 500,
+                            textTransform: "none"
                           }}
                         >
                           Sq. Ft.
@@ -140,6 +158,21 @@ const SellPropertyForm = () => {
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8.63px",
+                    "&:hover fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#C0C0C0",
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
                   },
                 }}
               />
@@ -165,6 +198,21 @@ const SellPropertyForm = () => {
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8.63px",
+                    "&:hover fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#C0C0C0",
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
                   },
                 }}
               />
@@ -188,6 +236,21 @@ const SellPropertyForm = () => {
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8.63px",
+                    "&:hover fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#C0C0C0",
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
                   },
                 }}
               />
@@ -213,6 +276,21 @@ const SellPropertyForm = () => {
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8.63px",
+                    "&:hover fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#C0C0C0",
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
                   },
                 }}
               />
@@ -238,6 +316,21 @@ const SellPropertyForm = () => {
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8.63px",
+                    "&:hover fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#C0C0C0",
+                    },
+                  },
+                  "& .MuiOutlinedInput-notchedOutline": {
+                    borderColor: "#C0C0C0",
+                  },
+                  "& .MuiInputLabel-root": {
+                    color: "#A0A0A0",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#A0A0A0",
                   },
                 }}
               />
@@ -301,7 +394,7 @@ const SellPropertyForm = () => {
                 color: "#484848",
                 "&:hover": { boxShadow: "none" },
                 textTransform: "none",
-                fontSize: "20px",
+                fontSize: "16px",
                 fontWeight: 500,
               }}
             >

@@ -30,7 +30,28 @@ export default function PropertyHero() {
             height: "450px",
           }}
         >
-          <Box sx={{ display: "flex", justifyContent: "flex-end", p: 2 }}>
+          <Box sx={{ display: "flex", justifyContent: "flex-end", p: 2, gap: "30px", flexWrap: "wrap" }}>
+            <Button
+              // onClick={() => router.back()}
+              // startIcon={<WestIcon sx={{ fontSize: "30px" }} />}
+              variant="contained"
+              sx={{
+                backgroundColor: "#E0D8C3",
+                "&:hover": {
+                  backgroundColor: "#3E4C66",
+                  color: "#fff",
+                  boxShadow: "none"
+                },
+                color: "#00000099",
+                minWidth: "233px",
+                height: "53px",
+                textTransform: "none",
+                boxShadow: "none",
+                borderRadius: "6px"
+              }}
+            >
+              Make A Home Tour
+            </Button>
             <Button
               onClick={() => router.back()}
               startIcon={<WestIcon sx={{ fontSize: "30px" }} />}
@@ -38,13 +59,16 @@ export default function PropertyHero() {
               sx={{
                 backgroundColor: "#E0D8C3",
                 "&:hover": {
-                  backgroundColor: "#4D4D4D",
+                  backgroundColor: "#3E4C66",
                   color: "#fff",
+                  boxShadow: "none"
                 },
-                color: "#000",
+                color: "#00000099",
                 minWidth: "233px",
                 height: "53px",
                 textTransform: "none",
+                boxShadow: "none",
+                borderRadius: "6px"
               }}
             >
               Back To Search

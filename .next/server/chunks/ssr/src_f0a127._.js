@@ -26,13 +26,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 const PropertySearch = ()=>{
     const [selectedTab, setSelectedTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("rent");
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["usePathname"])();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (pathname.includes("buy")) {
+            setSelectedTab("buy");
+        } else if (pathname.includes("rent")) {
+            setSelectedTab("rent");
+        }
+    }, [
+        pathname
+    ]);
     const handleTabChange = (event, newTab)=>{
         if (newTab !== null) {
             setSelectedTab(newTab);
+            router.push(`/${newTab}`); // Navigate to the respective tab's path
         }
     };
     const handleClick = ()=>{
         router.push("/sell");
+    };
+    const handleClickSearch = ()=>{
+        router.push("/map-view");
     };
     // Sample options for Autocomplete fields
     const propertyTypes = [
@@ -116,12 +130,12 @@ const PropertySearch = ()=>{
                             children: "Rent"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                            lineNumber: 54,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                        lineNumber: 53,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -164,12 +178,12 @@ const PropertySearch = ()=>{
                             children: "Buy"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                            lineNumber: 95,
+                            lineNumber: 110,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                        lineNumber: 94,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -200,18 +214,18 @@ const PropertySearch = ()=>{
                             children: "Sell"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                            lineNumber: 136,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                        lineNumber: 135,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                lineNumber: 44,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -316,7 +330,7 @@ const PropertySearch = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                    lineNumber: 202,
+                                    lineNumber: 217,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Autocomplete$2f$Autocomplete$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__Autocomplete$3e$__["Autocomplete"], {
@@ -366,12 +380,12 @@ const PropertySearch = ()=>{
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                            lineNumber: 241,
+                                            lineNumber: 256,
                                             columnNumber: 19
                                         }, void 0)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                    lineNumber: 238,
+                                    lineNumber: 253,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Autocomplete$2f$Autocomplete$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__Autocomplete$3e$__["Autocomplete"], {
@@ -422,12 +436,12 @@ const PropertySearch = ()=>{
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                            lineNumber: 282,
+                                            lineNumber: 297,
                                             columnNumber: 19
                                         }, void 0)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                    lineNumber: 279,
+                                    lineNumber: 294,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Autocomplete$2f$Autocomplete$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__Autocomplete$3e$__["Autocomplete"], {
@@ -477,18 +491,18 @@ const PropertySearch = ()=>{
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                            lineNumber: 324,
+                                            lineNumber: 339,
                                             columnNumber: 19
                                         }, void 0)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                    lineNumber: 321,
+                                    lineNumber: 336,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                            lineNumber: 192,
+                            lineNumber: 207,
                             columnNumber: 13
                         }, this),
                         selectedTab === "rent" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -554,7 +568,7 @@ const PropertySearch = ()=>{
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                    lineNumber: 375,
+                                    lineNumber: 390,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Autocomplete$2f$Autocomplete$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__Autocomplete$3e$__["Autocomplete"], {
@@ -608,12 +622,12 @@ const PropertySearch = ()=>{
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                            lineNumber: 414,
+                                            lineNumber: 429,
                                             columnNumber: 19
                                         }, void 0)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                    lineNumber: 411,
+                                    lineNumber: 426,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Autocomplete$2f$Autocomplete$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__Autocomplete$3e$__["Autocomplete"], {
@@ -664,12 +678,12 @@ const PropertySearch = ()=>{
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                            lineNumber: 455,
+                                            lineNumber: 470,
                                             columnNumber: 19
                                         }, void 0)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                    lineNumber: 452,
+                                    lineNumber: 467,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -728,12 +742,12 @@ const PropertySearch = ()=>{
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                                    lineNumber: 498,
+                                                    lineNumber: 513,
                                                     columnNumber: 21
                                                 }, void 0)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                            lineNumber: 495,
+                                            lineNumber: 510,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Autocomplete$2f$Autocomplete$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__Autocomplete$3e$__["Autocomplete"], {
@@ -784,27 +798,28 @@ const PropertySearch = ()=>{
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                                    lineNumber: 541,
+                                                    lineNumber: 556,
                                                     columnNumber: 21
                                                 }, void 0)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                            lineNumber: 538,
+                                            lineNumber: 553,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                                    lineNumber: 494,
+                                    lineNumber: 509,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                            lineNumber: 364,
+                            lineNumber: 379,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
+                            onClick: handleClickSearch,
                             variant: "contained",
                             sx: {
                                 backgroundColor: "#E0D8C3",
@@ -827,24 +842,24 @@ const PropertySearch = ()=>{
                             children: "Search"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                            lineNumber: 583,
+                            lineNumber: 598,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                    lineNumber: 174,
+                    lineNumber: 189,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-                lineNumber: 165,
+                lineNumber: 180,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Home/compoments/PropertySearch.js",
-        lineNumber: 35,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
 };
@@ -1730,7 +1745,7 @@ const FeatureProperties = ()=>{
                                 backgroundColor: "#fff",
                                 boxShadow: "none",
                                 "&:hover": {
-                                    backgroundColor: "#4D4D4D",
+                                    backgroundColor: "#3E4C66",
                                     color: "#fff"
                                 },
                                 color: "#4D4D4D",
@@ -2678,11 +2693,10 @@ const PopularBoston = ()=>{
                                 sx: {
                                     borderRadius: 2,
                                     overflow: "hidden",
-                                    boxShadow: 3,
                                     height: {
                                         xs: "280px",
                                         md: "310px",
-                                        lg: "310px"
+                                        lg: "312px"
                                     },
                                     width: {
                                         xs: "100%",
@@ -2694,7 +2708,8 @@ const PopularBoston = ()=>{
                                     "&:hover   .image-container": {
                                         transform: "scale(1.2)",
                                         zIndex: 0
-                                    }
+                                    },
+                                    border: "none"
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -2707,8 +2722,8 @@ const PopularBoston = ()=>{
                                                 sx: {
                                                     height: {
                                                         xs: "280px",
-                                                        md: "340px",
-                                                        lg: "315px"
+                                                        md: "310px",
+                                                        lg: "312px"
                                                     },
                                                     width: {
                                                         xs: "100%",
@@ -2739,7 +2754,7 @@ const PopularBoston = ()=>{
                                             height: {
                                                 xs: "80%",
                                                 md: "80%",
-                                                lg: "90%"
+                                                lg: "85%"
                                             }
                                         },
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CardContent$2f$CardContent$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__CardContent$3e$__["CardContent"], {
@@ -2747,9 +2762,17 @@ const PopularBoston = ()=>{
                                                 color: "#fff"
                                             },
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                                                component: "a",
+                                                href: "#",
                                                 sx: {
                                                     fontSize: "24px",
-                                                    fontWeight: 700
+                                                    fontWeight: 700,
+                                                    "&:hover": {
+                                                        color: "#E8E1C4"
+                                                    },
+                                                    cursor: "pointer",
+                                                    color: "#fff",
+                                                    textDecoration: "none"
                                                 },
                                                 children: item.title
                                             }, void 0, false, {

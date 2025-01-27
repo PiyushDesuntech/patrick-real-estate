@@ -27,16 +27,42 @@ const Filter = ({ filters, setFilters }) => {
 
   return (
     <Box sx={{ mb: 3 }}>
-      <Grid container spacing={2}>
+      <Grid container spacing={1}>
         {/* Individual Filters */}
         <Grid item xs={6} sm={6} md={1}>
           <FormControl fullWidth size="small">
-            <InputLabel>For Sale</InputLabel>
+            <InputLabel
+              sx={{
+                color: "#222222", 
+                "&.Mui-focused": {
+                  color: "#222222", 
+                },
+              }}
+            >
+              For Sale
+            </InputLabel>
             <Select
               value={filters.type || ""}
               onChange={handleFilterChange("type")}
               label="For Sale"
-              sx={{borderRadius: "7px", }}
+              sx={{
+                "& fieldset": {
+                  border: "1.12px solid #949494",
+                },
+                borderRadius: "6.72px",
+                "&:hover .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#949494", 
+                },
+                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#949494",
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#222222", 
+                },
+                "& .Mui-focused .MuiInputLabel-root": {
+                  color: "#222222", 
+                },
+              }}
             >
               <MenuItem value="">All</MenuItem>
               <MenuItem value="For Sale">For Sale</MenuItem>
@@ -47,12 +73,34 @@ const Filter = ({ filters, setFilters }) => {
 
         <Grid item xs={6} sm={6} md={1}>
           <FormControl fullWidth size="small">
-            <InputLabel>Price</InputLabel>
+            <InputLabel  sx={{
+                color: "#222222", 
+                "&.Mui-focused": {
+                  color: "#222222", 
+                },
+              }}>Price</InputLabel>
             <Select
               value={filters.price || ""}
               onChange={handleFilterChange("price")}
               label="Price"
-              sx={{borderRadius: "7px", }}
+              sx={{
+                "& fieldset": {
+                  border: "1.12px solid #949494",
+                },
+                borderRadius: "6.72px",
+                "&:hover .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#949494", 
+                },
+                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#949494",
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#222222", 
+                },
+                "& .Mui-focused .MuiInputLabel-root": {
+                  color: "#222222", 
+                },
+              }}
             >
               <MenuItem value="">All</MenuItem>
               <MenuItem value="<3000">Less than $3000</MenuItem>
@@ -64,12 +112,34 @@ const Filter = ({ filters, setFilters }) => {
 
         <Grid item xs={6} sm={6} md={1}>
           <FormControl fullWidth size="small">
-            <InputLabel>Beds/Baths</InputLabel>
+            <InputLabel  sx={{
+                color: "#222222", 
+                "&.Mui-focused": {
+                  color: "#222222", 
+                },
+              }}>Beds/Baths</InputLabel>
             <Select
               value={filters.bedsBaths || ""}
               onChange={handleFilterChange("bedsBaths")}
               label="Beds/Baths"
-              sx={{borderRadius: "7px", }}
+              sx={{
+                "& fieldset": {
+                  border: "1.12px solid #949494",
+                },
+                borderRadius: "6.72px",
+                "&:hover .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#949494", 
+                },
+                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#949494",
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#222222", 
+                },
+                "& .Mui-focused .MuiInputLabel-root": {
+                  color: "#222222", 
+                },
+              }}
             >
               <MenuItem value="">All</MenuItem>
               <MenuItem value="1-1">1 Bed, 1 Bath</MenuItem>
@@ -81,12 +151,34 @@ const Filter = ({ filters, setFilters }) => {
 
         <Grid item xs={6} sm={6} md={1}>
           <FormControl fullWidth size="small">
-            <InputLabel>Home Type</InputLabel>
+            <InputLabel  sx={{
+                color: "#222222", 
+                "&.Mui-focused": {
+                  color: "#222222", 
+                },
+              }}>Home Type</InputLabel>
             <Select
               value={filters.homeType || ""}
               onChange={handleFilterChange("homeType")}
               label="Home Type"
-              sx={{borderRadius: "7px", }}
+              sx={{
+                "& fieldset": {
+                  border: "1.12px solid #949494",
+                },
+                borderRadius: "6.72px",
+                "&:hover .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#949494", 
+                },
+                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                  borderColor: "#949494",
+                },
+                "& .MuiInputLabel-root": {
+                  color: "#222222", 
+                },
+                "& .Mui-focused .MuiInputLabel-root": {
+                  color: "#222222", 
+                },
+              }}
             >
               <MenuItem value="">All</MenuItem>
               <MenuItem value="Apartment">Apartment</MenuItem>
@@ -99,7 +191,7 @@ const Filter = ({ filters, setFilters }) => {
         {/* All Filters Button */}
         <Grid item xs={6} sm={6} md={1}>
           <Button
-            onClick={() => setFilterDialogOpen(true)}
+            // onClick={() => setFilterDialogOpen(true)}
             fullWidth
             variant="contained"
             sx={{
@@ -107,7 +199,7 @@ const Filter = ({ filters, setFilters }) => {
               bgcolor: "#fff",
               color: "#484848",
               boxShadow: "none",
-              py: 0.85,
+              // py: 0.85,
               "&:hover": {
                 bgcolor: "#fff",
                 color: "#484848",
@@ -115,9 +207,11 @@ const Filter = ({ filters, setFilters }) => {
               },
               //  fontSize: "20px",
               textTransform: "none",
-              borderRadius: "7px",
+              borderRadius: "6.72px",
               whiteSpace: "nowrap",
-              border: "1px solid #ccc",
+              border: "1.12px solid #949494",
+              fontSize: "16px", 
+              fontWeight: 500
             }}
           >
             All Filters
@@ -132,30 +226,51 @@ const Filter = ({ filters, setFilters }) => {
               bgcolor: "#E8E1C4",
               color: "#484848",
               boxShadow: "none",
-              py: 0.85,
               "&:hover": {
-                bgcolor: "#fff",
-                color: "#484848",
+                bgcolor: "#3E4C66",
+                color: "#fff",
                 boxShadow: "none",
               },
               //  fontSize: "20px",
               textTransform: "none",
-              borderRadius: "7px",
+              borderRadius: "6.72px",
               whiteSpace: "nowrap",
+              fontSize: "16px",
+              fontWeight: 500,
             }}
           >
             Save Search
           </Button>
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={12} md={6}>
           <TextField
-          size="small"
+            size="small"
             label="Search by Address"
             variant="outlined"
             value={filters.address || ""}
             onChange={handleFilterChange("address")}
             fullWidth
-            sx={{ mb: 2 }}
+            sx={{ mb: 2,  color: "#3E4C66",
+              "& .MuiInputLabel-root": {
+                color: "#3E4C66",
+                fontSize: "16px",
+              },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "#3E4C66",
+                fontSize: "16px",
+              },
+              "& .MuiOutlinedInput-root": {
+                borderRadius: "5px", 
+                "& fieldset": {
+                  borderColor: "#00000066", 
+                },
+                "&:hover fieldset": {
+                  borderColor: "#00000066", 
+                },
+                "&.Mui-focused fieldset": {
+                  borderColor: "#00000066", 
+                },
+              }, }}
           />
         </Grid>
       </Grid>

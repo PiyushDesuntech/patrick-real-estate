@@ -18,25 +18,8 @@ import {
   Google,
   LinkedIn,
 } from "@mui/icons-material";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-
-const theme = createTheme({
-  typography: {
-    fontFamily: "Nunito, Arial, sans-serif",
-  },
-});
 
 export default function ContactInfo() {
-    React.useEffect(() => {
-        const link = document.createElement('link');
-        link.href = 'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap';
-        link.rel = 'stylesheet';
-        document.head.appendChild(link);
-    
-        return () => {
-          document.head.removeChild(link); // Clean up after component unmount
-        };
-      }, []);
   return (
     <Box>
       <Box sx={{ height: { xs: "300px", sm: "500px" } }}>
@@ -47,7 +30,6 @@ export default function ContactInfo() {
           loading="lazy"
         ></iframe>
       </Box>
-      <ThemeProvider theme={theme}>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Box
             sx={{
@@ -308,7 +290,6 @@ export default function ContactInfo() {
             </Box>
           </Box>
         </Box>
-      </ThemeProvider>
     </Box>
   );
 }
