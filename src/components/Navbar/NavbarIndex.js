@@ -21,6 +21,7 @@ import {
   useMediaQuery,
   useTheme,
   InputAdornment,
+  Container,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
@@ -116,15 +117,16 @@ const NavbarIndex = () => {
 
   return (
     <>
-      <AppBar
+     <Container maxWidth="xl"> 
+     <AppBar
         position="static"
-        sx={{ background: showTransparent? "transparent": "#fff", boxShadow: "none", color: showTransparent? "#fff": "#000" }}
+        sx={{ background: showTransparent? "transparent": "#fff", boxShadow: showTransparent ? "none" : "0px 6px 6px -3px rgba(0, 0, 0, 0.2)", color: showTransparent? "#fff": "#000" }}
       >
         <Toolbar
           sx={{
             display: "flex",
             justifyContent: "space-between",
-            px: { lg: 8 },
+            px: { lg: 4 },
             pt: 2,
             zIndex: 1100,
           }}
@@ -249,6 +251,7 @@ const NavbarIndex = () => {
           </Box>
         </Toolbar>
       </AppBar>
+     </Container>
 
       {/* Drawer */}
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
