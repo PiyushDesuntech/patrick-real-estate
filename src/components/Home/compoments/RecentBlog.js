@@ -90,11 +90,12 @@ export default function RecentBlog() {
                       05/17/2019
                     </Typography>
                     <Button
-                      endIcon={<EastIcon sx={{ color: "#fff" }} />}
+                      endIcon={<EastIcon />}
                       sx={{
                         color: "#fff",
                         textTransform: "none",
                         fontSize: "16px",
+                        "&:hover": {color: "#E8E1C4"}
                       }}
                     >
                       Read More

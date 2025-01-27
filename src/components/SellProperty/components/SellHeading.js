@@ -19,7 +19,7 @@ function SellHeading() {
       .replace(/\b\w/g, (char) => char.toUpperCase()); 
 
     return isLast ? (
-      <Typography key={routePath} sx={{ color: "#B3A87A", fontWeight: 400, fontSize: "21.67px" }}>
+      <Typography key={routePath} sx={{ color: "#777777", fontWeight: 400, fontSize: "17.23px" }}>
         {displayName}
       </Typography>
     ) : (
@@ -38,7 +38,7 @@ function SellHeading() {
   return (
    <Box sx={{ py: 4, px: {xs: 1, sm: 3}}}>
      <Breadcrumbs aria-label="breadcrumb" separator={<ArrowForwardIosIcon sx={{fontSize: "10px"}}/>}>
-      <MuiLink component={Link} href="/" underline="hover" color="inherit" sx={{ color: "inherit", fontWeight: 400, fontSize: "21.67px" }}>
+      <MuiLink component={Link} href="/" underline="hover" color="inherit" sx={{ color: "inherit", fontWeight: 400, fontSize: "17.23px" }}>
         Home
       </MuiLink>
       {breadcrumbLinks}

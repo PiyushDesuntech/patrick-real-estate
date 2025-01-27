@@ -3,12 +3,9 @@ import React from "react";
 // import { Lato } from "next/font/google";
 import Box from "@mui/material/Box";
 import "./globals.css";
-import Script from "next/script";
 import NavbarIndex from "@/components/Navbar/NavbarIndex";
 import { useEffect, useState } from "react";
 import FooterIndex from "@/components/Footer/FooterIndex";
-import PropertyNavbar from "@/components/PropertyNavbar/PropertyNavbar";
-import { usePathname } from "next/navigation";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 
@@ -27,8 +24,6 @@ const theme = createTheme({
 
 export default function RootLayout({ children }) {
   const [isMounted, setIsMounted] = useState(false);
-  const pathname = usePathname(); 
-
   React.useEffect(() => {
     const link = document.createElement('link');
     link.href = 'https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap';
@@ -50,8 +45,7 @@ export default function RootLayout({ children }) {
       //  className={lato.className}
        >
         <ThemeProvider theme={theme}>
-        {isMounted && pathname === "/" && <NavbarIndex />}
-        {isMounted && pathname !== "/" && <PropertyNavbar />}
+        <NavbarIndex />
         <Box suppressHydrationWarning>{children}</Box>
         {isMounted && <FooterIndex />}
         </ThemeProvider>

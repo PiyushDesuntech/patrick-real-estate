@@ -388,7 +388,7 @@ const FeatureProperties = () => {
                 backgroundColor: "#fff",
                 boxShadow: "none",
                 "&:hover": {
-                  backgroundColor: "#4D4D4D",
+                  backgroundColor: "#3E4C66",
                   color: "#fff",
                 },
                 color: "#4D4D4D",

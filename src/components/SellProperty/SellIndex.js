@@ -8,6 +8,7 @@ import OurAgents from "../AboutUs/components/OurAgents";
 import MoreWays from "./components/MoreWays";
 import WhyChooseUs from "./components/WhyChooseUs";
 import SellPropertyForm from "./components/SellPropertyForm";
+import HomeIndex from "../Home/HomeIndex";
 
 export default function SellIndex() {
   const [showSellPropertyForm, setShowSellPropertyForm] = useState(false);
@@ -105,10 +106,12 @@ export default function SellIndex() {
       ) : (
         <Box sx={{ background: "#F7F7F7" }}>
           <Container maxWidth="xl" sx={{ px: { xs: 1, lg: 6 } }}>
+          <SellHeading />
             <SellPropertyForm />
           </Container>
         </Box>
       )}
+      {/* <HomeIndex/> */}
     </Box>
   );
 }

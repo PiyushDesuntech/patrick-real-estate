@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import {
   ToggleButton,
   ToggleButtonGroup,
@@ -10,21 +10,36 @@ import {
   Grid,
 } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const PropertySearch = () => {
   const [selectedTab, setSelectedTab] = useState("rent");
   const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname.includes("buy")) {
+      setSelectedTab("buy");
+    } else if (pathname.includes("rent")) {
+      setSelectedTab("rent");
+    }
+  }, [pathname]);
 
   const handleTabChange = (event, newTab) => {
     if (newTab !== null) {
       setSelectedTab(newTab);
+      router.push(`/${newTab}`); // Navigate to the respective tab's path
     }
   };
 
   const handleClick = () => {
     router.push("/sell");
   };
+  const handleClickSearch = () => {
+    router.push("/map-view");
+  };
+
+
 
   // Sample options for Autocomplete fields
   const propertyTypes = ["House", "Apartment", "Studio", "Villa"];
@@ -581,6 +596,7 @@ const PropertySearch = () => {
           )}
 
           <Button
+          onClick={handleClickSearch}
             variant="contained"
             sx={{
               backgroundColor: "#E0D8C3",

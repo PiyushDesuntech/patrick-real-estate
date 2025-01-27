@@ -42,7 +42,7 @@ const HomeCards = ({ property, onCardClick }) => {
         >
           <Box>
             <Chip
-              label="For Sale"
+               label={property.type}
               sx={{
                 bgcolor: "#3E4C66",
                 color: "#fff",

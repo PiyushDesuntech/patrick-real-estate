@@ -1050,11 +1050,7 @@ function RecentBlog() {
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
-                                                            endIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$East$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                                sx: {
-                                                                    color: "#fff"
-                                                                }
-                                                            }, void 0, false, {
+                                                            endIcon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$East$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                                 fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
                                                                 lineNumber: 93,
                                                                 columnNumber: 32
@@ -1062,7 +1058,10 @@ function RecentBlog() {
                                                             sx: {
                                                                 color: "#fff",
                                                                 textTransform: "none",
-                                                                fontSize: "16px"
+                                                                fontSize: "16px",
+                                                                "&:hover": {
+                                                                    color: "#E8E1C4"
+                                                                }
                                                             },
                                                             children: "Read More"
                                                         }, void 0, false, {
@@ -1124,12 +1123,12 @@ function RecentBlog() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                                    lineNumber: 109,
+                                    lineNumber: 110,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                                lineNumber: 108,
+                                lineNumber: 109,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1160,7 +1159,7 @@ function RecentBlog() {
                                         children: "Never miss an opportunity."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                                        lineNumber: 132,
+                                        lineNumber: 133,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1172,7 +1171,7 @@ function RecentBlog() {
                                         children: "Subscribeto our newsletter for all updates."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                                        lineNumber: 137,
+                                        lineNumber: 138,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
@@ -1203,12 +1202,12 @@ function RecentBlog() {
                                                     children: "Subscribe"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                                                    lineNumber: 149,
+                                                    lineNumber: 150,
                                                     columnNumber: 23
                                                 }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                                                lineNumber: 148,
+                                                lineNumber: 149,
                                                 columnNumber: 21
                                             }, void 0),
                                             style: {
@@ -1237,19 +1236,19 @@ function RecentBlog() {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                                        lineNumber: 142,
+                                        lineNumber: 143,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                                lineNumber: 119,
+                                lineNumber: 120,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Home/compoments/RecentBlog.js",
-                        lineNumber: 107,
+                        lineNumber: 108,
                         columnNumber: 11
                     }, this)
                 ]
@@ -2046,7 +2045,7 @@ const ContactUs = ()=>{
                                     sx: {
                                         backgroundColor: "#E0D8C3",
                                         "&:hover": {
-                                            backgroundColor: "#4D4D4D",
+                                            backgroundColor: "#3E4C66",
                                             color: "#fff",
                                             boxShadow: "none"
                                         },

@@ -267,50 +267,58 @@ const FooterIndex = () => {
               }}
             >
               <Typography
-                variant="body2"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+                component="a"
+                href="/"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
               >
                 Home
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+                component="a"
+                href="/buy"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
               >
                 Buy
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+                component="a"
+                href="/rent"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
               >
                 Rent
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+                component="a"
+                href="/sell"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
               >
                 Sell
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+                component="a"
+                href="#"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
               >
                 Students
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+                component="a"
+                href="/insights"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
               >
                 Market Insights
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+                component="a"
+                href="#"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
               >
                Resources
               </Typography>
               <Typography
-                variant="body2"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}
+                component="a"
+                href="/about-us"
+                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
               >
                 About
               </Typography>

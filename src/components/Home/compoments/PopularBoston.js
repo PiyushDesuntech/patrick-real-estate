@@ -110,7 +110,7 @@ const PopularBoston = () => {
   };
 
   return (
-    <Container maxWidth="xl" sx={{mt: 10}}>
+    <Container maxWidth="xl" sx={{ mt: 10 }}>
       <Box
         sx={{
           mb: 2,
@@ -157,8 +157,7 @@ const PopularBoston = () => {
                 sx={{
                   borderRadius: 2,
                   overflow: "hidden",
-                  boxShadow: 3,
-                  height: { xs: "280px", md: "310px", lg: "310px" },
+                  height: { xs: "280px", md: "310px", lg: "312px" },
                   width: { xs: "100%", lg: "100%" },
                   display: "flex",
                   flexDirection: "column",
@@ -167,6 +166,7 @@ const PopularBoston = () => {
                     transform: "scale(1.2)",
                     zIndex: 0,
                   },
+                  border: "none",
                 }}
               >
                 <Box sx={{ position: "relative", overflow: "hidden" }}>
@@ -175,7 +175,7 @@ const PopularBoston = () => {
                       key={imgIndex}
                       className="image-container"
                       sx={{
-                        height: { xs: "280px", md: "340px", lg: "315px" },
+                        height: { xs: "280px", md: "310px", lg: "312px" },
                         width: { xs: "100%", lg: "100%" },
                         backgroundImage: `url(${img})`,
                         backgroundSize: "cover",
@@ -192,11 +192,22 @@ const PopularBoston = () => {
                     flexDirection: "column",
                     justifyContent: "flex-end",
                     width: "100%",
-                    height: { xs: "80%", md: "80%", lg: "90%" },
+                    height: { xs: "80%", md: "80%", lg: "85%" },
                   }}
                 >
                   <CardContent sx={{ color: "#fff" }}>
-                    <Typography sx={{ fontSize: "24px", fontWeight: 700 }}>
+                    <Typography
+                      component="a"
+                      href="#"
+                      sx={{
+                        fontSize: "24px",
+                        fontWeight: 700,
+                        "&:hover": { color: "#E8E1C4" },
+                        cursor: "pointer",
+                        color: "#fff",
+                        textDecoration:"none"
+                      }}
+                    >
                       {item.title}
                     </Typography>
                   </CardContent>
