@@ -13,17 +13,17 @@ export default function ChangePassIndex() {
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        gap: { xs: '16px', sm: '24px', md: '48px' },
+        gap: { xs: '8px', sm: '16px', md: '48px' },
         overflow: 'hidden',
         position: 'relative',
-        paddingBottom: { xs: '32px', sm: '100px', md: '200px' },
+        paddingBottom: { xs: '16px', sm: '32px', md: '200px' },
       }}
     >
       <Box
         sx={{
-          paddingLeft: { xs: '16px', sm: '24px', md: '50px' },
-          paddingRight: { xs: '16px', sm: '24px', md: '32px' },
-          paddingTop: { xs: '16px', sm: '24px', md: '32px' },
+          paddingLeft: { xs: '0px', sm: '16px', md: '50px' },
+          paddingRight: { xs: '0px', sm: '16px', md: '32px' },
+          paddingTop: { xs: '8px', sm: '16px', md: '32px' },
           width: '100%',
           boxSizing: 'border-box',
         }}

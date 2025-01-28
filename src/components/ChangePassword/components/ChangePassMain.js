@@ -12,7 +12,7 @@ const StyledButton = styled(Button)({
   fontSize: '16px',
   fontWeight: 500,
   boxShadow: 'none',
-  minWidth: '140px', // Added fixed minimum width for both buttons
+  minWidth: '140px',
   '&:hover': {
     boxShadow: 'none',
   },
@@ -86,15 +86,16 @@ export default function ChangePassMain() {
     <Box sx={{ 
       maxWidth: '100%',
       margin: '0 auto',
-      px: { xs: 2, sm: 3, md: 4 }
+      px: { xs: 0, sm: 2, md: 4 }
     }}>
       <Paper
         elevation={0}
         sx={{
-          borderRadius: '12px',
-          p: { xs: 3, sm: 4, md: 6 },
+          borderRadius: { xs: 0, sm: '12px' },
+          p: { xs: 2, sm: 4, md: 6 },
           maxWidth: '550px',
           margin: '0 auto',
+          boxShadow: { xs: 'none', sm: '0px 1px 3px rgba(0, 0, 0, 0.1)' }
         }}
       >
         <Box
@@ -103,16 +104,16 @@ export default function ChangePassMain() {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: 4,
+            gap: { xs: 3, sm: 4 },
           }}
         >
-          <Box sx={{ mb: 2 }}>
+          <Box sx={{ mb: { xs: 1, sm: 2 } }}>
             <Typography
               sx={{
                 color: '#484848',
-                fontSize: '18px',
+                fontSize: { xs: '16px', sm: '18px' },
                 fontWeight: 500,
-                mb: 2,
+                mb: { xs: 1.5, sm: 2 },
               }}
             >
               Enter Your Current Password
@@ -127,13 +128,13 @@ export default function ChangePassMain() {
             />
           </Box>
 
-          <Box sx={{ mb: 2 }}>
+          <Box sx={{ mb: { xs: 1, sm: 2 } }}>
             <Typography
               sx={{
                 color: '#484848',
-                fontSize: '18px',
+                fontSize: { xs: '16px', sm: '18px' },
                 fontWeight: 500,
-                mb: 2,
+                mb: { xs: 1.5, sm: 2 },
               }}
             >
               Enter Your New Password
@@ -148,13 +149,13 @@ export default function ChangePassMain() {
             />
           </Box>
 
-          <Box sx={{ mb: 4 }}>
+          <Box sx={{ mb: { xs: 3, sm: 4 } }}>
             <Typography
               sx={{
                 color: '#484848',
-                fontSize: '18px',
+                fontSize: { xs: '16px', sm: '18px' },
                 fontWeight: 500,
-                mb: 2,
+                mb: { xs: 1.5, sm: 2 },
               }}
             >
               Re-enter Your New Password
@@ -172,9 +173,13 @@ export default function ChangePassMain() {
           <Box
             sx={{
               display: 'flex',
-              gap: 2,
+              flexDirection: { xs: 'column', sm: 'row' },
+              gap: { xs: 2, sm: 2 },
               justifyContent: 'center',
-              mt: 2,
+              mt: { xs: 1, sm: 2 },
+              '& > button': {
+                width: { xs: '100%', sm: 'auto' }
+              }
             }}
           >
             <SaveButton type="submit">

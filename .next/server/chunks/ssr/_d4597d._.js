@@ -204,7 +204,7 @@ function AgentsGridView() {
     const paginatedAgents = sortedAgents.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            padding: "20px"
+            paddingTop: "20px"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -346,8 +346,13 @@ function AgentsGridView() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                 container: true,
-                spacing: 6,
-                mt: 3,
+                spacing: 4,
+                sx: {
+                    mt: {
+                        xs: 0,
+                        md: 3
+                    }
+                },
                 children: paginatedAgents.map((agent)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
                         item: true,
                         xs: 12,
@@ -392,7 +397,11 @@ function AgentsGridView() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                 sx: {
-                                                    fontSize: "34px",
+                                                    fontSize: {
+                                                        xs: "24px",
+                                                        sm: "28px",
+                                                        md: "34px"
+                                                    },
                                                     fontWeight: 700,
                                                     color: "#484848",
                                                     mt: 3
@@ -405,7 +414,11 @@ function AgentsGridView() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                 sx: {
-                                                    fontSize: "26px",
+                                                    fontSize: {
+                                                        xs: "18px",
+                                                        sm: "22px",
+                                                        md: "26px"
+                                                    },
                                                     fontWeight: 400,
                                                     color: "#6F6F6F"
                                                 },
@@ -417,7 +430,11 @@ function AgentsGridView() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                 sx: {
-                                                    fontSize: "26px",
+                                                    fontSize: {
+                                                        xs: "18px",
+                                                        sm: "22px",
+                                                        md: "26px"
+                                                    },
                                                     fontWeight: 400,
                                                     color: "#484848",
                                                     mt: 2
@@ -433,7 +450,11 @@ function AgentsGridView() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                 sx: {
-                                                    fontSize: "26px",
+                                                    fontSize: {
+                                                        xs: "18px",
+                                                        sm: "22px",
+                                                        md: "26px"
+                                                    },
                                                     fontWeight: 400,
                                                     color: "#484848",
                                                     mt: 1
@@ -472,7 +493,11 @@ function AgentsGridView() {
                                                 marginTop: "10px",
                                                 border: "none",
                                                 textTransform: "none",
-                                                fontSize: "26px",
+                                                fontSize: {
+                                                    xs: "18px",
+                                                    sm: "22px",
+                                                    md: "26px"
+                                                },
                                                 fontWeight: 400,
                                                 color: "#5D5D5D"
                                             },
@@ -613,7 +638,7 @@ function AgentListView() {
     const paginatedAgents = sortedAgents.slice((page - 1) * ITEMS_PER_PAGE, page * ITEMS_PER_PAGE);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         style: {
-            padding: "20px"
+            paddingTop: "20px"
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -813,7 +838,11 @@ function AgentListView() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                         sx: {
-                                                            fontSize: "34px",
+                                                            fontSize: {
+                                                                xs: "24px",
+                                                                sm: "28px",
+                                                                md: "34px"
+                                                            },
                                                             fontWeight: 700,
                                                             color: "#484848",
                                                             mt: 3
@@ -826,7 +855,11 @@ function AgentListView() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                         sx: {
-                                                            fontSize: "26px",
+                                                            fontSize: {
+                                                                xs: "18px",
+                                                                sm: "22px",
+                                                                md: "26px"
+                                                            },
                                                             fontWeight: 400,
                                                             color: "#6F6F6F"
                                                         },
@@ -838,7 +871,11 @@ function AgentListView() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                         sx: {
-                                                            fontSize: "26px",
+                                                            fontSize: {
+                                                                xs: "18px",
+                                                                sm: "22px",
+                                                                md: "26px"
+                                                            },
                                                             fontWeight: 400,
                                                             color: "#484848",
                                                             mt: 2
@@ -854,7 +891,11 @@ function AgentListView() {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                                         sx: {
-                                                            fontSize: "26px",
+                                                            fontSize: {
+                                                                xs: "18px",
+                                                                sm: "22px",
+                                                                md: "26px"
+                                                            },
                                                             fontWeight: 400,
                                                             color: "#484848",
                                                             mt: 1
@@ -899,7 +940,11 @@ function AgentListView() {
                                                 marginTop: "10px",
                                                 border: "none",
                                                 textTransform: "none",
-                                                fontSize: "26px",
+                                                fontSize: {
+                                                    xs: "18px",
+                                                    sm: "22px",
+                                                    md: "26px"
+                                                },
                                                 fontWeight: 400,
                                                 color: "#5D5D5D"
                                             },
@@ -976,7 +1021,7 @@ function AgentsIndex() {
         maxWidth: "xl",
         sx: {
             px: {
-                lg: 6,
+                lg: 7,
                 xs: 1
             }
         },
@@ -990,7 +1035,10 @@ function AgentsIndex() {
                 sx: {
                     width: "100%",
                     display: "flex",
-                    gap: 2,
+                    gap: {
+                        xs: 1,
+                        md: 2
+                    },
                     justifyContent: "flex-end",
                     mt: -7,
                     mb: 1
