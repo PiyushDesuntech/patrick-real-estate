@@ -1,4 +1,8 @@
 {
+  "/changepassword/page": "app/changepassword/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/profile/page": "app/profile/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/agents/page": "app/agents/page.js"
 }
