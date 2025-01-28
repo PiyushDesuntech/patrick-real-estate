@@ -45,8 +45,8 @@ const CustomArrow = ({ onClick, direction }) => (
     onClick={onClick}
     sx={{
       minWidth: 0,
-      width: 48,
-      height: 52,
+      width: {xs: 30, sm: 48},
+      height: {xs: 32, sm: 52},
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
@@ -56,14 +56,14 @@ const CustomArrow = ({ onClick, direction }) => (
       ":hover": { backgroundColor: "#E8E1C4", border: "none" },
       marginLeft: direction === "right" ? "8px" : "0",
       p: 1,
-      border: "1px solid #A5A5A5"
+      border: "1px solid #A5A5A5",
     }}
   >
-    {direction === "left" ? <ArrowBackIosNewIcon /> : <ArrowForwardIosIcon />}
+    {direction === "left" ? <ArrowBackIosNewIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/> : <ArrowForwardIosIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>}
   </Button>
 );
 
-const ClientTestimonials = () => {
+const ClientTestimonials = ({ title }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -73,7 +73,7 @@ const ClientTestimonials = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 960,
+        breakpoint: 1054,
         settings: {
           slidesToShow: 2,
         },
@@ -90,80 +90,122 @@ const ClientTestimonials = () => {
   const sliderRef = React.useRef();
 
   return (
-   <Container maxWidth="xl" sx={{px: {lg: 7, xs: 1}}}>
-     <Box sx={{ position: "relative", padding: "20px" }}>
-      <Typography sx={{fontSize: "40px", fontWeight: 600 , width: {xs: "70%", sm: "100%"}}} gutterBottom>
-        Client Testimonials
-      </Typography>
-      <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858"}} gutterBottom>
-        Morbi at felis ullamcorper ipsum.
-      </Typography>
+    <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 1 }, mt: {xs: 1}}}>
+      <Box sx={{ position: "relative", padding: "20px" }}>
+        <Typography
+          sx={{
+            fontSize: {xs:"26px", md: "40px"},
+            fontWeight: 500,
+            width: { xs: "70%", sm: "100%" },
+            lineHeight: "26px"
+          }}
+          gutterBottom
+        >
+          {title}
+        </Typography>
+        <Typography
+          sx={{ fontSize: {xs:"12px",md: "16px"}, fontWeight: 500, color: "#585858" }}
+          gutterBottom
+        >
+          Morbi at felis ullamcorper ipsum.
+        </Typography>
 
-      <Box
-        sx={{
-          position: "absolute",
-          top: "10px",
-          right: "10px",
-          display: "flex",
-          alignItems: "center",
-          zIndex: 2,
-        }}
-      >
-        <CustomArrow
-          direction="left"
-          onClick={() => sliderRef.current.slickPrev()}
-        />
-        <CustomArrow
-          direction="right"
-          onClick={() => sliderRef.current.slickNext()}
-        />
+        <Box
+          sx={{
+            position: "absolute",
+            top: "10px",
+            right: "10px",
+            display: "flex",
+            alignItems: "center",
+            zIndex: 2,
+          }}
+        >
+          <CustomArrow
+            direction="left"
+            onClick={() => sliderRef.current.slickPrev()}
+          />
+          <CustomArrow
+            direction="right"
+            onClick={() => sliderRef.current.slickNext()}
+          />
+        </Box>
+
+        {/* Slider */}
+        <Slider {...settings} ref={sliderRef}>
+          {testimonials.map((testimonial, index) => (
+            <Box key={index} sx={{ pr: { xs: 0, sm: 4 }, mt: 3 }}>
+              <Card
+                sx={{
+                  p: 2,
+                  backgroundColor: "#fff",
+                  //   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+                  boxShadow: "none",
+                  border: "2px solid #D5D5D5",
+                  "&:hover": {
+                    background: "#E8E1C4",
+                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                    border: "2px solid #E8E1C4",
+                  },
+                }}
+              >
+                <CardContent>
+                  <Image
+                    src="/Images/comma.svg"
+                    alt="Colonial Realty Associates"
+                    width={100}
+                    height={100}
+                    style={{ objectFit: "contain" }}
+                  />
+                  <Typography
+                    sx={{ fontSize: {xs:"12px",md: "16px"}, fontWeight: 500, color: "#585858" }}
+                    gutterBottom
+                  >
+                    {testimonial.text}
+                  </Typography>
+                  {/* <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858", textDecoration: "underline", }}>Read full story</Typography> */}
+                  <Box sx={{ display: "flex", alignItems: "center", mt: 2 }}>
+                    <Avatar
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      sx={{ width: 80, height: 80 }}
+                    />
+                    <Box
+                      ml={2}
+                      sx={{ display: "flex", flexDirection: "column" }}
+                    >
+                      <Typography
+                        sx={{
+                          fontSize: {xs:"16px",md: "22px"},
+                          fontWeight: 700,
+                          color: "#585858",
+                        }}
+                      >
+                        {testimonial.name}
+                      </Typography>
+                      <Typography
+                        sx={{
+                          fontSize: {xs:"12px",md: "16px"},
+                          color: "#585858",
+                          fontWeight: 500,
+                        }}
+                      >
+                        {testimonial.role}
+                      </Typography>
+                      <Rating
+                        name="half-rating-read"
+                        defaultValue={5}
+                        precision={0.5}
+                        readOnly
+                      />
+                    </Box>
+                  </Box>
+                </CardContent>
+              </Card>
+            </Box>
+          ))}
+        </Slider>
       </Box>
-
-      {/* Slider */}
-      <Slider {...settings} ref={sliderRef}>
-        {testimonials.map((testimonial, index) => (
-         <Box  key={index} sx={{p: {xs: 0, md: 2}, mt: 3,}}>
-             <Card
-            sx={{
-              p: 2,
-              backgroundColor: "#fff",
-            //   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
-            boxShadow: "none",
-            border: "2px solid #D5D5D5",
-            "&:hover":{  background: "#E8E1C4", boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",  border: "2px solid #E8E1C4",},
-            }}
-          >
-            <CardContent>
-                <Image
-                  src="/Images/comma.svg"
-                  alt="Colonial Realty Associates"
-                  width={100}
-                  height={100}
-                  style={{ objectFit: "contain" }}
-                />
-              <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858"}}  gutterBottom>
-                {testimonial.text}
-              </Typography>
-              {/* <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858", textDecoration: "underline", }}>Read full story</Typography> */}
-              <Box sx={{ display: "flex", alignItems: "center", mt: 2, }}>
-                <Avatar src={testimonial.avatar} alt={testimonial.name} sx={{ width: 80, height: 80 }}/>
-                <Box ml={2} sx={{display: "flex", flexDirection: "column",}}>
-                  <Typography variant="subtitle1" sx={{fontSize: "22px"}}>
-                    {testimonial.name}
-                  </Typography>
-                  <Typography variant="caption" sx={{fontSize: "16px", color: "#585858"}}>
-                    {testimonial.role}
-                  </Typography>
-                  <Rating name="half-rating-read" defaultValue={5} precision={0.5} readOnly />
-                </Box>
-              </Box>
-            </CardContent>
-          </Card>
-         </Box>
-        ))}
-      </Slider>
-    </Box>
-   </Container>
+    </Container>
   );
 };
 

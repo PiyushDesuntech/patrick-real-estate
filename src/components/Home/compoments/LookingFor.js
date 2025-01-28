@@ -25,8 +25,8 @@ export default function LookingFor() {
           left: 0,
           width: "100%",
           height: {
-            xs: "50%", // 30% of the box height on small screens
-            sm: "40%", // 40% of the box height on medium screens
+            xs: "75%", // 30% of the box height on small screens
+            sm: "70%", // 40% of the box height on medium screens
             md: "70%", // 50% of the box height on larger screens
           },
           backgroundImage: "url(/Images/LookingFor.svg)",
@@ -48,19 +48,15 @@ export default function LookingFor() {
             md: "5%", // Standard space for larger screens
           },
           color: "#fff",
-          mt: {xs: -7,sm: 0-4, md: 0}
+          mt: {xs: -4,sm: -6, md: 0}
         }}
       >
         <Typography
-          variant="h4"
           sx={{
             textAlign: "center",
             marginBottom: 2,
-            fontSize: {
-              xs: "1.5rem", // Smaller font for small screens
-              sm: "2rem", // Medium font for medium screens
-              md: "40px", // Standard font for larger screens
-            },
+            fontSize: {xs:"24px", md: "40px"},
+            fontWeight: 500
           }}
         >
           Available Properties Near You{" "}
@@ -70,11 +66,7 @@ export default function LookingFor() {
           sx={{
             textAlign: "center",
             marginBottom: 4,
-            fontSize: {
-              xs: "0.9rem", // Smaller font for small screens
-              sm: "1rem", // Medium font for medium screens
-              md: "16px", // Standard font for larger screens
-            },
+            fontSize: {xs:"12px",md: "16px"}
           }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -123,7 +115,7 @@ export default function LookingFor() {
             position: "relative",
             overflow: "hidden",
             paddingTop: {
-              xs: "50%", // Higher aspect ratio on small screens
+              xs: "60%", // Higher aspect ratio on small screens
               sm: "45%", // Adjusted for medium screens
               md: "40%", // Standard aspect ratio for larger screens
             },

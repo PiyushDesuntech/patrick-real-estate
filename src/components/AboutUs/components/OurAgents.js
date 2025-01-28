@@ -8,6 +8,7 @@ import {
   CardMedia,
   CardContent,
   IconButton,
+  Container,
 } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -110,11 +111,12 @@ const OurAgents = () => {
   };
 
   return (
-    <Box sx={{ textAlign: "center", p: 4 }}>
-      <Typography variant="h4" gutterBottom>
+    <Container maxWidth="xl" sx={{px:{xs: 2, lg: 7}}}>
+      <Box sx={{ textAlign: "center",  }}>
+      <Typography sx={{fontSize: "36.92px", fontWeight: 700, color: "#484848"}} gutterBottom>
         Our Agents
       </Typography>
-      <Typography variant="body1" sx={{ mb: 3, color: "text.secondary" }}>
+      <Typography  sx={{ mb: 3, color: "#484848", fontSize: "19.69px", fontWeight: 400 }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </Typography>
       <Box sx={{ position: "relative" }}>
@@ -151,6 +153,7 @@ const OurAgents = () => {
         </Slider>
       </Box>
     </Box>
+    </Container>
   );
 };
 

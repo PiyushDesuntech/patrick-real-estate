@@ -71,14 +71,14 @@ export default function Overview() {
           id="panel1a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {xs: "18px", md: '22px'}, fontWeight: 600 }}
           >
             Overview
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography
-            sx={{ fontSize: "17px", fontWeight: 400, color: "#484848" }}
+            sx={{ fontSize: {xs: "14px", md: "17px"}, fontWeight: 400, color: "#484848" }}
           >
             Evans Tower very high demand corner junior one bedroom plus a large
             balcony boasting full open NYC views. You need to see the views to
@@ -134,7 +134,7 @@ export default function Overview() {
           id="panel2a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {xs: "18px", md: '22px'}, fontWeight: 600 }}
           >
             Amenities
           </Typography>
@@ -191,7 +191,7 @@ export default function Overview() {
           id="panel3a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {xs: "18px", md: '22px'}, fontWeight: 600 }}
           >
             Location
           </Typography>
@@ -243,7 +243,7 @@ export default function Overview() {
           id="panel4a-header"
         >
           <Typography
-            sx={{ color: "#484848", fontSize: "22px", fontWeight: 600 }}
+            sx={{ color: "#484848", fontSize: {xs: "18px", md: '22px'}, fontWeight: 600 }}
           >
             Floor Plans
           </Typography>
@@ -277,7 +277,7 @@ export default function Overview() {
                   <Typography
                     sx={{
                       color: "#484848",
-                      fontSize: "22px",
+                      fontSize: {xs: "18px", md: '22px'},
                       fontWeight: 600,
                     }}
                   >
@@ -323,7 +323,7 @@ export default function Overview() {
                     />
                   </Box>
                   <Typography
-                    sx={{ fontSize: "17px", fontWeight: 400, color: "#484848" }}
+                    sx={{ fontSize: {xs: "14px", md: "17px"}, fontWeight: 400, color: "#484848" }}
                   >
                     Evans Tower very high demand corner junior one bedroom plus
                     a large balcony boasting full open NYC views. You need to
@@ -360,7 +360,7 @@ export default function Overview() {
                   <Typography
                     sx={{
                       color: "#484848",
-                      fontSize: "22px",
+                      fontSize: {xs: "18px", md: '22px'},
                       fontWeight: 600,
                     }}
                   >
@@ -406,7 +406,7 @@ export default function Overview() {
                     />
                   </Box>
                   <Typography
-                    sx={{ fontSize: "17px", fontWeight: 400, color: "#484848" }}
+                    sx={{ fontSize: {xs: "14px", md: "17px"}, fontWeight: 400, color: "#484848" }}
                   >
                     Evans Tower very high demand corner junior one bedroom plus
                     a large balcony boasting full open NYC views. You need to
@@ -446,11 +446,11 @@ export default function Overview() {
         >
           <Tab
             label="Property Video"
-            sx={{ textTransform: "none", fontSize: "22px" }}
+            sx={{ textTransform: "none", fontSize: {xs: "18px", md: '22px'} }}
           />
           <Tab
             label="Virtual Tour"
-            sx={{ textTransform: "none", fontSize: "22px" }}
+            sx={{ textTransform: "none", fontSize: {xs: "18px", md: '22px'} }}
           />
         </Tabs>
 
@@ -510,7 +510,7 @@ export default function Overview() {
           p: 3,
         }}
       >
-        <Typography sx={{fontSize: "22px", color: "#484848", fontWeight: 600, mb: 4}}>Facilities</Typography>
+        <Typography sx={{fontSize: {xs: "18px", md: '22px'}, color: "#484848", fontWeight: 600, mb: 4}}>Facilities</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
             <Box
@@ -519,7 +519,7 @@ export default function Overview() {
                 justifyContent: "space-between",
                 width: "60%",
                 color: "#484848",
-                fontSize: "17px"
+                fontSize: {xs: "14px", md: "17px"}
               }}
             >
               <Typography>City center</Typography>
@@ -533,7 +533,7 @@ export default function Overview() {
                 justifyContent: "space-between",
                 width: "60%",
                 color: "#484848",
-                fontSize: "17px"
+                fontSize: {xs: "14px", md: "17px"}
               }}
             >
               <Typography>Hospital</Typography>
@@ -547,7 +547,7 @@ export default function Overview() {
                 justifyContent: "space-between",
                 width: "60%",
                 color: "#484848",
-                fontSize: "17px"
+                fontSize: {xs: "14px", md: "17px"}
               }}
             >
               <Typography>Shop</Typography>

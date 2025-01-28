@@ -71,7 +71,7 @@ const NavbarIndex = () => {
 
   const switchView = () => {
     setIsLoginView(!isLoginView);
-    setIsAgentLoginView(false)
+    setIsAgentLoginView(false);
   };
 
   const switchToAgentLogin = () => {
@@ -83,8 +83,8 @@ const NavbarIndex = () => {
     // setIsLoginView(false);
     // switchView(false)
     setIsAgentLoginView(false);
-    setIsAgentRegisterView(true)
-  } 
+    setIsAgentRegisterView(true);
+  };
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -117,141 +117,152 @@ const NavbarIndex = () => {
 
   return (
     <>
-     <Container maxWidth="xl"> 
-     <AppBar
-        position="static"
-        sx={{ background: showTransparent? "transparent": "#fff", boxShadow: showTransparent ? "none" : "0px 6px 6px -3px rgba(0, 0, 0, 0.2)", color: showTransparent? "#fff": "#000" }}
-      >
-        <Toolbar
+      
+        <AppBar
+          position="static"
           sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            px: { lg: 4 },
-            pt: 2,
-            zIndex: 1100,
+            background: showTransparent ? "transparent" : "#fff",
+            boxShadow: showTransparent
+              ? "none"
+              : "0px 6px 6px -3px rgba(0, 0, 0, 0.2)",
+            color: showTransparent ? "#fff" : "#000",
           }}
         >
-          <Box sx={{ width: { xs: "200px", md: "100px", lg: "269px" } }}>
-            <Image
-            onClick={handleLogoClick} 
-              src={showTransparent? "/Images/logo.svg": "/Images/logo2.svg"}
-              alt="Colonial Realty Associates"
-              layout="responsive"
-              width={269}
-              height={66}
-              style={{cursor: "pointer"}}
-            />
-          </Box>
+          <Container maxWidth="xl">
+          <Toolbar
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              px: { xs: 2, lg: 4 },
+              py: 1,
+              zIndex: 1100,
+            }}
+          >
+            <Box sx={{ width: { xs: "200px", md: "150px", lg: "269px" } }}>
+              <Image
+                onClick={handleLogoClick}
+                src={showTransparent ? "/Images/logo.svg" : "/Images/logo2.svg"}
+                alt="Colonial Realty Associates"
+                layout="responsive"
+                width={269}
+                height={66}
+                style={{ cursor: "pointer", objectFit: "contain" }}
+              />
+            </Box>
 
-          <Box sx={{ display: "flex" }}>
-            <Box
-              sx={{
-                display: { xs: "none", md: "flex" },
-                gap: { md: 0, lg: 0 },
-                alignItems: "center",
-                px: 2,
-              }}
-            >
-              {navItems.map((item, index) => (
+            <Box sx={{ display: "flex" }}>
+              <Box
+                sx={{
+                  display: { xs: "none", md: "flex" },
+                  gap: { md: 0, lg: 0 },
+                  alignItems: "center",
+                  px: { xs: 0, lg: 2 },
+                }}
+              >
+                {navItems.map((item, index) => (
+                  <Button
+                  size="small"
+                    key={index}
+                    color="inherit"
+                    onClick={() => handleNavigation(item.path)} // Navigate on click
+                    sx={{
+                      textTransform: "none",
+                      fontSize: { md: "12px", lg: "16px" },
+                      display: "flex",
+                      alignItems: "flex-end",
+                      fontWeight: 500,
+                      width: "fit-contents",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {item.label} <KeyboardArrowDownIcon fontSize="small" />
+                  </Button>
+                ))}
+                <Divider
+                  sx={{
+                    borderColor: "#B1B1B1",
+                    borderWidth: "1px",
+                    height: "27px",
+                  }}
+                />
                 <Button
-                  key={index}
+                  // endIcon={<KeyboardArrowDownIcon/>}
+                  size="small"
                   color="inherit"
-                  onClick={() => handleNavigation(item.path)} // Navigate on click
                   sx={{
                     textTransform: "none",
-                    fontSize: "16px",
+                    fontSize: { xs: "12px", lg: "16px" },
                     display: "flex",
                     alignItems: "flex-end",
                     fontWeight: 500,
-                    width: "fit-contents",
-                    whiteSpace: "nowrap",
+                  }}
+                  onClick={handleMenuOpen}
+                >
+                  <PersonOutlineOutlinedIcon sx={{ mx: 1 }} />
+                  Landlords
+                  <KeyboardArrowDownIcon fontSize="small" />
+                </Button>
+                <Menu
+                  anchorEl={anchorEl}
+                  open={isMenuOpen}
+                  onClose={handleMenuClose}
+                  PaperProps={{
+                    style: {
+                      marginTop: "8px",
+                      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                    },
                   }}
                 >
-                  {item.label} <KeyboardArrowDownIcon fontSize="small" />
-                </Button>
-              ))}
-              <Divider
-                sx={{
-                  borderColor: "#B1B1B1",
-                  borderWidth: "1px",
-                  height: "27px",
-                }}
-              />
+                  <MenuItem onClick={handleMenuClose}>
+                    Landlord Resources
+                  </MenuItem>
+                  <MenuItem onClick={handleMenuClose}>Landlord Login</MenuItem>
+                </Menu>
+              </Box>
+
               <Button
-                // endIcon={<KeyboardArrowDownIcon/>}
-                color="inherit"
+              size="small"
+                variant="contained"
+                onClick={handleDialogToggle}
+                color="secondary"
                 sx={{
-                  textTransform: "none",
-                  fontSize: "16px",
-                  display: "flex",
-                  alignItems: "flex-end",
-                  fontWeight: 500,
-                }}
-                onClick={handleMenuOpen}
-              >
-                <PersonOutlineOutlinedIcon sx={{ mx: 1 }} />
-                Landlords
-                <KeyboardArrowDownIcon fontSize="small" />
-              </Button>
-              <Menu
-                anchorEl={anchorEl}
-                open={isMenuOpen}
-                onClose={handleMenuClose}
-                PaperProps={{
-                  style: {
-                    marginTop: "8px",
-                    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                  display: { xs: "none", md: "flex" },
+                  backgroundColor: "#E0D8C3",
+                  "&:hover": {
+                    backgroundColor: "#3E4C66",
+                    color: "#fff",
                   },
+                  color: "#000",
+                  borderRadius: "30px",
+                  textTransform: "none",
+                  px: { xs: 2, sm: 2, md: 2, lg: "25px" },
+                  py: "10px",
+                  // mr: 3,
+                  width: "fit-content",
+                  whiteSpace: "nowrap",
+                  fontSize: { xs: "12px", md: "16px" },
+                  fontWeight: 500,
+                  height: "50px",
                 }}
               >
-                <MenuItem onClick={handleMenuClose}>
-                  Landlord Resources
-                </MenuItem>
-                <MenuItem onClick={handleMenuClose}>Landlord Login</MenuItem>
-              </Menu>
+                Login/Register
+              </Button>
+
+              {/* Mobile Menu Icon */}
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                sx={{ display: { xs: "block", md: "none" }, mr: -2 }}
+                onClick={toggleDrawer(true)}
+              >
+                <MenuIcon />
+              </IconButton>
             </Box>
-
-            <Button
-              variant="contained"
-              onClick={handleDialogToggle}
-              color="secondary"
-              sx={{
-                display: { xs: "none", md: "flex" },
-                backgroundColor: "#E0D8C3",
-                "&:hover": {
-                  backgroundColor: "#3E4C66",
-                  color: "#fff",
-                },
-                color: "#000",
-                borderRadius: "30px",
-                textTransform: "none",
-                px: { xs: 2, sm: 2, md: 2, lg: "25px" },
-                py: "10px",
-                // mr: 3,
-                width: "fit-content",
-                whiteSpace: "nowrap",
-                fontSize: "16px",
-                fontWeight: 500,
-                height: "50px",
-              }}
-            >
-              Login/Register
-            </Button>
-
-            {/* Mobile Menu Icon */}
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ display: { xs: "block", md: "none" } }}
-              onClick={toggleDrawer(true)}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Box>
-        </Toolbar>
-      </AppBar>
-     </Container>
+          </Toolbar>
+          </Container>
+        </AppBar>
+    
 
       {/* Drawer */}
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
@@ -308,24 +319,22 @@ const NavbarIndex = () => {
         fullScreen={isMobile}
         sx={{
           "& .MuiDialog-paper": {
-            maxWidth: "1012px", 
+            maxWidth: "1012px",
             width: "100%",
             overflow: "hidden",
           },
         }}
       >
-         <AuthDialog
-      handleDialogToggle={handleDialogToggle}
-      isLoginView={isLoginView}
-      isMobile={isMobile}
-      switchView={switchView}
-      switchToAgentLogin={switchToAgentLogin}
-      isAgentLoginView={isAgentLoginView}
-      switchToAgentRegister={switchToAgentRegister}
-      isAgentRegisterView={isAgentRegisterView}
-      
-    />
-
+        <AuthDialog
+          handleDialogToggle={handleDialogToggle}
+          isLoginView={isLoginView}
+          isMobile={isMobile}
+          switchView={switchView}
+          switchToAgentLogin={switchToAgentLogin}
+          isAgentLoginView={isAgentLoginView}
+          switchToAgentRegister={switchToAgentRegister}
+          isAgentRegisterView={isAgentRegisterView}
+        />
       </Dialog>
     </>
   );

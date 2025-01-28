@@ -12,33 +12,37 @@ import React from "react";
 
 export default function WantCall() {
   return (
-    <Box
-      sx={{
-        backgroundImage: "url(/Images/WantCallBG.svg)", // Path to your image
-        backgroundSize: "cover", // Ensures the image covers the entire area
-        backgroundRepeat: "no-repeat", // Prevents the image from repeating
-        backgroundPosition: "center", // Centers the image
-        height: "100%", // Adjust height as needed
-        width: "100%", // Adjust width as needed
-        mt: 3,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center,",
-        flexDirection: "column",
-      }}
+    <Container
+      maxWidth="xl"
+      sx={{ px: { lg: "94px", md: 0, xs: 2 }, pt: { xs: 0,sm:2, lg: 5 } }}
     >
-      <Container maxWidth="xl" sx={{ px: { lg: "94px", xs: 0 }, py: 5 }}>
-        <Grid container>
+      <Box
+        sx={{
+          backgroundImage: "url(/Images/WantCallBG.svg)", // Path to your image
+          backgroundSize: "cover", // Ensures the image covers the entire area
+          backgroundRepeat: "no-repeat", // Prevents the image from repeating
+          backgroundPosition: "center", // Centers the image
+          height: "100%", // Adjust height as needed
+          width: "100%", // Adjust width as needed
+          mt: {xs: 0, sm: 3},
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center,",
+          flexDirection: "column",
+          py: {xs: 1, md: 6},
+        }}
+      >
+        <Grid container sx={{px: {xs: 0, md: 2}}}>
           <Grid item xs={12} md={6.5}>
             <Grid container spacing={2}>
               <Grid item sm={6} xs={12}>
                 <Box
-                  style={{
-                    display: "flex",
+                  sx={{
+                    display: { xs: "none", sm: "flex" },
                     justifyContent: "center",
                     alignItems: "center",
                     width: { xs: "95%", sm: "100%" },
-                    // padding: "1rem",
+                    padding: { xs: "1rem", sm: 0 },
                   }}
                 >
                   <Image
@@ -53,13 +57,11 @@ export default function WantCall() {
               </Grid>
               <Grid item sm={6} xs={12}>
                 <Box
-                  style={{
-                    display: "flex",
+                  sx={{
+                    display: { xs: "none", sm: "flex" },
                     justifyContent: "center",
                     alignItems: "center",
                     width: { xs: "95%", sm: "100%" },
-                    // padding: "1rem",
-                    flexDirection: "column",
                   }}
                 >
                   <Image
@@ -70,6 +72,18 @@ export default function WantCall() {
                     height={500}
                     style={{ objectFit: "contain", transform: "scaleX(-1)" }}
                   />
+                </Box>
+
+                <Box
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: { xs: "95%", sm: "100%" },
+                    // padding: "1rem",
+                    flexDirection: "column",
+                  }}
+                >
                   <Image
                     src="/Images/WantCall3.svg"
                     alt="Colonial Realty Associates"
@@ -89,7 +103,7 @@ export default function WantCall() {
                 flexDirection: "column",
                 justifyContent: "center",
                 // alignItems: "center",
-                py: { xs: 2, md: 15 },
+                py: { xs: 2, lg: 15 },
                 px: { xs: 0, md: 2 },
                 gap: 3,
                 width: { lg: "500px", md: "100%" },
@@ -107,7 +121,7 @@ export default function WantCall() {
               <Typography
                 sx={{
                   textAlign: "start",
-                  fontSize: "16px",
+                  fontSize: { xs: "12px", md: "16px" },
                   fontWeight: 500,
                   color: "#585858",
                 }}
@@ -132,7 +146,7 @@ export default function WantCall() {
                             color: "#fff",
                           },
                           color: "#4D4D4D",
-                          minWidth: "118px",
+                          minWidth: { xs: "fit-content", sm: "118px" },
                           height: "55px",
                           mr: -1.7,
                           borderRadius: "0px 4px 4px 0px",
@@ -149,17 +163,18 @@ export default function WantCall() {
                   style: {
                     backgroundColor: "#fff",
                     borderRadius: "4px",
+                    border: "none",
                   },
                 }}
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8px",
-                    border: "1px solid #D9D9D9",
+                    border: "1px solid #A0A0A0",
                     "&:hover fieldset": {
-                      border: "1px solid #D9D9D9",
+                      border: "1px solid #A0A0A0",
                     },
                     "&.Mui-focused fieldset": {
-                      border: "1px solid #D9D9D9",
+                      border: "1px solid #A0A0A0",
                     },
                   },
                   "& .MuiInputLabel-root": {
@@ -173,7 +188,7 @@ export default function WantCall() {
             </Box>
           </Grid>
         </Grid>
-      </Container>
-    </Box>
+      </Box>
+    </Container>
   );
 }

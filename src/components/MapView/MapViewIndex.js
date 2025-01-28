@@ -136,8 +136,8 @@ const MapViewIndex = () => {
   });
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [currentView, setCurrentView] = useState({
-    sort: 'Recommended',
-    view: 'Photos',
+    sort: "Recommended",
+    view: "Photos",
   });
 
   const filteredProperties = properties.filter((property) => {
@@ -160,7 +160,7 @@ const MapViewIndex = () => {
   const handleCardClick = (locationSrc) => {
     setSelectedLocation(locationSrc);
   };
-const handleSortChange = (sortType) => {
+  const handleSortChange = (sortType) => {
     setCurrentView({ ...currentView, sort: sortType });
   };
 
@@ -173,34 +173,50 @@ const handleSortChange = (sortType) => {
         <Filter filters={filters} setFilters={setFilters} />
         <Grid
           container
-          spacing={3}
-          sx={{ display: "flex", flexWrap: "wrap-reverse", mt: -5 }}
+          // spacing={3}
+          sx={{
+            display: "flex",
+            flexWrap: "wrap-reverse",
+            mt: -5,
+            height: { xs: "100%", md: "100vh" },
+          }}
         >
-          <Grid item xs={12} sm={12} md={6}>
-            <Box sx={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", mb: 2}}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            sx={{
+              height: "100%",
+              overflowY: "auto",
+              display: "flex",
+              flexDirection: "column",
+              pt: 2,
+              scrollbarWidth: "none",
+              "&::-webkit-scrollbar": {
+                display: "none",
+              },
+              pr:{xs: 0, md: 1}
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-between",
+                mb: 2,
+              }}
+            >
               <Typography
                 sx={{ fontSize: "17.79px", fontWeight: 700, color: "#000" }}
               >
                 Pleasant Hill, A
               </Typography>
-              {/* <Box sx={{display: "flex", flexWrap: "wrap", justifyContent: "space-between", gap: 2}}>
-                <Typography sx={{ fontSize: "13.83px", fontWeight: 700, display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                  74{" "}
-                  <span style={{ color: "#676767", fontWeight: 400 }}> of </span>{" "}
-                  74 homes
-                </Typography>
-                <Typography sx={{ fontSize: "13.83px", fontWeight: 700, display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                  Sort: <span style={{color: "#15727A"}}> Recommended </span> <ArrowDropDownIcon sx={{color: "#15727A"}} />
-                </Typography>
-                <Typography sx={{ fontSize: "13.83px", fontWeight: 700, display: 'flex', alignItems: 'center', gap: 0.5 }}>
-                  View: <span style={{color: "#15727A"}}>Photos</span> <ArrowDropDownIcon sx={{color: "#15727A"}} />
-                </Typography>
-              </Box> */}
-             <HomeOptions
-              totalHomes={filteredProperties.length}
-              currentView={currentView}
-              onSortChange={handleSortChange}
-              onViewChange={handleViewChange}
+              <HomeOptions
+                totalHomes={filteredProperties.length}
+                currentView={currentView}
+                onSortChange={handleSortChange}
+                onViewChange={handleViewChange}
               />
             </Box>
             <Grid container spacing={2}>
@@ -214,7 +230,20 @@ const handleSortChange = (sortType) => {
               ))}
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            sx={{
+              position: "sticky",
+              top: 0,
+              height: "100%",
+              overflow: "hidden",
+              pt: { xs: 0, md: 3 },
+              pl: { xs: 0, md: 1 },
+            }}
+          >
             <MapView locationSrc={selectedLocation} />
           </Grid>
         </Grid>

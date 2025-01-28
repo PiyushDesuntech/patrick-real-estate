@@ -25,7 +25,7 @@ export default function HomeIndex() {
      {/* <FindLocalAgent/> */}
      <LookingFor/>
      <WhyUs/>
-     <ClientTestimonials/>
+     <ClientTestimonials title="Client Testimonials"/>
      {/* <ClientStories/> */}
      <RecentBlog/>
      <WantCall/>

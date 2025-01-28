@@ -351,7 +351,7 @@ const PropertyListingGrid = () => {
               >
                 <Box
                   sx={{
-                    height: "273px",
+                    height: {xs: "220px", md: "273px"},
                     width: { xs: "100%", sm: "100%" },
                     backgroundImage: `url(${property.image})`,
                     borderRadius: 2,
@@ -389,8 +389,7 @@ const PropertyListingGrid = () => {
                     <Box>
                       <Typography
                         sx={{
-                          fontWeight: "bold",
-                          fontSize: "27px",
+                          fontSize: {xs: "16px", md: "27px"},
                           fontWeight: 600,
                           color: "#fff",
                         }}
@@ -410,7 +409,7 @@ const PropertyListingGrid = () => {
                           },
                         }}
                       >
-                        <FavoriteBorderIcon />
+                        <FavoriteBorderIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
                       </IconButton>
                       <IconButton
                         sx={{
@@ -423,7 +422,7 @@ const PropertyListingGrid = () => {
                           },
                         }}
                       >
-                        <SyncAltOutlinedIcon />
+                        <SyncAltOutlinedIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
                       </IconButton>
                       <IconButton
                         sx={{
@@ -436,7 +435,7 @@ const PropertyListingGrid = () => {
                           },
                         }}
                       >
-                        <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
+                        <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)", fontSize: {xs: "small", sm: "medium"} }} />
                       </IconButton>
                       <IconButton
                         sx={{
@@ -450,7 +449,7 @@ const PropertyListingGrid = () => {
                         }}
                       >
                         <CalculateOutlinedIcon
-                          sx={{ transform: "scaleX(-1)" }}
+                          sx={{ transform: "scaleX(-1)", fontSize: {xs: "small", sm: "medium"} }}
                         />
                       </IconButton>
                     </Box>
@@ -473,18 +472,17 @@ const PropertyListingGrid = () => {
                     {property.type}
                   </Typography>
                   <Typography
-                    sx={{ fontWeight: 600, fontSize: "30px", color: "#484848" }}
+                    sx={{ fontWeight: 600, fontSize: {xs: "16px", md: "18px",lg: "22px"}, color: "#484848" }}
                   >
                     {property.title}
                   </Typography>
                   <Typography
-                    variant="body2"
                     sx={{
                       display: "flex",
                       alignItems: "center",
                       mb: 1,
                       color: "#484848",
-                      fontSize: "21px",
+                      fontSize: {xs: "14px", md: "16px",lg: "17.68px"},
                     }}
                   >
                     <PlaceOutlinedIcon fontSize="small" sx={{ mr: 0.5 }} />
@@ -498,9 +496,8 @@ const PropertyListingGrid = () => {
                     }}
                   >
                     <Typography
-                      variant="body2"
                       sx={{
-                        fontSize: "21px",
+                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -508,9 +505,8 @@ const PropertyListingGrid = () => {
                       Beds: {property.beds}
                     </Typography>
                     <Typography
-                      variant="body2"
                       sx={{
-                        fontSize: "21px",
+                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -518,9 +514,8 @@ const PropertyListingGrid = () => {
                       Baths: {property.baths}
                     </Typography>
                     <Typography
-                      variant="body2"
                       sx={{
-                        fontSize: "21px",
+                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}

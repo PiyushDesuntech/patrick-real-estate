@@ -126,10 +126,10 @@ const PopularBoston = () => {
           }}
         >
           <Box>
-            <Typography sx={{ fontSize: "40px", fontWeight: 500 }}>
+            <Typography sx={{ fontSize: {xs:"26px", md: "40px"}, fontWeight: 500 }}>
               Popular Boston Locations
             </Typography>
-            <Typography sx={{ fontSize: "16px", fontWeight: 400 }}>
+            <Typography sx={{ fontSize: {xs:"12px",md: "16px"}, fontWeight: 400 }}>
               Handpicked propertiesby our team.
             </Typography>
           </Box>
@@ -201,7 +201,7 @@ const PopularBoston = () => {
                       href="#"
                       sx={{
                         fontSize: "24px",
-                        fontWeight: 700,
+                        fontWeight: 600,
                         "&:hover": { color: "#E8E1C4" },
                         cursor: "pointer",
                         color: "#fff",

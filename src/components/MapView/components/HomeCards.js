@@ -28,7 +28,7 @@ const HomeCards = ({ property, onCardClick }) => {
       >
         <Box
           sx={{
-            height: { xs: "252px" },
+            height: { xs: "252px", md: "200px", lg: "252px" },
             width: { xs: "100%" },
             backgroundImage: `url(${property.image})`,
             borderRadius: "12px 12px 0px 0px ",
@@ -105,7 +105,6 @@ const HomeCards = ({ property, onCardClick }) => {
             {property.title}
           </Typography>
           <Typography
-            variant="body2"
             sx={{
               display: "flex",
               alignItems: "center",
@@ -118,13 +117,13 @@ const HomeCards = ({ property, onCardClick }) => {
             {property.address}
           </Typography>
           <Box sx={{ display: "flex", gap: 2, fontSize: "13px" }}>
-            <Typography color="textSecondary">
+            <Typography sx={{fontSize: "13px", color: "#222222", fontWeight: 400}}>
               Beds: {property.beds} | Baths: {property.baths}
               {/* | Price: $
             {property.price} */}
             </Typography>
             {property.type === "For Rent" && (
-              <Typography color="textSecondary">
+              <Typography sx={{fontSize: "13px", color: "#222222", fontWeight: 400}}>
                 Available: {property.dateAvailable}
               </Typography>
             )}

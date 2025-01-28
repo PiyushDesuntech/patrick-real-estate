@@ -96,7 +96,7 @@ export default function AgentsGridView() {
   );
 
   return (
-    <Box sx={{ padding: "20px" }}>
+    <Box sx={{ paddingTop: "20px" }}>
       {/* Filter and Result Display */}
       <Box
         sx={{
@@ -174,7 +174,7 @@ export default function AgentsGridView() {
       </Box>
 
       {/* Grid Display */}
-      <Grid container spacing={6} mt={3}>
+      <Grid container spacing={4} sx={{mt: {xs: 0, md: 3}}}>
         {paginatedAgents.map((agent) => (
           <Grid item xs={12} sm={6} md={6} key={agent.id}>
             <Card
@@ -205,7 +205,7 @@ export default function AgentsGridView() {
                   </Box>
                   <Typography
                     sx={{
-                      fontSize: "34px",
+                      fontSize: {xs: "24px", sm: "28px", md: "34px"},
                       fontWeight: 700,
                       color: "#484848",
                       mt: 3,
@@ -214,13 +214,13 @@ export default function AgentsGridView() {
                     {agent.name}
                   </Typography>
                   <Typography
-                    sx={{ fontSize: "26px", fontWeight: 400, color: "#6F6F6F" }}
+                    sx={{ fontSize: {xs: "18px", sm: "22px", md: "26px"}, fontWeight: 400, color: "#6F6F6F" }}
                   >
                     {agent.role}
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: "26px",
+                      fontSize: {xs: "18px", sm: "22px", md: "26px"},
                       fontWeight: 400,
                       color: "#484848",
                       mt: 2,
@@ -230,7 +230,7 @@ export default function AgentsGridView() {
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: "26px",
+                      fontSize: {xs: "18px", sm: "22px", md: "26px"},
                       fontWeight: 400,
                       color: "#484848",
                       mt: 1,
@@ -255,7 +255,7 @@ export default function AgentsGridView() {
                       marginTop: "10px",
                       border: "none",
                       textTransform: "none",
-                      fontSize: "26px",
+                      fontSize: {xs: "18px", sm: "22px", md: "26px"},
                       fontWeight: 400,
                       color: "#5D5D5D",
                     }}

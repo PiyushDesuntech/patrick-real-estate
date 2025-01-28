@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {
   Box,
@@ -9,11 +10,14 @@ import {
   Typography,
   Link,
   Container,
+  useMediaQuery, useTheme,
 } from "@mui/material";
 
 const ContactUs = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 1 }, mt: "90px" }}>
+    <Container maxWidth="xl" sx={{ px: { lg: 8, xs: 2 }, mt: {xs: "20px", md: "90px"} }}>
       <Box
         sx={
           {
@@ -24,23 +28,23 @@ const ContactUs = () => {
         }
       >
         <Typography
-          variant="h4"
           align="center"
           gutterBottom
-          sx={{ fontWeight: 500, fontSize: "40px" }}
+          sx={{ fontWeight: 500, fontSize: {xs:"26px", md: "40px"} }}
         >
           Contact Us
         </Typography>
         <form>
           <Grid container spacing={2} sx={{ mb: "50px" }}>
             <Grid item xs={12} sm={4}>
-              <Typography sx={{ mb: 1, fontSize: "22px", fontWeight: 500 }}>
+              <Typography sx={{ mb: 1, fontSize: {xs:"14px",md: "22px"}, fontWeight: 500 }}>
                 First Name{" "}
                 <Typography component="span" color="error">
                   *
                 </Typography>
               </Typography>
               <TextField
+              size= {isSmallScreen? "small": "medium"}
                 sx={{
                   "& .MuiOutlinedInput-root": {
                     borderRadius: "8px",
@@ -68,10 +72,11 @@ const ContactUs = () => {
               />
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Typography sx={{ mb: 1, fontSize: "22px", fontWeight: 500 }}>
+              <Typography sx={{ mb: 1, fontSize: {xs:"14px",md: "22px"}, fontWeight: 500 }}>
                 Last Name
               </Typography>
               <TextField
+              size= {isSmallScreen? "small": "medium"}
                sx={{
                 "& .MuiOutlinedInput-root": {
                   borderRadius: "8px",
@@ -98,10 +103,11 @@ const ContactUs = () => {
               />
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Typography sx={{ mb: 1, fontSize: "22px", fontWeight: 500 }}>
+              <Typography sx={{ mb: 1, fontSize: {xs:"14px",md: "22px"}, fontWeight: 500 }}>
                 Phone Number
               </Typography>
               <TextField
+              size= {isSmallScreen? "small": "medium"}
               sx={{
                 "& .MuiOutlinedInput-root": {
                   borderRadius: "8px",
@@ -128,13 +134,14 @@ const ContactUs = () => {
               />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Typography sx={{ mb: 1, fontSize: "22px", fontWeight: 500 }}>
+              <Typography sx={{ mb: 1, fontSize: {xs:"14px",md: "22px"}, fontWeight: 500 }}>
                 Email Address{" "}
                 <Typography component="span" color="error">
                   *
                 </Typography>
               </Typography>
               <TextField
+              size= {isSmallScreen? "small": "medium"}
                sx={{
                 "& .MuiOutlinedInput-root": {
                   borderRadius: "8px",
@@ -162,10 +169,11 @@ const ContactUs = () => {
               />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <Typography sx={{ mb: 1, fontSize: "22px", fontWeight: 500 }}>
+              <Typography sx={{ mb: 1, fontSize: {xs:"14px",md: "22px"}, fontWeight: 500 }}>
                 How Can We Help You?
               </Typography>
               <TextField
+              size= {isSmallScreen? "small": "medium"}
                sx={{
                 "& .MuiOutlinedInput-root": {
                   borderRadius: "8px",
@@ -196,14 +204,14 @@ const ContactUs = () => {
                 control={<Checkbox />}
                 label={
                   <Typography
-                    sx={{ fontWeight: 500, fontSize: "16px", color: "#585858" }}
+                    sx={{ fontWeight: 500, fontSize: {xs:"12px",md: "16px"}, color: "#585858" }}
                   >
                     By checking this box I consent to receiving text messages
                     from Colonial Realty. Reply STOP to opt-out.{" "}
                     <Link
                       href="#"
                       sx={{
-                        fontSize: "16px",
+                        fontSize: {xs:"12px",md: "16px"},
                         fontWeight: 500,
                         color: "#585858",
                         textDecoration: "underlien",
@@ -218,7 +226,7 @@ const ContactUs = () => {
                     <Link
                       href="#"
                       sx={{
-                        fontSize: "16px",
+                        fontSize: {xs:"12px",md: "16px"},
                         fontWeight: 500,
                         color: "#585858",
                         textDecoration: "underlien",
@@ -249,7 +257,7 @@ const ContactUs = () => {
                   textTransform: "none",
                   boxShadow: "none",
                   height: "48px",
-                  width: "114px",
+                  width: {xs: "100%", md: "114px"},
                   fontSize: "16px",
                   fontWeight: 500,
                 }}

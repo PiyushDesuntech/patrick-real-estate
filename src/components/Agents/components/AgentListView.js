@@ -96,7 +96,7 @@ export default function AgentListView() {
   );
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ paddingTop: "20px" }}>
       {/* Filter and Result Display */}
       <Box
         sx={{
@@ -206,7 +206,7 @@ export default function AgentListView() {
                   <Box>
                     <Typography
                       sx={{
-                        fontSize: "34px",
+                        fontSize: {xs: "24px", sm: "28px", md: "34px"},
                         fontWeight: 700,
                         color: "#484848",
                         mt: 3,
@@ -216,7 +216,7 @@ export default function AgentListView() {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "26px",
+                        fontSize: {xs: "18px", sm: "22px", md: "26px"},
                         fontWeight: 400,
                         color: "#6F6F6F",
                       }}
@@ -225,7 +225,7 @@ export default function AgentListView() {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "26px",
+                        fontSize: {xs: "18px", sm: "22px", md: "26px"},
                         fontWeight: 400,
                         color: "#484848",
                         mt: 2,
@@ -235,7 +235,7 @@ export default function AgentListView() {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "26px",
+                        fontSize: {xs: "18px", sm: "22px", md: "26px"},
                         fontWeight: 400,
                         color: "#484848",
                         mt: 1,
@@ -261,7 +261,7 @@ export default function AgentListView() {
                       marginTop: "10px",
                       border: "none",
                       textTransform: "none",
-                      fontSize: "26px",
+                      fontSize: {xs: "18px", sm: "22px", md: "26px"},
                       fontWeight: 400,
                       color: "#5D5D5D",
                     }}
