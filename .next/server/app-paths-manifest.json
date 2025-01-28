@@ -4,5 +4,6 @@
   "/profile/page": "app/profile/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/agents/page": "app/agents/page.js"
+  "/agents/page": "app/agents/page.js",
+  "/edit-profile/page": "app/edit-profile/page.js"
 }
