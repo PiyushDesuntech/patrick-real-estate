@@ -90,7 +90,7 @@ export default function ProfilePage() {
   };
 
   const handleChangePassword = () => {
-    router.push('/change-password');
+    router.push('/changepassword');
   };
 
   const handleImageClick = () => {
