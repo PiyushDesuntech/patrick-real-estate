@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import {
@@ -7,6 +8,8 @@ import {
   Card,
   CardContent,
   Container,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 
 const data = [
@@ -31,23 +34,25 @@ const data = [
 ];
 
 const WhyUs = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Container maxWidth="xl">
-      <Box sx={{ padding: {md: 6}, mt: 2 }}>
+      <Box sx={{ padding: {md: 0.5,lg: 6}, mt: {xs: 3, sm: 3, md: 2} }}>
         <Typography sx={{ fontWeight: 500, fontSize: {xs:"26px", md: "40px"}, color: "#484848"}} align="center" gutterBottom>
           Why Choose Us
         </Typography>
         <Typography sx={{fontSize: {xs:"12px",md: "16px"}, fontWeight: 500, color: "#585858"}} align="center" gutterBottom>
           We provide full service at every step
         </Typography>
-        <Grid container spacing={4} mt={2}>
+        <Grid container spacing={isMobile? 2: 4} sx={{mt: {xs: 1, md: 2}, display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
           {data.map((item, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Card
                 sx={{
                   textAlign: "center",
                   boxShadow: 3,
-                  padding: "1rem",
+                  // padding: "1rem",
                   borderRadius: "8px",
                   color: "#444444",
                   transition: "background-color 0.5s ease, color 0.5s ease",
@@ -62,10 +67,10 @@ const WhyUs = () => {
                   sx={{
                     display: "flex",
                     flexDirection: "column",
-                    justifyContent: "space-around",
+                    justifyContent: "center",
                     alignItems: "center",
-                    // gap: "36px",
-                    height: {lg: "360px", md: "380px"},
+                    gap: {xs: "16px", lg: "26px"},
+                    height: {lg: "430px", md: "400px"},
                   }}
                 >
                   <Box

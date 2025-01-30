@@ -57,7 +57,7 @@ function AboutHeading() {
     >
       <Container
         maxWidth="xl"
-        sx={{ px: { xs: 1, lg: 7 }, position: "relative", height: "100%" }}
+        sx={{ px: { xs: 0, lg: 7 }, position: "relative", height: "100%" }}
       >
         <Box  sx={{
             position: "absolute",
@@ -76,7 +76,7 @@ function AboutHeading() {
           sx={{
             position: "absolute",
             bottom: 0,
-            right: 50,
+            right: {xs: "none", md: 10, lg: 50},
             display: "flex",
             justifyContent: "flex-end",
             alignItems: "baseline",

@@ -199,13 +199,15 @@ const Buyers = () => {
           sx={{
             backgroundColor: "#E0D8C3",
             "&:hover": {
-              backgroundColor: "#4D4D4D",
+              backgroundColor: "#3E4C66",
               color: "#fff",
             },
             color: "#000",
             minWidth: "233px",
             height: "53px",
             textTransform: "none",
+            fontSize: "16px", 
+            fontWeight: 500
           }}
         >
           Connect Now

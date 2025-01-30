@@ -1814,7 +1814,7 @@ const NavbarIndex = ()=>{
                             display: "flex",
                             justifyContent: "space-between",
                             px: {
-                                xs: 2,
+                                xs: 0,
                                 lg: 4
                             },
                             py: 1,
@@ -2043,7 +2043,7 @@ const NavbarIndex = ()=>{
                                                 xs: "block",
                                                 md: "none"
                                             },
-                                            mr: -2
+                                            mr: -1
                                         },
                                         onClick: toggleDrawer(true),
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
@@ -2090,6 +2090,28 @@ const NavbarIndex = ()=>{
                     onClick: toggleDrawer(false),
                     onKeyDown: toggleDrawer(false),
                     children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                onClick: handleLogoClick,
+                                src: "/Images/logo2.svg",
+                                alt: "Colonial Realty Associates",
+                                layout: "responsive",
+                                width: 269,
+                                height: 76,
+                                style: {
+                                    cursor: "pointer",
+                                    objectFit: "contain"
+                                }
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Navbar/NavbarIndex.js",
+                                lineNumber: 276,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/Navbar/NavbarIndex.js",
+                            lineNumber: 275,
+                            columnNumber: 11
+                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$List$2f$List$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__List$3e$__["List"], {
                             children: [
                                 navItems.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$ListItem$2f$ListItem$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ListItem$3e$__["ListItem"], {
@@ -2099,12 +2121,12 @@ const NavbarIndex = ()=>{
                                             primary: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Navbar/NavbarIndex.js",
-                                            lineNumber: 282,
+                                            lineNumber: 293,
                                             columnNumber: 17
                                         }, this)
                                     }, index, false, {
                                         fileName: "[project]/src/components/Navbar/NavbarIndex.js",
-                                        lineNumber: 277,
+                                        lineNumber: 288,
                                         columnNumber: 15
                                     }, this)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$ListItem$2f$ListItem$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ListItem$3e$__["ListItem"], {
@@ -2112,18 +2134,18 @@ const NavbarIndex = ()=>{
                                         primary: "Landlord"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Navbar/NavbarIndex.js",
-                                        lineNumber: 286,
+                                        lineNumber: 297,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar/NavbarIndex.js",
-                                    lineNumber: 285,
+                                    lineNumber: 296,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Navbar/NavbarIndex.js",
-                            lineNumber: 275,
+                            lineNumber: 286,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -2152,7 +2174,7 @@ const NavbarIndex = ()=>{
                             children: "Login/Register"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Navbar/NavbarIndex.js",
-                            lineNumber: 289,
+                            lineNumber: 300,
                             columnNumber: 11
                         }, this)
                     ]
@@ -2190,12 +2212,12 @@ const NavbarIndex = ()=>{
                     isAgentRegisterView: isAgentRegisterView
                 }, void 0, false, {
                     fileName: "[project]/src/components/Navbar/NavbarIndex.js",
-                    lineNumber: 328,
+                    lineNumber: 339,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Navbar/NavbarIndex.js",
-                lineNumber: 314,
+                lineNumber: 325,
                 columnNumber: 7
             }, this)
         ]
@@ -2332,13 +2354,19 @@ const FooterIndex = ()=>{
                                             lg: 7,
                                             md: 0
                                         },
-                                        mt: 5
+                                        mt: {
+                                            xs: 1,
+                                            md: 5
+                                        }
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                             sx: {
                                                 fontWeight: 700,
-                                                mb: 4,
+                                                mb: {
+                                                    xs: 2,
+                                                    md: 4
+                                                },
                                                 fontSize: "22px"
                                             },
                                             children: "Quick Links"
@@ -2351,7 +2379,10 @@ const FooterIndex = ()=>{
                                             sx: {
                                                 display: "block",
                                                 color: "inherit",
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontSize: "16px",
                                                 fontWeight: 500,
                                                 "&:hover": {
@@ -2369,7 +2400,10 @@ const FooterIndex = ()=>{
                                             sx: {
                                                 display: "block",
                                                 color: "inherit",
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontSize: "16px",
                                                 fontWeight: 500,
                                                 "&:hover": {
@@ -2387,7 +2421,10 @@ const FooterIndex = ()=>{
                                             sx: {
                                                 display: "block",
                                                 color: "inherit",
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontSize: "16px",
                                                 fontWeight: 500,
                                                 "&:hover": {
@@ -2405,7 +2442,10 @@ const FooterIndex = ()=>{
                                             sx: {
                                                 display: "block",
                                                 color: "inherit",
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontSize: "16px",
                                                 fontWeight: 500,
                                                 "&:hover": {
@@ -2423,7 +2463,10 @@ const FooterIndex = ()=>{
                                             sx: {
                                                 display: "block",
                                                 color: "inherit",
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontSize: "16px",
                                                 fontWeight: 500,
                                                 "&:hover": {
@@ -2456,13 +2499,19 @@ const FooterIndex = ()=>{
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                     sx: {
                                         //  px: {md: 7},
-                                        mt: 5
+                                        mt: {
+                                            xs: 1,
+                                            md: 5
+                                        }
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                             sx: {
                                                 fontWeight: 700,
-                                                mb: 4,
+                                                mb: {
+                                                    xs: 2,
+                                                    md: 4
+                                                },
                                                 fontSize: "22px"
                                             },
                                             children: "Contact Us"
@@ -2474,7 +2523,10 @@ const FooterIndex = ()=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                             sx: {
                                                 fontSize: "16px",
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontWeight: "500",
                                                 "&:hover": {
                                                     color: "#E8E1C4"
@@ -2490,7 +2542,10 @@ const FooterIndex = ()=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                             sx: {
                                                 fontSize: "16px",
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontWeight: "500",
                                                 "&:hover": {
                                                     color: "#E8E1C4"
@@ -2506,7 +2561,10 @@ const FooterIndex = ()=>{
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                             sx: {
                                                 fontSize: "16px",
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontWeight: "500",
                                                 "&:hover": {
                                                     color: "#E8E1C4"
@@ -2541,13 +2599,19 @@ const FooterIndex = ()=>{
                                             lg: 3,
                                             md: 0
                                         },
-                                        mt: 5
+                                        mt: {
+                                            xs: 1,
+                                            md: 5
+                                        }
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                             sx: {
                                                 fontWeight: 700,
-                                                mb: 2,
+                                                mb: {
+                                                    xs: 1,
+                                                    md: 2
+                                                },
                                                 fontSize: "22px"
                                             },
                                             children: "Follow Us"
@@ -2573,7 +2637,10 @@ const FooterIndex = ()=>{
                                                     },
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                         sx: {
-                                                            fontSize: "32px"
+                                                            fontSize: {
+                                                                md: "26px",
+                                                                lg: "32px"
+                                                            }
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
@@ -2594,7 +2661,10 @@ const FooterIndex = ()=>{
                                                     },
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$X$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                         sx: {
-                                                            fontSize: "32px"
+                                                            fontSize: {
+                                                                md: "26px",
+                                                                lg: "32px"
+                                                            }
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
@@ -2615,7 +2685,10 @@ const FooterIndex = ()=>{
                                                     },
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Twitter$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                         sx: {
-                                                            fontSize: "32px"
+                                                            fontSize: {
+                                                                md: "26px",
+                                                                lg: "32px"
+                                                            }
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
@@ -2636,7 +2709,10 @@ const FooterIndex = ()=>{
                                                     },
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Instagram$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                         sx: {
-                                                            fontSize: "32px"
+                                                            fontSize: {
+                                                                md: "26px",
+                                                                lg: "32px"
+                                                            }
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
@@ -2657,7 +2733,10 @@ const FooterIndex = ()=>{
                                                     },
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Pinterest$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                         sx: {
-                                                            fontSize: "32px"
+                                                            fontSize: {
+                                                                md: "26px",
+                                                                lg: "32px"
+                                                            }
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
@@ -2678,7 +2757,10 @@ const FooterIndex = ()=>{
                                                     },
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Google$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                                         sx: {
-                                                            fontSize: "32px"
+                                                            fontSize: {
+                                                                md: "26px",
+                                                                lg: "32px"
+                                                            }
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
@@ -2824,13 +2906,15 @@ const FooterIndex = ()=>{
                                     },
                                     gap: {
                                         xs: 1,
+                                        sm: "30px",
                                         md: "30px"
                                     },
                                     flexWrap: "wrap,",
                                     gridTemplateColumns: {
                                         xs: "repeat(4, 1fr)",
                                         sm: "none"
-                                    }
+                                    },
+                                    textAlign: "center"
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2852,7 +2936,7 @@ const FooterIndex = ()=>{
                                         children: "Home"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 302,
+                                        lineNumber: 303,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2874,7 +2958,7 @@ const FooterIndex = ()=>{
                                         children: "Buy"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 316,
+                                        lineNumber: 317,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2896,7 +2980,7 @@ const FooterIndex = ()=>{
                                         children: "Rent"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 330,
+                                        lineNumber: 331,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2918,7 +3002,7 @@ const FooterIndex = ()=>{
                                         children: "Sell"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 344,
+                                        lineNumber: 345,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2940,7 +3024,7 @@ const FooterIndex = ()=>{
                                         children: "Students"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 358,
+                                        lineNumber: 359,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2962,7 +3046,7 @@ const FooterIndex = ()=>{
                                         children: "Market Insights"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 372,
+                                        lineNumber: 373,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2984,7 +3068,7 @@ const FooterIndex = ()=>{
                                         children: "Resources"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 386,
+                                        lineNumber: 387,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -3006,7 +3090,7 @@ const FooterIndex = ()=>{
                                         children: "About"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 400,
+                                        lineNumber: 401,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -3023,14 +3107,16 @@ const FooterIndex = ()=>{
                                     alignItems: "center",
                                     mt: {
                                         xs: 1,
-                                        sm: -2
+                                        sm: 0,
+                                        md: -2
                                     },
                                     justifyContent: "space-between",
                                     width: {
                                         xs: "fit-content",
                                         md: "100%",
                                         lg: "fit-content"
-                                    }
+                                    },
+                                    textAlign: "center"
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -3038,7 +3124,7 @@ const FooterIndex = ()=>{
                                         children: "Copyright © 2024 Colonial Realty. All rights reserved."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 426,
+                                        lineNumber: 428,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$IconButton$2f$IconButton$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconButton$3e$__["IconButton"], {
@@ -3081,18 +3167,18 @@ const FooterIndex = ()=>{
                                         },
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$North$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                             fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                            lineNumber: 450,
+                                            lineNumber: 452,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                        lineNumber: 429,
+                                        lineNumber: 431,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer/FooterIndex.js",
-                                lineNumber: 415,
+                                lineNumber: 416,
                                 columnNumber: 13
                             }, this)
                         ]

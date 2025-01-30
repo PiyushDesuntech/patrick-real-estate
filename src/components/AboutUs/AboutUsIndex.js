@@ -15,7 +15,9 @@ export default function AboutUsIndex() {
       <OurMission />
       <WhyUs />
       <OurAgents/>
+      <Box sx={{pb: {xs: 0, md: 5}}}>
       <ClientTestimonials title="Client Stories"/>
+      </Box>
       <JoinUs/>
     </Box>
   )

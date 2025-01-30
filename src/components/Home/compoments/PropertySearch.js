@@ -179,10 +179,10 @@ const PropertySearch = () => {
       </ToggleButtonGroup>
       <Box
         sx={{
-          p: { xs: "10px", sm: "20px" },
+          p: { xs: "10px", md: "20px" },
           background: "rgba(255, 255, 255, 0.3)",
           borderRadius: "10px",
-          maxWidth: { xs: "300px", sm: "1193px" },
+          maxWidth: { xs: "300px", sm: "600px", md: "950px",lg: "1193px" },
           width: "100%",
         }}
       >
@@ -200,14 +200,14 @@ const PropertySearch = () => {
             flexWrap: { xs: "wrap", md: "nowrap" },
             gap: "15px",
             width: "100%",
-            maxWidth: { xs: "280px", sm: "1193px" },
+            maxWidth: { xs: "280px",sm: "580px", md: "930px", lg: "1193px" },
           }}
         >
-          {selectedTab === "buy" && (
+          {selectedTab === "rent" && (
             <Box
               sx={{
                 display: "flex",
-                flexWrap: { xs: "wrap", lg: "unset" },
+                flexWrap: { xs: "wrap", md: "unset" },
                 gap: 2,
                 alignItems: "center",
                 justifyContent: "center",
@@ -220,7 +220,223 @@ const PropertySearch = () => {
                 variant="outlined"
                 fullWidth
                 sx={{
-                  width: { xs: "250px", md: "369px" },
+                  width: { xs: "250px", md:"150px", lg: "369px" },
+                  // maxWidth: "369px",
+                  fontSize: "14px",
+                  fontWeight: 400,
+                  color: "#3E4C66",
+                  "& .MuiInputLabel-root": {
+                    color: "#3E4C66",
+                    fontSize: "14px",
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": {
+                    color: "#3E4C66",
+                    fontSize: "14px",
+                  },
+                  "& .MuiOutlinedInput-root": {
+                    height: { xs: "40px", sm: "50px" }, 
+                    "& .MuiInputBase-input": {
+                      padding: { xs: "5px", sm: "14px" }, 
+                    },
+                    borderRadius: "4px", 
+                    "& fieldset": {
+                      borderColor: "#DCDCDC", 
+                    },
+                    "&:hover fieldset": {
+                      borderColor: "#DCDCDC", 
+                    },
+                    "&.Mui-focused fieldset": {
+                      borderColor: "#DCDCDC", 
+                    },
+                  },
+                }}
+              />
+              <Autocomplete
+                options={["Apartment", "Studio", "Shared"]}
+                renderInput={(params) => (
+                  <TextField
+                    {...params}
+                    label="Earliest Move Date"
+                    variant="outlined"
+                    sx={{
+                      minWidth: { xs: "250px",md: "128px", lg: "163px" },
+                      fontSize: "14px",
+                      fontWeight: 400,
+                      color: "#3E4C66",
+                      "& .MuiInputLabel-root": {
+                        color: "#3E4C66",
+                        fontSize: "14px",
+                      },
+                      "& .MuiInputLabel-root.Mui-focused": {
+                        color: "#3E4C66",
+                        fontSize: "14px",
+                      },
+                      "& .MuiOutlinedInput-root": {
+                        height: { xs: "40px", sm: "50px" }, 
+                        "& .MuiInputBase-input": {
+                          padding: { xs: "5px", sm: "14px" }, 
+                        },
+                        borderRadius: "4px", 
+                        "& fieldset": {
+                          borderColor: "#DCDCDC", 
+                        },
+                        "&:hover fieldset": {
+                          borderColor: "#DCDCDC", 
+                        },
+                        "&.Mui-focused fieldset": {
+                          borderColor: "#DCDCDC", 
+                        },
+                      },
+                    }}
+                  />
+                )}
+                // fullWidth
+              />
+              <Autocomplete
+                options={locations}
+                renderInput={(params) => (
+                  <TextField
+                    {...params}
+                    label="Latest Move Date"
+                    variant="outlined"
+                    sx={{
+                      minWidth: { xs: "250px",md: "120px", lg: "163px" },
+                      fontSize: "14px",
+                      fontWeight: 400,
+                      color: "#3E4C66",
+                      "& .MuiInputLabel-root": {
+                        color: "#3E4C66",
+                        fontSize: "14px",
+                      },
+                      "& .MuiInputLabel-root.Mui-focused": {
+                        color: "#3E4C66",
+                        fontSize: "14px",
+                      },
+                      "& .MuiOutlinedInput-root": {
+                        height: { xs: "40px", sm: "50px" }, 
+                        "& .MuiInputBase-input": {
+                          padding: { xs: "5px", sm: "14px" }, 
+                        },
+                        borderRadius: "4px", 
+                        "& fieldset": {
+                          borderColor: "#DCDCDC", 
+                        },
+                        "&:hover fieldset": {
+                          borderColor: "#DCDCDC", 
+                        },
+                        "&.Mui-focused fieldset": {
+                          borderColor: "#DCDCDC", 
+                        },
+                      },
+                    }}
+                  />
+                )}
+                // fullWidth
+              />
+              <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
+                <Autocomplete
+                  options={locations}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      label="Min Beds"
+                      variant="outlined"
+                      sx={{
+                        fontSize: "14px",
+                        fontWeight: 400,
+                        color: "#3E4C66",
+                        "& .MuiInputLabel-root": {
+                          color: "#3E4C66",
+                          fontSize: "14px",
+                        },
+                        "& .MuiInputLabel-root.Mui-focused": {
+                          color: "#3E4C66",
+                          fontSize: "14px",
+                        },
+                        "& .MuiOutlinedInput-root": {
+                          height: { xs: "40px", sm: "50px" }, 
+                          "& .MuiInputBase-input": {
+                            padding: { xs: "5px", sm: "14px" }, 
+                          },
+                          borderRadius: "4px", 
+                          "& fieldset": {
+                            borderColor: "#DCDCDC", 
+                          },
+                          "&:hover fieldset": {
+                            borderColor: "#DCDCDC", 
+                          },
+                          "&.Mui-focused fieldset": {
+                            borderColor: "#DCDCDC", 
+                          },
+                        },
+                        minWidth: { xs: "115px", md: "70px", lg: "102px" },
+                      }}
+                    />
+                  )}
+                  // fullWidth
+                />
+                <Autocomplete
+                  options={locations}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      label="Max Price"
+                      variant="outlined"
+                      sx={{
+                        fontSize: "14px",
+                        fontSize: "14px",
+                        fontWeight: 400,
+                        color: "#3E4C66",
+                        "& .MuiInputLabel-root": {
+                          color: "#3E4C66",
+                          fontSize: "14px",
+                        },
+                        "& .MuiInputLabel-root.Mui-focused": {
+                          color: "#3E4C66",
+                          fontSize: "14px",
+                        },
+                        "& .MuiOutlinedInput-root": {
+                          height: { xs: "40px", sm: "50px" }, 
+                          "& .MuiInputBase-input": {
+                            padding: { xs: "5px", sm: "14px" }, 
+                          },
+                          borderRadius: "4px", 
+                          "& fieldset": {
+                            borderColor: "#DCDCDC", 
+                          },
+                          "&:hover fieldset": {
+                            borderColor: "#DCDCDC", 
+                          },
+                          "&.Mui-focused fieldset": {
+                            borderColor: "#DCDCDC", 
+                          },
+                        },
+                        minWidth: { xs: "115px", md: "70px", lg: "102px" },
+                      }}
+                    />
+                  )}
+                />
+              </Box>
+            </Box>
+          )}
+          {selectedTab === "buy" && (
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: { xs: "wrap", md: "unset" },
+                gap: 2,
+                alignItems: "center",
+                justifyContent: "center",
+                width: "100%",
+                flexDirection: { xs: "column", sm: "unset" },
+              }}
+            >
+              <TextField
+                label="City, Neighborhood, Zip, School, Keyword"
+                variant="outlined"
+                fullWidth
+                sx={{
+                  width: { xs: "250px", md:"150px", lg: "369px" },
                   maxWidth: "369px",
                   fontSize: "14px",
                   fontWeight: 400,
@@ -259,7 +475,7 @@ const PropertySearch = () => {
                     label="Min Baths"
                     variant="outlined"
                     sx={{
-                      minWidth: { xs: "250px", sm: "193px" }, // Smaller width for xs
+                      minWidth: { xs: "250px", md: "173px",lg: "193px"  }, 
                       fontSize: "14px",
                       fontWeight: 400,
                       color: "#3E4C66",
@@ -328,7 +544,7 @@ const PropertySearch = () => {
                           borderColor: "#DCDCDC", 
                         },
                       },
-                      minWidth: { xs: "250px", sm: "193px" },
+                      minWidth: { xs: "250px", md: "173px",lg: "193px"  },
                     }}
                   />
                 )}
@@ -369,233 +585,14 @@ const PropertySearch = () => {
                           borderColor: "#DCDCDC", 
                         },
                       },
-                      minWidth: { xs: "250px", sm: "159px" },
+                      minWidth: { xs: "250px", md: "130px",lg: "159px"  },
                     }}
                   />
                 )}
               />
             </Box>
           )}
-          {selectedTab === "rent" && (
-            <Box
-              sx={{
-                display: "flex",
-                flexWrap: { xs: "wrap", lg: "unset" },
-                gap: 2,
-                alignItems: "center",
-                justifyContent: "center",
-                width: "100%",
-                flexDirection: { xs: "column", sm: "unset" },
-              }}
-            >
-              <TextField
-                label="City, Neighborhood, Zip, School, Keyword"
-                variant="outlined"
-                fullWidth
-                sx={{
-                  width: { xs: "250px", sm: "369px" },
-                  maxWidth: "369px",
-                  fontSize: "14px",
-                  fontWeight: 400,
-                  color: "#3E4C66",
-                  "& .MuiInputLabel-root": {
-                    color: "#3E4C66",
-                    fontSize: "14px",
-                  },
-                  "& .MuiInputLabel-root.Mui-focused": {
-                    color: "#3E4C66",
-                    fontSize: "14px",
-                  },
-                  "& .MuiOutlinedInput-root": {
-                    height: { xs: "40px", sm: "50px" }, 
-                    "& .MuiInputBase-input": {
-                      padding: { xs: "5px", sm: "14px" }, 
-                    },
-                    borderRadius: "4px", 
-                    "& fieldset": {
-                      borderColor: "#DCDCDC", 
-                    },
-                    "&:hover fieldset": {
-                      borderColor: "#DCDCDC", 
-                    },
-                    "&.Mui-focused fieldset": {
-                      borderColor: "#DCDCDC", 
-                    },
-                  },
-                }}
-              />
-              <Autocomplete
-                options={["Apartment", "Studio", "Shared"]}
-                renderInput={(params) => (
-                  <TextField
-                    {...params}
-                    label="Earliest Move Date"
-                    variant="outlined"
-                    sx={{
-                      minWidth: { xs: "250px", sm: "163px" },
-                      fontSize: "14px",
-                      fontWeight: 400,
-                      color: "#3E4C66",
-                      "& .MuiInputLabel-root": {
-                        color: "#3E4C66",
-                        fontSize: "14px",
-                      },
-                      "& .MuiInputLabel-root.Mui-focused": {
-                        color: "#3E4C66",
-                        fontSize: "14px",
-                      },
-                      "& .MuiOutlinedInput-root": {
-                        height: { xs: "40px", sm: "50px" }, 
-                        "& .MuiInputBase-input": {
-                          padding: { xs: "5px", sm: "14px" }, 
-                        },
-                        borderRadius: "4px", 
-                        "& fieldset": {
-                          borderColor: "#DCDCDC", 
-                        },
-                        "&:hover fieldset": {
-                          borderColor: "#DCDCDC", 
-                        },
-                        "&.Mui-focused fieldset": {
-                          borderColor: "#DCDCDC", 
-                        },
-                      },
-                    }}
-                  />
-                )}
-                // fullWidth
-              />
-              <Autocomplete
-                options={locations}
-                renderInput={(params) => (
-                  <TextField
-                    {...params}
-                    label="Latest Move Date"
-                    variant="outlined"
-                    sx={{
-                      minWidth: { xs: "250px", sm: "163px" },
-                      fontSize: "14px",
-                      fontSize: "14px",
-                      fontWeight: 400,
-                      color: "#3E4C66",
-                      "& .MuiInputLabel-root": {
-                        color: "#3E4C66",
-                        fontSize: "14px",
-                      },
-                      "& .MuiInputLabel-root.Mui-focused": {
-                        color: "#3E4C66",
-                        fontSize: "14px",
-                      },
-                      "& .MuiOutlinedInput-root": {
-                        height: { xs: "40px", sm: "50px" }, 
-                        "& .MuiInputBase-input": {
-                          padding: { xs: "5px", sm: "14px" }, 
-                        },
-                        borderRadius: "4px", 
-                        "& fieldset": {
-                          borderColor: "#DCDCDC", 
-                        },
-                        "&:hover fieldset": {
-                          borderColor: "#DCDCDC", 
-                        },
-                        "&.Mui-focused fieldset": {
-                          borderColor: "#DCDCDC", 
-                        },
-                      },
-                    }}
-                  />
-                )}
-                // fullWidth
-              />
-              <Box sx={{ display: "flex", flexDirection: "row", gap: 2 }}>
-                <Autocomplete
-                  options={locations}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label="Min Beds"
-                      variant="outlined"
-                      // sx={{ minWidth: "150px" }}
-                      sx={{
-                        fontSize: "14px",
-                        fontSize: "14px",
-                        fontWeight: 400,
-                        color: "#3E4C66",
-                        "& .MuiInputLabel-root": {
-                          color: "#3E4C66",
-                          fontSize: "14px",
-                        },
-                        "& .MuiInputLabel-root.Mui-focused": {
-                          color: "#3E4C66",
-                          fontSize: "14px",
-                        },
-                        "& .MuiOutlinedInput-root": {
-                          height: { xs: "40px", sm: "50px" }, 
-                          "& .MuiInputBase-input": {
-                            padding: { xs: "5px", sm: "14px" }, 
-                          },
-                          borderRadius: "4px", 
-                          "& fieldset": {
-                            borderColor: "#DCDCDC", 
-                          },
-                          "&:hover fieldset": {
-                            borderColor: "#DCDCDC", 
-                          },
-                          "&.Mui-focused fieldset": {
-                            borderColor: "#DCDCDC", 
-                          },
-                        },
-                        minWidth: { xs: "115px", sm: "102px" },
-                      }}
-                    />
-                  )}
-                  // fullWidth
-                />
-                <Autocomplete
-                  options={locations}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label="Max Price"
-                      variant="outlined"
-                      sx={{
-                        fontSize: "14px",
-                        fontSize: "14px",
-                        fontWeight: 400,
-                        color: "#3E4C66",
-                        "& .MuiInputLabel-root": {
-                          color: "#3E4C66",
-                          fontSize: "14px",
-                        },
-                        "& .MuiInputLabel-root.Mui-focused": {
-                          color: "#3E4C66",
-                          fontSize: "14px",
-                        },
-                        "& .MuiOutlinedInput-root": {
-                          height: { xs: "40px", sm: "50px" }, 
-                          "& .MuiInputBase-input": {
-                            padding: { xs: "5px", sm: "14px" }, 
-                          },
-                          borderRadius: "4px", 
-                          "& fieldset": {
-                            borderColor: "#DCDCDC", 
-                          },
-                          "&:hover fieldset": {
-                            borderColor: "#DCDCDC", 
-                          },
-                          "&.Mui-focused fieldset": {
-                            borderColor: "#DCDCDC", 
-                          },
-                        },
-                        minWidth: { xs: "115px", sm: "102px" },
-                      }}
-                    />
-                  )}
-                />
-              </Box>
-            </Box>
-          )}
-
+          <Box sx={{px: {xs: 1, sm: 1.5, md: 0}, width: "100%"}}>
           <Button
           onClick={handleClickSearch}
             variant="contained"
@@ -607,7 +604,7 @@ const PropertySearch = () => {
                 boxShadow: "none",
               },
               color: "#464646",
-              minWidth: "135px",
+              minWidth: {xs: "100%", md:"90px", lg: "135px"},
               height: { xs: "40px", sm: "50px" },
               boxShadow: "none",
               textTransform: "none",
@@ -617,6 +614,7 @@ const PropertySearch = () => {
           >
             Search
           </Button>
+          </Box>
         </Box>
       </Box>
     </Box>

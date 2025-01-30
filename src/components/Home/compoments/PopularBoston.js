@@ -123,6 +123,7 @@ const PopularBoston = () => {
             justifyContent: "space-between",
             flexWrap: "wrap",
             alignItems: "baseline",
+            px: {xs: 0, sm: 4, lg: 2}
           }}
         >
           <Box>

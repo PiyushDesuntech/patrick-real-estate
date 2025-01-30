@@ -133,7 +133,7 @@ const NavbarIndex = () => {
             sx={{
               display: "flex",
               justifyContent: "space-between",
-              px: { xs: 2, lg: 4 },
+              px: { xs: 0, lg: 4 },
               py: 1,
               zIndex: 1100,
             }}
@@ -253,7 +253,7 @@ const NavbarIndex = () => {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ display: { xs: "block", md: "none" }, mr: -2 }}
+                sx={{ display: { xs: "block", md: "none" }, mr: -1 }}
                 onClick={toggleDrawer(true)}
               >
                 <MenuIcon />
@@ -272,6 +272,17 @@ const NavbarIndex = () => {
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
         >
+          <Box >
+              <Image
+                onClick={handleLogoClick}
+                src="/Images/logo2.svg"
+                alt="Colonial Realty Associates"
+                layout="responsive"
+                width={269}
+                height={76}
+                style={{ cursor: "pointer", objectFit: "contain" }}
+              />
+            </Box>
           <List>
             {navItems.map((item, index) => (
               <ListItem

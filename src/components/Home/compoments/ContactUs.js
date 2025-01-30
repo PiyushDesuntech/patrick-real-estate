@@ -17,7 +17,7 @@ const ContactUs = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 8, xs: 2 }, mt: {xs: "20px", md: "90px"} }}>
+    <Container maxWidth="xl" sx={{ px: { lg: 8,sm: 3, xs: 2 }, mt: {xs: "20px", md: "90px"} }}>
       <Box
         sx={
           {

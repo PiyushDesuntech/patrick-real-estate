@@ -11,22 +11,23 @@ export default function JoinUs() {
       }}
     >
       <Container maxWidth="xl">
-        <Grid container sx={{ px: { md: 7 }, py: {xs: 3, md: 4} }}>
+        <Grid container sx={{ px: { md: 0,lg: 5 }, py: {xs: 3, md: 1, lg: 4} }}>
           <Grid item md={7} xs={12} sx={{ color: "#fff" }}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                py: {xs: 2, md: 10},
+                py: {xs: 2, md: 6, lg: 10},
                 gap: 2,
-                alignItems: {xs: "center", md: "flex-start"}
+                alignItems: {xs: "center", md: "flex-start"},
+                textAlign: {xs: "center", md: "unset"}
               }}
             >
-              <Typography sx={{ fontSize: {xs:"26px", md: "40px"}, fontWeight: 600 }}>
+              <Typography sx={{ fontSize: {xs:"26px", lg: "40px"}, fontWeight: 600, }}>
                 Interested in a career in real estate{" "}
               </Typography>
-              <Typography sx={{ fontSize: {xs:"12px",md: "16px"}, fontWeight: 500 }}>
+              <Typography sx={{ fontSize: {xs:"12px",md: "14px", lg: "16px"}, fontWeight: 500 }}>
                 Maecenas pharetra neque maximus nunc semper, in faucibus quam
                 facilisis.
               </Typography>
@@ -38,8 +39,8 @@ export default function JoinUs() {
             xs={12}
             sx={{
               display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
+              // flexDirection: "column",
+              justifyContent: { xs: "center", md: "flex-end" },
             }}
           >
             <Box
@@ -48,8 +49,8 @@ export default function JoinUs() {
                 gap: 3,
                 justifyContent: { xs: "center", md: "flex-end" },
                 alignItems: "center",
-                py: {xs: 2, md: 9},
-                flexWrap: {xs: "wrap", lg: "nowrap"},
+                py: {xs: 2, lg: 9},
+                flexWrap: {xs: "wrap", md: "nowrap"},
               }}
             >
               <Button
@@ -61,7 +62,7 @@ export default function JoinUs() {
                     color: "#fff",
                   },
                   color: "#4D4D4D",
-                  minWidth: "233px",
+                  minWidth: {xs: "233px",md: "183px", lg: "233px"},
                   height: "53px",
                   textTransform: "none",
                   fontSize: "16px",
@@ -80,7 +81,7 @@ export default function JoinUs() {
                     color: "#fff",
                   },
                   color: "#4D4D4D",
-                  minWidth: "233px",
+                  minWidth: {xs: "233px",md: "183px", lg: "233px"},
                   height: "53px",
                   fontSize: "16px",
                   fontWeight: 500

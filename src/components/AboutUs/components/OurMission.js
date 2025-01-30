@@ -1,6 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  IconButton,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import Image from "next/image";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 import { Icon } from "@iconify/react";
@@ -8,27 +16,44 @@ import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOu
 
 export default function OurMission() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const handlePlayVideo = () => {
     setIsVideoPlaying(true);
   };
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 6, xs: 1 }, mt: "60px" }}>
+    <Container
+      maxWidth="xl"
+      sx={{
+        px: { lg: 7, md: 3, xs: 1 },
+        mt: { xs: "20px", md: "40px", lg: "60px" },
+      }}
+    >
       <Box>
         <Typography
-          sx={{ textAlign: "center", fontSize: "36px", fontWeight: 600 }}
+          sx={{
+            textAlign: "center",
+            fontSize: { xs: "28px", md: "30px", lg: "40px" },
+            fontWeight: 500,
+            color: "#484848",
+          }}
         >
           Our Mission Is To Find House
         </Typography>
 
-        <Grid container spacing={4} sx={{ mt: "47px" }}>
+        <Grid
+          container
+          spacing={isMobile ? 1 : 4}
+          sx={{ mt: { xs: "20px", md: "30px", lg: "47px" } }}
+        >
           <Grid item xs={12} md={7}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "70px",
-                p: 2,
+                gap: { xs: "20px", sm: "30px", md: "40px", lg: "70px" },
+                p: 1,
               }}
             >
               <Typography
@@ -39,7 +64,11 @@ export default function OurMission() {
                 tempor.
               </Typography>
               <Typography
-                sx={{ fontWeight: 400, fontSize: "17px", color: "#484848" }}
+                sx={{
+                  fontWeight: 400,
+                  fontSize: { xs: "13px", sm: "15px", lg: "17px" },
+                  color: "#484848",
+                }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 quis ligula eu lectus vulputate porttitor sed feugiat nunc.
@@ -49,7 +78,11 @@ export default function OurMission() {
                 amet velit.
               </Typography>
               <Typography
-                sx={{ fontWeight: 400, fontSize: "17px", color: "#484848" }}
+                sx={{
+                  fontWeight: 400,
+                  fontSize: { xs: "13px", sm: "15px", lg: "17px" },
+                  color: "#484848",
+                }}
               >
                 Maecenas quis viverra metus, et efficitur ligula. Nam congue
                 augue et ex congue, sed luctus lectus congue. Integer convallis
@@ -59,25 +92,41 @@ export default function OurMission() {
                 ipsum dolor sit amet, consectetur adipisicing elit. Quod libero
                 amet, laborum qui nulla quae alias tempora.
               </Typography>
-              <Box sx={{ padding: 4 }}>
-                <Grid container spacing={2} justifyContent="center">
-                  <Grid
-                    item
-                    xs={12}
-                    sm={4}
+              <Box sx={{ pt: { xs: 1, sm: 2, md: 0, lg: 2 }, }}>
+                <Box sx={{display: "flex", flexWrap: "wrap", gap: {xs: 2,sm: 3, md: 3, lg: 3}, justifyContent: {xs: "center", sm: "unset"}}} >
+                  <Box
                     textAlign="center"
-                    sx={{ display: "flex", gap: 2 }}
+                    sx={{ display: "flex", gap: {xs: 2, sm: 2, md: 1}, alignItems: "center", }}
                   >
-                    <Icon
-                      icon="uil:user"
-                      style={{ fontSize: "68px", color: "#B29D70" }}
-                    />
+                    <Box
+                      sx={{
+                        width: {xs: "30px", sm: "40px", md: "50px", lg: "68px"},
+                        height: {xs: "30px", sm: "40px", md: "50px", lg: "68px"},
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Image
+                        src="/Images/UserIcon.svg"
+                        // layout="responsive"
+                        alt="User"
+                        width={50}
+                        height={50}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </Box>
                     <Box sx={{ textAlign: "left" }}>
                       <Typography
                         sx={{
                           whiteSpace: "nowrap",
                           fontWeight: 600,
-                          fontSize: "27px",
+                          fontSize: {
+                            xs: "22px",
+                            sm: "24px",
+                            md: "24px",
+                            lg: "27px",
+                          },
                           color: "#484848",
                         }}
                       >
@@ -85,7 +134,7 @@ export default function OurMission() {
                       </Typography>
                       <Typography
                         sx={{
-                          fontSize: "17px",
+                          fontSize: { xs: "13px", sm: "15px", lg: "17px" },
                           fontWeight: 400,
                           color: "#484848",
                         }}
@@ -93,25 +142,41 @@ export default function OurMission() {
                         Customers to date
                       </Typography>
                     </Box>
-                  </Grid>
+                  </Box>
 
-                  <Grid
-                    item
-                    xs={12}
-                    sm={4}
+                  <Box
                     textAlign="center"
-                    sx={{ display: "flex", gap: 2 }}
+                    sx={{ display: "flex", gap: {xs: 2, sm: 2, md: 1}, alignItems: "center" }}
                   >
-                    <Icon
-                      icon="solar:home-outline"
-                      style={{ fontSize: "68px", color: "#B29D70" }}
-                    />
+                    <Box
+                      sx={{
+                        width: {xs: "30px", sm: "40px", md: "50px", lg: "68px"},
+                        height: {xs: "30px", sm: "40px", md: "50px", lg: "68px"},
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Image
+                        src="/Images/HomeIcon.svg"
+                        alt="Home"
+                        // layout="responsive"
+                        width={50}
+                        height={50}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </Box>
                     <Box sx={{ textAlign: "left" }}>
                       <Typography
                         sx={{
                           whiteSpace: "nowrap",
                           fontWeight: 600,
-                          fontSize: "27px",
+                          fontSize: {
+                            xs: "22px",
+                            sm: "24px",
+                            md: "24px",
+                            lg: "27px",
+                          },
                           color: "#484848",
                         }}
                       >
@@ -119,7 +184,7 @@ export default function OurMission() {
                       </Typography>
                       <Typography
                         sx={{
-                          fontSize: "17px",
+                          fontSize: { xs: "13px", sm: "15px", lg: "17px" },
                           fontWeight: 400,
                           color: "#484848",
                         }}
@@ -127,25 +192,41 @@ export default function OurMission() {
                         In home sales
                       </Typography>
                     </Box>
-                  </Grid>
+                  </Box>
 
-                  <Grid
-                    item
-                    xs={12}
-                    sm={4}
+                  <Box
                     textAlign="center"
-                    sx={{ display: "flex", gap: 2 }}
+                    sx={{ display: "flex", gap: {xs: 2, sm: 2, md: 1}, alignItems: "center" }}
                   >
-                    <CurrencyExchangeOutlinedIcon
-                      //   icon="mdi:currency-usd"
-                      style={{ fontSize: "68px", color: "#B29D70" }}
-                    />
+                    <Box
+                      sx={{
+                        width: {xs: "30px", sm: "40px", md: "50px", lg: "68px"},
+                        height: {xs: "30px", sm: "40px", md: "50px", lg: "68px"},
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Image
+                        src="/Images/DollarIcon.svg"
+                        alt="Dollar"
+                        // layout="responsive"
+                        width={50}
+                        height={50}
+                        style={{ objectFit: "contain" }}
+                      />
+                    </Box>
                     <Box sx={{ textAlign: "left" }}>
                       <Typography
                         sx={{
                           whiteSpace: "nowrap",
                           fontWeight: 600,
-                          fontSize: "27px",
+                          fontSize: {
+                            xs: "22px",
+                            sm: "24px",
+                            md: "24px",
+                            lg: "27px",
+                          },
                           color: "#484848",
                         }}
                       >
@@ -153,7 +234,7 @@ export default function OurMission() {
                       </Typography>
                       <Typography
                         sx={{
-                          fontSize: "17px",
+                          fontSize: { xs: "13px", sm: "15px", lg: "17px" },
                           fontWeight: 400,
                           color: "#484848",
                         }}
@@ -161,8 +242,8 @@ export default function OurMission() {
                         In Savings
                       </Typography>
                     </Box>
-                  </Grid>
-                </Grid>
+                  </Box>
+                </Box>
               </Box>
             </Box>
           </Grid>
@@ -173,8 +254,9 @@ export default function OurMission() {
             sx={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
+              // alignItems: "center",
               p: { xs: 0, lg: 2 },
+              mt: {xs: 2, md: 0}
             }}
           >
             <Box
@@ -183,11 +265,12 @@ export default function OurMission() {
                 height: {
                   xs: "290px",
                   sm: "400px",
-                  md: "100%",
+                  md: "450px",
+                  lg: "598px",
                 },
                 display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
+                // justifyContent: "center",
+                // alignItems: "center",
                 position: "relative",
               }}
             >
@@ -195,7 +278,7 @@ export default function OurMission() {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"
+                  src="https://www.youtube.com/embed/JnTmPSswgzs?autoplay=1"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

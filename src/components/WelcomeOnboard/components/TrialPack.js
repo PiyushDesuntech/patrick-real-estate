@@ -1,11 +1,11 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import CheckIcon from "@mui/icons-material/Check";
 
 export default function TrialPack() {
   return (
-    <Box>
-      <Box sx={{ px: 4 }}>
+    <Container maxWidth="xl" sx={{px: {xs: 1, md: 6}}}>
+      {/* <Box sx={{ px: 4 }}>
         <Box
           sx={{
             maxWidth: "1200px",
@@ -87,8 +87,8 @@ export default function TrialPack() {
             </Grid>
           </Grid>
         </Box>
-      </Box>
-      <Box sx={{mt: {xs: 4, md: 30,}, mb: 6, p: 1}}>
+      </Box> */}
+      <Box sx={{mt: {xs: 4, md: 10,}, mb: 6,}}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Typography sx={{fontSize: "26px", fontWeight: 700, color: "#484848"}}>About Colonial Reality</Typography>
@@ -130,6 +130,6 @@ export default function TrialPack() {
           </Grid>
         </Grid>
       </Box>
-    </Box>
+    </Container>
   );
 }
