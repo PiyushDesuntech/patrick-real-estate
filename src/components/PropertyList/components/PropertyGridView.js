@@ -77,7 +77,7 @@ const PropertyGridView = ({properties}) => {
               >
                 <Box
                   sx={{
-                    height: "273px",
+                    height:{xs: "220px", md:  "273px"},
                     width: { xs: "100%", sm: "100%" },
                     backgroundImage: `url(${property.image})`,
                     borderRadius: 2,
@@ -85,6 +85,8 @@ const PropertyGridView = ({properties}) => {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize:"cover"
                   }}
                 >
                   <Box sx={{ display: "flex", gap: 2 }}>
@@ -116,7 +118,7 @@ const PropertyGridView = ({properties}) => {
                       <Typography
                         sx={{
                           fontWeight: "bold",
-                          fontSize: "27px",
+                          fontSize: {xs: "16px", md: "23px",lg: "27px"},
                           fontWeight: 600,
                           color: "#fff",
                         }}
@@ -136,7 +138,7 @@ const PropertyGridView = ({properties}) => {
                           },
                         }}
                       >
-                        <FavoriteBorderIcon />
+                        <FavoriteBorderIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
                       </IconButton>
                       <IconButton
                         sx={{
@@ -149,7 +151,7 @@ const PropertyGridView = ({properties}) => {
                           },
                         }}
                       >
-                        <SyncAltOutlinedIcon />
+                        <SyncAltOutlinedIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
                       </IconButton>
                       <IconButton
                         sx={{
@@ -162,7 +164,7 @@ const PropertyGridView = ({properties}) => {
                           },
                         }}
                       >
-                        <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
+                        <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)",fontSize: {xs: "small", sm: "medium"} }} />
                       </IconButton>
                     </Box>
                   </Box>
@@ -184,7 +186,7 @@ const PropertyGridView = ({properties}) => {
                     {property.type}
                   </Typography>
                   <Typography
-                    sx={{ fontWeight: 600, fontSize: "30px", color: "#484848" }}
+                    sx={{ fontWeight: 600, fontSize: {xs: "20px", md: "26px",lg: "30px"}, color: "#484848" }}
                   >
                     {property.title}
                   </Typography>
@@ -195,7 +197,7 @@ const PropertyGridView = ({properties}) => {
                       alignItems: "center",
                       mb: 1,
                       color: "#484848",
-                      fontSize: "21px",
+                      fontSize: {xs: "16px", md: "18px",lg: "21px"}
                     }}
                   >
                     <PlaceOutlinedIcon fontSize="small" sx={{ mr: 0.5 }} />
@@ -211,7 +213,7 @@ const PropertyGridView = ({properties}) => {
                     <Typography
                       variant="body2"
                       sx={{
-                        fontSize: "21px",
+                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -221,7 +223,7 @@ const PropertyGridView = ({properties}) => {
                     <Typography
                       variant="body2"
                       sx={{
-                        fontSize: "21px",
+                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -231,7 +233,7 @@ const PropertyGridView = ({properties}) => {
                     <Typography
                       variant="body2"
                       sx={{
-                        fontSize: "21px",
+                        fontSize: {xs: "16px", md: "18px",lg: "21px"},
                         fontWeight: 400,
                         color: "#484848",
                       }}
@@ -261,7 +263,7 @@ const PropertyGridView = ({properties}) => {
                   />
                   <Typography
                     sx={{
-                      fontSize: "18px",
+                      fontSize: {xs: "16px", md: "18px",lg: "21px"},
                       color: "#484848",
                     }}
                   >
@@ -271,7 +273,7 @@ const PropertyGridView = ({properties}) => {
                 <Typography
                   variant="body2"
                   color="textSecondary"
-                  sx={{ fontSize: "18px" }}
+                  sx={{ fontSize: {xs: "16px", md: "18px",lg: "21px"} }}
                 >
                   {property.yearsAgo} years ago
                 </Typography>

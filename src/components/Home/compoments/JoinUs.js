@@ -8,25 +8,25 @@ export default function JoinUs() {
         backgroundImage: "url(/Images/Join.svg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        mt: 10,
       }}
     >
       <Container maxWidth="xl">
-        <Grid container sx={{ px: { md: 7 }, py: 4 }}>
-          <Grid item sm={7} xs={12} sx={{ color: "#fff" }}>
+        <Grid container sx={{ px: { md: 7 }, py: {xs: 3, md: 4} }}>
+          <Grid item md={7} xs={12} sx={{ color: "#fff" }}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                py: 10,
+                py: {xs: 2, md: 10},
                 gap: 2,
+                alignItems: {xs: "center", md: "flex-start"}
               }}
             >
-              <Typography sx={{ fontSize: "40px", fontWeight: 600 }}>
+              <Typography sx={{ fontSize: {xs:"26px", md: "40px"}, fontWeight: 600 }}>
                 Interested in a career in real estate{" "}
               </Typography>
-              <Typography sx={{ fontSize: "16px", fontWeight: 500 }}>
+              <Typography sx={{ fontSize: {xs:"12px",md: "16px"}, fontWeight: 500 }}>
                 Maecenas pharetra neque maximus nunc semper, in faucibus quam
                 facilisis.
               </Typography>
@@ -34,7 +34,7 @@ export default function JoinUs() {
           </Grid>
           <Grid
             item
-            sm={5}
+            md={5}
             xs={12}
             sx={{
               display: "flex",
@@ -48,7 +48,7 @@ export default function JoinUs() {
                 gap: 3,
                 justifyContent: { xs: "center", md: "flex-end" },
                 alignItems: "center",
-                py: 9,
+                py: {xs: 2, md: 9},
                 flexWrap: {xs: "wrap", lg: "nowrap"},
               }}
             >

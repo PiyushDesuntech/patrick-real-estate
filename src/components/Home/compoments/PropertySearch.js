@@ -207,10 +207,11 @@ const PropertySearch = () => {
             <Box
               sx={{
                 display: "flex",
-                flexWrap: { xs: "wrap", sm: "unset" },
+                flexWrap: { xs: "wrap", lg: "unset" },
                 gap: 2,
                 alignItems: "center",
                 justifyContent: "center",
+                width: "100%",
                 flexDirection: { xs: "column", sm: "unset" },
               }}
             >

@@ -242,7 +242,7 @@ const Filter = ({ filters, setFilters }) => {
             Save Search
           </Button>
         </Grid>
-        <Grid item xs={12} sm={12} md={6}>
+        <Grid item xs={12} sm={12} md={6} sx={{mb: {xs: 2, md: 0}, pl: {xs: 0, md: 1}}}>
           <TextField
             size="small"
             label="Search by Address"

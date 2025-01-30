@@ -58,13 +58,11 @@ const FooterIndex = () => {
             <Grid item xs={12} sm={6} md={2.5}>
               <Box
                 sx={{
-                  px: { md: 7 },
+                  px: { lg: 7, md: 0 },
                   mt: 5,
                 }}
               >
-                <Typography
-                  sx={{ fontWeight: 700, mb: 4, fontSize: "22px" }}
-                >
+                <Typography sx={{ fontWeight: 700, mb: 4, fontSize: "22px" }}>
                   Quick Links
                 </Typography>
                 <Typography
@@ -74,8 +72,8 @@ const FooterIndex = () => {
                     mb: 2,
                     fontSize: "16px",
                     fontWeight: 500,
-                    "&:hover": {color: "#E8E1C4"},
-                    cursor: "pointer"
+                    "&:hover": { color: "#E8E1C4" },
+                    cursor: "pointer",
                   }}
                 >
                   About Us
@@ -87,8 +85,8 @@ const FooterIndex = () => {
                     mb: 2,
                     fontSize: "16px",
                     fontWeight: 500,
-                    "&:hover": {color: "#E8E1C4"},
-                    cursor: "pointer"
+                    "&:hover": { color: "#E8E1C4" },
+                    cursor: "pointer",
                   }}
                 >
                   Terms & Conditions
@@ -100,8 +98,8 @@ const FooterIndex = () => {
                     mb: 2,
                     fontSize: "16px",
                     fontWeight: 500,
-                    "&:hover": {color: "#E8E1C4"},
-                    cursor: "pointer"
+                    "&:hover": { color: "#E8E1C4" },
+                    cursor: "pointer",
                   }}
                 >
                   User's Guide
@@ -113,21 +111,21 @@ const FooterIndex = () => {
                     mb: 2,
                     fontSize: "16px",
                     fontWeight: 500,
-                    "&:hover": {color: "#E8E1C4"},
-                    cursor: "pointer"
+                    "&:hover": { color: "#E8E1C4" },
+                    cursor: "pointer",
                   }}
                 >
                   Support Center
                 </Typography>
                 <Typography
-                   sx={{
+                  sx={{
                     display: "block",
                     color: "inherit",
                     mb: 2,
                     fontSize: "16px",
                     fontWeight: 500,
-                    "&:hover": {color: "#E8E1C4"},
-                    cursor: "pointer"
+                    "&:hover": { color: "#E8E1C4" },
+                    cursor: "pointer",
                   }}
                 >
                   Press Info
@@ -143,18 +141,42 @@ const FooterIndex = () => {
                   mt: 5,
                 }}
               >
-                <Typography
-                  sx={{ fontWeight: 700, mb: 4, fontSize: "22px" }}
-                >
+                <Typography sx={{ fontWeight: 700, mb: 4, fontSize: "22px" }}>
                   Contact Us
                 </Typography>
-                <Typography sx={{ fontSize: "16px", mb: 2, fontWeight: "500", "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}>
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    mb: 2,
+                    fontWeight: "500",
+                    "&:hover": { color: "#E8E1C4" },
+                    cursor: "pointer",
+                  }}
+                >
                   info@examplemail.com
                 </Typography>
-                <Typography sx={{ fontSize: "16px", mb: 2, fontWeight: "500", "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}>
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    mb: 2,
+                    fontWeight: "500",
+                    "&:hover": { color: "#E8E1C4" },
+                    cursor: "pointer",
+                  }}
+                >
                   Collins Street West, Victoria 9007, Australia
                 </Typography>
-                <Typography sx={{ fontSize: "16px", mb: 2, fontWeight: "500", "&:hover": {color: "#E8E1C4"}, cursor: "pointer" }}>+123 456 789</Typography>
+                <Typography
+                  sx={{
+                    fontSize: "16px",
+                    mb: 2,
+                    fontWeight: "500",
+                    "&:hover": { color: "#E8E1C4" },
+                    cursor: "pointer",
+                  }}
+                >
+                  +123 456 789
+                </Typography>
               </Box>
             </Grid>
 
@@ -162,34 +184,44 @@ const FooterIndex = () => {
             <Grid item xs={12} sm={6} md={3.5}>
               <Box
                 sx={{
-                  px: { md: 4 },
+                  px: { lg: 3, md: 0 },
                   mt: 5,
                 }}
               >
-                <Typography
-                  sx={{ fontWeight: 700, mb: 2, fontSize: "22px" }}
-                >
+                <Typography sx={{ fontWeight: 700, mb: 2, fontSize: "22px" }}>
                   Follow Us
                 </Typography>
                 <Box
-                  sx={{ display: "flex", gap: 0.5, mb: 3, flexWrap: "wrap" }}
+                  sx={{ display: "flex", gap:0, mb: 3, flexWrap: "wrap" }}
                 >
-                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"}  }}>
+                  <IconButton
+                    sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
+                  >
                     <FacebookIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
+                  <IconButton
+                    sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
+                  >
                     <XIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
+                  <IconButton
+                    sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
+                  >
                     <TwitterIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
+                  <IconButton
+                    sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
+                  >
                     <InstagramIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
+                  <IconButton
+                    sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
+                  >
                     <PinterestIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
-                  <IconButton sx={{ color: "white", "&:hover": {color: "#E8E1C4"} }}>
+                  <IconButton
+                    sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
+                  >
                     <GoogleIcon sx={{ fontSize: "32px" }} />
                   </IconButton>
                 </Box>
@@ -256,69 +288,126 @@ const FooterIndex = () => {
               color: "white",
               // py: 3,
               pb: 2,
+              gap: 1,
             }}
           >
             <Box
               sx={{
-                display: {xs: "grid", sm: "flex"},
+                display: { xs: "grid", sm: "flex" },
                 gap: { xs: 1, md: "30px" },
                 flexWrap: "wrap,",
-                gridTemplateColumns: "1fr, 1fr"
+                gridTemplateColumns: { xs: "repeat(4, 1fr)", sm: "none" },
               }}
             >
               <Typography
                 component="a"
                 href="/"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                  "&:hover": { color: "#E8E1C4" },
+                  cursor: "pointer",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
               >
                 Home
               </Typography>
               <Typography
                 component="a"
                 href="/buy"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                  "&:hover": { color: "#E8E1C4" },
+                  cursor: "pointer",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
               >
                 Buy
               </Typography>
               <Typography
                 component="a"
                 href="/rent"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                  "&:hover": { color: "#E8E1C4" },
+                  cursor: "pointer",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
               >
                 Rent
               </Typography>
               <Typography
                 component="a"
                 href="/sell"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                  "&:hover": { color: "#E8E1C4" },
+                  cursor: "pointer",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
               >
                 Sell
               </Typography>
               <Typography
                 component="a"
                 href="#"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                  "&:hover": { color: "#E8E1C4" },
+                  cursor: "pointer",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
               >
                 Students
               </Typography>
               <Typography
                 component="a"
                 href="/insights"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                  "&:hover": { color: "#E8E1C4" },
+                  cursor: "pointer",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
               >
                 Market Insights
               </Typography>
               <Typography
                 component="a"
                 href="#"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                  "&:hover": { color: "#E8E1C4" },
+                  cursor: "pointer",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
               >
-               Resources
+                Resources
               </Typography>
               <Typography
                 component="a"
                 href="/about-us"
-                sx={{ mb: 2, fontSize: { xs: "14px", sm: "16px" }, "&:hover": {color: "#E8E1C4"}, cursor: "pointer", color: "#fff", textDecoration: "none" }}
+                sx={{
+                  mb: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                  "&:hover": { color: "#E8E1C4" },
+                  cursor: "pointer",
+                  color: "#fff",
+                  textDecoration: "none",
+                }}
               >
                 About
               </Typography>
@@ -329,7 +418,9 @@ const FooterIndex = () => {
                 flexWrap: "wrap",
                 gap: 2,
                 alignItems: "center",
-                mt: -2,
+                mt: { xs: 1, sm: -2 },
+                justifyContent: "space-between",
+                width: {xs: "fit-content", md: "100%", lg: "fit-content"}
               }}
             >
               <Typography variant="body2">
@@ -338,6 +429,10 @@ const FooterIndex = () => {
               <IconButton
                 variant="contained"
                 sx={{
+                  position: { xs: "fixed", md: "static" }, 
+                  bottom: { xs: "20px", md: "auto" }, 
+                  right: { xs: "20px", md: "auto" }, 
+                  zIndex: { xs: 1000, md: "auto" },
                   backgroundColor: "#fff",
                   "&:hover": {
                     backgroundColor: "#4D4D4D",
@@ -346,7 +441,7 @@ const FooterIndex = () => {
                   color: "#2C3E50",
                   minWidth: "50px",
                   height: "50px",
-                  mr: -1,
+                  boxShadow: { xs: "0px 4px 10px rgba(0, 0, 0, 0.2)", md: "none" }, 
                 }}
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });

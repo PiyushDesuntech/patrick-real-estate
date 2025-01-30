@@ -83,17 +83,18 @@ export default function PropertyHero() {
           >
             <Box>
               <Typography
-                sx={{ fontSize: "37px", fontWeight: 600, color: "#fff" }}
+                sx={{ fontSize: {xs: "26px", sm: "28px", md: "30px", lg: "37px"}, fontWeight: 600, color: "#fff" }}
               >
                 Diamond Manor Apartment
               </Typography>
               <Typography
-                variant="body2"
                 sx={{
                   display: "flex",
                   alignItems: "center",
                   mb: 1,
                   color: "#fff",
+                  fontSize: {xs: "14px", md: "17px"},
+                  fontWeight: 400,
                 }}
               >
                 <PlaceOutlinedIcon fontSize="small" sx={{ mr: 0.5 }} />
@@ -102,7 +103,7 @@ export default function PropertyHero() {
             </Box>
             <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
               <Typography
-                sx={{ fontSize: "37px", color: "#fff", fontWeight: 600 }}
+                sx={{ fontSize: {xs: "26px", sm: "28px", md: "30px", lg: "37px"}, color: "#fff", fontWeight: 600 }}
               >
                 $6500
               </Typography>
@@ -112,42 +113,42 @@ export default function PropertyHero() {
                     borderRadius: "3px",
                     background: "#E8E1C4",
                     color: "#767676",
-                    height: "43px",
+                    // height: "43px",
                     "&:hover": {
                       background: "#fff",
                       color: "#4D4D4D",
                     },
                   }}
                 >
-                  <FavoriteBorderIcon />
+                  <FavoriteBorderIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
                 </IconButton>
                 <IconButton
                   sx={{
                     borderRadius: "3px",
                     background: "#E8E1C4",
                     color: "#767676",
-                    height: "43px",
+                    // height: "43px",
                     "&:hover": {
                       background: "#fff",
                       color: "#4D4D4D",
                     },
                   }}
                 >
-                  <SyncAltOutlinedIcon />
+                  <SyncAltOutlinedIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
                 </IconButton>
                 <IconButton
                   sx={{
                     borderRadius: "3px",
                     background: "#E8E1C4",
                     color: "#767676",
-                    height: "43px",
+                    // height: "43px",
                     "&:hover": {
                       background: "#fff",
                       color: "#4D4D4D",
                     },
                   }}
                 >
-                  <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
+                  <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)", fontSize: {xs: "small", sm: "medium"} }} />
                 </IconButton>
               </Box>
             </Box>

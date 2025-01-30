@@ -1,13 +1,19 @@
+"use client";
+import React, { useState } from "react";
 import { Box, Container, Grid, IconButton, Typography } from "@mui/material";
 import Image from "next/image";
-import React from "react";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 import { Icon } from "@iconify/react";
-import CurrencyExchangeOutlinedIcon from '@mui/icons-material/CurrencyExchangeOutlined';
+import CurrencyExchangeOutlinedIcon from "@mui/icons-material/CurrencyExchangeOutlined";
 
 export default function OurMission() {
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
+  const handlePlayVideo = () => {
+    setIsVideoPlaying(true);
+  };
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 6, xs: 1 }, mt: 2 }}>
+    <Container maxWidth="xl" sx={{ px: { lg: 6, xs: 1 }, mt: "60px" }}>
       <Box>
         <Typography
           sx={{ textAlign: "center", fontSize: "36px", fontWeight: 600 }}
@@ -15,7 +21,7 @@ export default function OurMission() {
           Our Mission Is To Find House
         </Typography>
 
-        <Grid container spacing={4} sx={{mt: "47px"}}>
+        <Grid container spacing={4} sx={{ mt: "47px" }}>
           <Grid item xs={12} md={7}>
             <Box
               sx={{
@@ -64,7 +70,7 @@ export default function OurMission() {
                   >
                     <Icon
                       icon="uil:user"
-                      style={{ fontSize: "68px", color: "#B29D70",  }}
+                      style={{ fontSize: "68px", color: "#B29D70" }}
                     />
                     <Box sx={{ textAlign: "left" }}>
                       <Typography
@@ -72,6 +78,7 @@ export default function OurMission() {
                           whiteSpace: "nowrap",
                           fontWeight: 600,
                           fontSize: "27px",
+                          color: "#484848",
                         }}
                       >
                         14,768
@@ -105,6 +112,7 @@ export default function OurMission() {
                           whiteSpace: "nowrap",
                           fontWeight: 600,
                           fontSize: "27px",
+                          color: "#484848",
                         }}
                       >
                         $13 Billion
@@ -129,7 +137,7 @@ export default function OurMission() {
                     sx={{ display: "flex", gap: 2 }}
                   >
                     <CurrencyExchangeOutlinedIcon
-                    //   icon="mdi:currency-usd"
+                      //   icon="mdi:currency-usd"
                       style={{ fontSize: "68px", color: "#B29D70" }}
                     />
                     <Box sx={{ textAlign: "left" }}>
@@ -138,6 +146,7 @@ export default function OurMission() {
                           whiteSpace: "nowrap",
                           fontWeight: 600,
                           fontSize: "27px",
+                          color: "#484848",
                         }}
                       >
                         $85 Million
@@ -157,7 +166,17 @@ export default function OurMission() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} md={5}  sx={{display: "flex", justifyContent: "center", alignItems: "center", p: {xs: 0, lg: 2}}}>
+          <Grid
+            item
+            xs={12}
+            md={5}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              p: { xs: 0, lg: 2 },
+            }}
+          >
             <Box
               sx={{
                 width: "100%",
@@ -166,28 +185,59 @@ export default function OurMission() {
                   sm: "400px",
                   md: "100%",
                 },
-                backgroundImage: "url(/Images/ourmissions.svg)",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                position: "relative",
               }}
             >
-              <IconButton
-                sx={{
-                  background: "#B3A87A",
-                  color: "#fff",
-                  width: 86,
-                  height: 86,
-                  "&:hover": {
-                    background: "#fff",
-                    color: "#B3A87A",
-                  },
-                }}
-              >
-                <PlayArrowOutlinedIcon sx={{ fontSize: 48 }} />
-              </IconButton>
+              {isVideoPlaying ? (
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                  }}
+                ></iframe>
+              ) : (
+                <Box
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    backgroundImage: "url(/Images/ourmissions.svg)",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <IconButton
+                    sx={{
+                      background: "#B3A87A",
+                      color: "#fff",
+                      width: 86,
+                      height: 86,
+                      "&:hover": {
+                        background: "#fff",
+                        color: "#B3A87A",
+                      },
+                    }}
+                    onClick={handlePlayVideo}
+                  >
+                    <PlayArrowOutlinedIcon sx={{ fontSize: 48 }} />
+                  </IconButton>
+                </Box>
+              )}
             </Box>
           </Grid>
         </Grid>

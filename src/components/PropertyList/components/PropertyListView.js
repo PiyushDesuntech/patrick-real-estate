@@ -78,7 +78,7 @@ const PropertyListView = ({ properties }) => {
               >
                 <Box
                   sx={{
-                    height: { xs: "150px", md: "249px" },
+                    height: { xs: "200px",sm: "250px", md: "249px" },
                     width: { xs: "100%", md: "304px" },
                     backgroundImage: `url(${property.image})`,
                     borderRadius: "12px",
@@ -86,6 +86,8 @@ const PropertyListView = ({ properties }) => {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize:"cover"
                   }}
                 >
                   <Box sx={{ display: "flex", gap: 2 }}>
@@ -307,12 +309,13 @@ const PropertyListView = ({ properties }) => {
                     xs: "0px 0px 12px 12px",
                     md: "0px 12px 12px 0px",
                   },
+                  py: {xs: 1, md: 0}
                 }}
               >
                 <Typography
                   sx={{
                     fontWeight: "bold",
-                    fontSize: "39px",
+                    fontSize: {xs: "26px", md: "34px",lg: "39px"},
                     fontWeight: 600,
                     color: "#000",
                   }}

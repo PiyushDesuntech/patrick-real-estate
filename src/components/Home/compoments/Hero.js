@@ -28,7 +28,7 @@ export default function Hero() {
     <Box
       sx={{
         position: "relative",
-        height: "100vh",
+        height: "100%",
         width: "100%",
         mt: -14,
       }}
@@ -70,7 +70,7 @@ export default function Hero() {
           pt: {xs: 15, sm: 20,md: 20, lg: 33},
         }}
       >
-        <Box sx={{ display: "flex", flexDirection: "column", gap: {xs:"10px", lg: "100px"},}}>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: {xs:"10px", lg: "100px"}, pb: 3}}>
           <Box>
           <Typography
             sx={{

@@ -272,7 +272,7 @@ const PropertyListing = () => {
                 {/* Image Section */}
                 <Box
                   sx={{
-                    height: { xs: "303px", sm: "303px" },
+                    height: { xs: "220px", sm: "303px" },
                     width: { xs: "100%", sm: "328px" },
                     backgroundImage: `url(${property.image})`,
                     borderRadius: 2,
@@ -306,7 +306,7 @@ const PropertyListing = () => {
                         },
                       }}
                     >
-                      <FavoriteBorderIcon />
+                      <FavoriteBorderIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
                     </IconButton>
                     <IconButton
                       sx={{
@@ -319,7 +319,7 @@ const PropertyListing = () => {
                         },
                       }}
                     >
-                      <SyncAltOutlinedIcon />
+                      <SyncAltOutlinedIcon sx={{fontSize: {xs: "small", sm: "medium"}}}/>
                     </IconButton>
                     <IconButton
                       sx={{
@@ -332,7 +332,7 @@ const PropertyListing = () => {
                         },
                       }}
                     >
-                      <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
+                      <ReplyOutlinedIcon sx={{ transform: "scaleX(-1)", fontSize: {xs: "small", sm: "medium"} }} />
                     </IconButton>
                     <IconButton
                       sx={{
@@ -345,7 +345,7 @@ const PropertyListing = () => {
                         },
                       }}
                     >
-                      <CalculateOutlinedIcon sx={{ transform: "scaleX(-1)" }} />
+                      <CalculateOutlinedIcon sx={{ transform: "scaleX(-1)", fontSize: {xs: "small", sm: "medium"} }} />
                     </IconButton>
                   </Box>
                 </Box>
@@ -360,26 +360,25 @@ const PropertyListing = () => {
                   }}
                 >
                   <Typography
-                    variant="subtitle2"
                     sx={{ color: "#B3A87A", fontSize: "17px" }}
                   >
                     {property.type}
                   </Typography>
                   <Typography
-                    sx={{ fontWeight: 600, fontSize: "22px", color: "#484848" }}
+                    sx={{ fontWeight: 600, fontSize: {xs: "16px", md: "18px",lg: "22px"}, color: "#484848" }}
                   >
                     {property.title}
                   </Typography>
                   <Typography
-                    variant="body2"
                     sx={{
                       display: "flex",
                       alignItems: "center",
                       mb: 1,
                       color: "#484848",
+                      fontSize: {xs: "14px", md: "16px",lg: "17.68px"}
                     }}
                   >
-                    <PlaceOutlinedIcon fontSize="small" sx={{ mr: 0.5 }} />
+                    <PlaceOutlinedIcon fontSize="small" sx={{ mr: 0.5, mt: 1 }} />
                     {property.location}
                   </Typography>
                   <Box
@@ -403,15 +402,14 @@ const PropertyListing = () => {
                   display: "flex",
                   justifyContent: "space-between",
                   px: 2,
-                  py: 1,
+                  py: {xs: 1, md: 3},
                   //   borderTop: '1px solid #ddd',
                   flexDirection: "column",
                 }}
               >
                 <Typography
                   sx={{
-                    fontWeight: "bold",
-                    fontSize: "27px",
+                    fontSize: {xs: "16px", md: "27px"},
                     fontWeight: 600,
                     color: "#484848",
                   }}

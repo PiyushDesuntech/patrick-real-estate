@@ -33,11 +33,11 @@ const data = [
 const WhyUs = () => {
   return (
     <Container maxWidth="xl">
-      <Box sx={{ padding: {md: 7}, mt: 2 }}>
-        <Typography sx={{fontSize: "40px", fontWeight: 600}} align="center" gutterBottom>
+      <Box sx={{ padding: {md: 6}, mt: 2 }}>
+        <Typography sx={{ fontWeight: 500, fontSize: {xs:"26px", md: "40px"}, color: "#484848"}} align="center" gutterBottom>
           Why Choose Us
         </Typography>
-        <Typography sx={{fontSize: "16px", fontWeight: 500, color: "#585858"}} align="center" gutterBottom>
+        <Typography sx={{fontSize: {xs:"12px",md: "16px"}, fontWeight: 500, color: "#585858"}} align="center" gutterBottom>
           We provide full service at every step
         </Typography>
         <Grid container spacing={4} mt={2}>
@@ -49,6 +49,7 @@ const WhyUs = () => {
                   boxShadow: 3,
                   padding: "1rem",
                   borderRadius: "8px",
+                  color: "#444444",
                   transition: "background-color 0.5s ease, color 0.5s ease",
                   "&:hover": {
                     backgroundColor: "#3E4C66",
@@ -64,7 +65,7 @@ const WhyUs = () => {
                     justifyContent: "space-around",
                     alignItems: "center",
                     // gap: "36px",
-                    height: {md: "360px"},
+                    height: {lg: "360px", md: "380px"},
                   }}
                 >
                   <Box
@@ -89,12 +90,12 @@ const WhyUs = () => {
                     />
                   </Box>
                  <Box>
-                 <Typography variant="h6" gutterBottom>
+                 <Typography sx={{fontWeight: 600, fontSize: {xs:"16px",md: "18px",lg: "22px"}, }} gutterBottom>
                     {item.title}
                   </Typography>
                  </Box>
                   <Box>
-                  <Typography variant="body2" >
+                  <Typography sx={{fontWeight: 500, fontSize: {xs:"12px",md: "14px",lg: "16px"}, }} >
                     {item.description}
                   </Typography>
                   </Box>

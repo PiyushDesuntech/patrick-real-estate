@@ -3,7 +3,7 @@ import { Box, Card, CardContent, CardMedia, Grid, Typography } from "@mui/materi
 
 const properties = [
   {
-    image: "images/nearby1.svg", // Replace with actual image URLs
+    image: "/Images/nearby1.svg", 
     title: "Diamond Manor",
     price: "$6500",
     beds: 4,
@@ -11,7 +11,7 @@ const properties = [
     sqft: 150,
   },
   {
-    image: "images/nearby2.svg",
+    image: "/Images/nearby2.svg",
     title: "Eaton Garth Penthouse",
     price: "$7500",
     beds: 4,
@@ -19,7 +19,7 @@ const properties = [
     sqft: 220,
   },
   {
-    image: "images/nearby3.svg",
+    image: "/Images/nearby3.svg",
     title: "Skyper Pool Apartment",
     price: "$1200/mo",
     beds: 3,
@@ -27,7 +27,7 @@ const properties = [
     sqft: 110,
   },
   {
-    image: "images/nearby4.svg",
+    image: "/Images/nearby4.svg",
     title: "North Dillard Street",
     price: "$5500",
     beds: 4,
@@ -40,23 +40,24 @@ const PropertyCard = ({ property }) => (
   <Card
     sx={{
       display: "flex",
-      flexDirection: { xs: "column", sm: "row" },
+      flexDirection: { xs: "row", sm: "row" },
       mb: 1,
-      boxShadow: "none"
+      boxShadow: "none",
+      alignItems: "center",
     }}
   >
     <CardMedia
       component="img"
       image={property.image}
       alt={property.title}
-      sx={{ width: { xs: "100%", sm: 100 }, height: 100 }}
+      sx={{ width: { xs: 60, sm: 100 }, height:  { xs: 60, sm: 100 } }}
     />
     <CardContent sx={{ flex: 1 }}>
-      <Typography variant="h6" noWrap>
+      <Typography sx={{fontSize: {xs: "14px", md: "20px"}, fontWeight: 700, color: "#484848"}} noWrap>
         {property.title}
       </Typography>
-      <Typography color="text.secondary">{property.price}</Typography>
-      <Typography variant="body2">
+      <Typography sx={{fontSize: {xs: "14px", md: "20px"}, fontWeight: 700, color: "#B3A87A"}}>{property.price}</Typography>
+      <Typography sx={{fontSize: {xs: "12px", md: "17px"}, fontWeight: 700, color: "#B3A87A"}}>
         Beds: {property.beds} Baths: {property.baths} Sqft: {property.sqft}
       </Typography>
     </CardContent>
@@ -67,7 +68,7 @@ const NearbyProperties = () => (
   <Box p={3}>
     <Box  sx={{
         // width: "300px",
-        padding: "30px",
+        padding: {xs: "20px", md: "30px"},
         borderRadius: "8px",
         // boxShadow: 1,
         border: "2px solid #D8D8D8",

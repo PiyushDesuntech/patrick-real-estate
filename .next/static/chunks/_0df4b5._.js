@@ -11,6 +11,8 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/styles/styled.js [app-client] (ecmascript) <locals> <export default as styled>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Button/Button.js [app-client] (ecmascript) <export default as Button>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Box/Box.js [app-client] (ecmascript) <export default as Box>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Breadcrumbs$2f$Breadcrumbs$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Breadcrumbs$3e$__ = __turbopack_import__("[project]/node_modules/@mui/material/Breadcrumbs/Breadcrumbs.js [app-client] (ecmascript) <export default as Breadcrumbs>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ArrowForwardIos$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/icons-material/esm/ArrowForwardIos.js [app-client] (ecmascript)");
@@ -23,70 +25,129 @@ var _s = __turbopack_refresh__.signature();
 ;
 ;
 ;
+;
+const AgentButton = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$styled$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__$3c$export__default__as__styled$3e$__["styled"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"])(({ theme })=>({
+        backgroundColor: '#E8E1C4',
+        color: '#777777',
+        textTransform: 'none',
+        padding: '8px 16px',
+        fontSize: '14px',
+        fontWeight: 500,
+        minWidth: '120px',
+        height: 'fit-content',
+        '&:hover': {
+            backgroundColor: '#d8d0c0'
+        },
+        [theme.breakpoints.down('md')]: {
+            padding: '6px 14px',
+            fontSize: '14px',
+            minWidth: '90px'
+        },
+        [theme.breakpoints.down('sm')]: {
+            padding: '6px 12px',
+            fontSize: '13px',
+            minWidth: '80px'
+        }
+    }));
+_c = AgentButton;
 function Heading() {
     _s();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const pathSegments = pathname.split("/").filter(Boolean);
+    const handleAgentClick = ()=>{
+        router.push('/agents');
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
-            py: 4,
+            py: {
+                xs: 2,
+                sm: 3,
+                md: 4
+            },
             px: {
-                xs: 1,
-                sm: 3
-            }
+                xs: 2,
+                sm: 3,
+                md: 4
+            },
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            gap: 2
         },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Breadcrumbs$2f$Breadcrumbs$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Breadcrumbs$3e$__["Breadcrumbs"], {
-            "aria-label": "breadcrumb",
-            separator: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ArrowForwardIos$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Breadcrumbs$2f$Breadcrumbs$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Breadcrumbs$3e$__["Breadcrumbs"], {
+                "aria-label": "breadcrumb",
+                separator: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$ArrowForwardIos$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    sx: {
+                        fontSize: "10px"
+                    }
+                }, void 0, false, {
+                    fileName: "[project]/src/components/ChangePassword/components/Heading.js",
+                    lineNumber: 56,
+                    columnNumber: 20
+                }, void 0),
                 sx: {
-                    fontSize: "10px"
-                }
+                    '& .MuiBreadcrumbs-li': {
+                        fontSize: {
+                            xs: '14px',
+                            sm: '16px'
+                        }
+                    }
+                },
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
+                        component: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
+                        href: "/profile",
+                        underline: "hover",
+                        color: "inherit",
+                        children: "My Profile"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ChangePassword/components/Heading.js",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
+                        color: "text.primary",
+                        children: "Change Password"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/ChangePassword/components/Heading.js",
+                        lineNumber: 66,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/ChangePassword/components/Heading.js",
+                lineNumber: 54,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AgentButton, {
+                onClick: handleAgentClick,
+                children: "My Agent"
             }, void 0, false, {
                 fileName: "[project]/src/components/ChangePassword/components/Heading.js",
-                lineNumber: 14,
-                columnNumber: 54
-            }, void 0),
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Link$2f$Link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Link$3e$__["Link"], {
-                    component: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"],
-                    href: "/profile",
-                    underline: "hover",
-                    color: "inherit",
-                    children: "My Profile"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/ChangePassword/components/Heading.js",
-                    lineNumber: 15,
-                    columnNumber: 7
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
-                    color: "text.primary",
-                    children: "Change Password"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/ChangePassword/components/Heading.js",
-                    lineNumber: 18,
-                    columnNumber: 7
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/ChangePassword/components/Heading.js",
-            lineNumber: 14,
-            columnNumber: 6
-        }, this)
-    }, void 0, false, {
+                lineNumber: 70,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/components/ChangePassword/components/Heading.js",
-        lineNumber: 13,
-        columnNumber: 4
+        lineNumber: 43,
+        columnNumber: 5
     }, this);
 }
-_s(Heading, "xbyQPtUVMO7MNj7WjJlpdWqRcTo=", false, function() {
+_s(Heading, "0h+B63IiVHeDT9bDhB3JTwv8ebY=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
-_c = Heading;
+_c1 = Heading;
 const __TURBOPACK__default__export__ = Heading;
-var _c;
-__turbopack_refresh__.register(_c, "Heading");
+var _c, _c1;
+__turbopack_refresh__.register(_c, "AgentButton");
+__turbopack_refresh__.register(_c1, "Heading");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -193,22 +254,29 @@ function ChangePassMain() {
             maxWidth: '100%',
             margin: '0 auto',
             px: {
-                xs: 2,
-                sm: 3,
+                xs: 0,
+                sm: 2,
                 md: 4
             }
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Paper$2f$Paper$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Paper$3e$__["Paper"], {
             elevation: 0,
             sx: {
-                borderRadius: '12px',
+                borderRadius: {
+                    xs: 0,
+                    sm: '12px'
+                },
                 p: {
-                    xs: 3,
+                    xs: 2,
                     sm: 4,
                     md: 6
                 },
                 maxWidth: '550px',
-                margin: '0 auto'
+                margin: '0 auto',
+                boxShadow: {
+                    xs: 'none',
+                    sm: '0px 1px 3px rgba(0, 0, 0, 0.1)'
+                }
             },
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                 component: "form",
@@ -216,25 +284,37 @@ function ChangePassMain() {
                 sx: {
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: 4
+                    gap: {
+                        xs: 3,
+                        sm: 4
+                    }
                 },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
-                            mb: 2
+                            mb: {
+                                xs: 1,
+                                sm: 2
+                            }
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
                                     color: '#484848',
-                                    fontSize: '18px',
+                                    fontSize: {
+                                        xs: '16px',
+                                        sm: '18px'
+                                    },
                                     fontWeight: 500,
-                                    mb: 2
+                                    mb: {
+                                        xs: 1.5,
+                                        sm: 2
+                                    }
                                 },
                                 children: "Enter Your Current Password"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                                lineNumber: 110,
+                                lineNumber: 111,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTextField, {
@@ -246,31 +326,40 @@ function ChangePassMain() {
                                 placeholder: "Enter current password"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                                lineNumber: 120,
+                                lineNumber: 121,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                        lineNumber: 109,
+                        lineNumber: 110,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
-                            mb: 2
+                            mb: {
+                                xs: 1,
+                                sm: 2
+                            }
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
                                     color: '#484848',
-                                    fontSize: '18px',
+                                    fontSize: {
+                                        xs: '16px',
+                                        sm: '18px'
+                                    },
                                     fontWeight: 500,
-                                    mb: 2
+                                    mb: {
+                                        xs: 1.5,
+                                        sm: 2
+                                    }
                                 },
                                 children: "Enter Your New Password"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                                lineNumber: 131,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTextField, {
@@ -282,31 +371,40 @@ function ChangePassMain() {
                                 placeholder: "Enter new password"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                                lineNumber: 141,
+                                lineNumber: 142,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                        lineNumber: 130,
+                        lineNumber: 131,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
-                            mb: 4
+                            mb: {
+                                xs: 3,
+                                sm: 4
+                            }
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
                                 sx: {
                                     color: '#484848',
-                                    fontSize: '18px',
+                                    fontSize: {
+                                        xs: '16px',
+                                        sm: '18px'
+                                    },
                                     fontWeight: 500,
-                                    mb: 2
+                                    mb: {
+                                        xs: 1.5,
+                                        sm: 2
+                                    }
                                 },
                                 children: "Re-enter Your New Password"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                                lineNumber: 152,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StyledTextField, {
@@ -318,21 +416,37 @@ function ChangePassMain() {
                                 placeholder: "Re-enter new password"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                                lineNumber: 162,
+                                lineNumber: 163,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                        lineNumber: 151,
+                        lineNumber: 152,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                         sx: {
                             display: 'flex',
-                            gap: 2,
+                            flexDirection: {
+                                xs: 'column',
+                                sm: 'row'
+                            },
+                            gap: {
+                                xs: 2,
+                                sm: 2
+                            },
                             justifyContent: 'center',
-                            mt: 2
+                            mt: {
+                                xs: 1,
+                                sm: 2
+                            },
+                            '& > button': {
+                                width: {
+                                    xs: '100%',
+                                    sm: 'auto'
+                                }
+                            }
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SaveButton, {
@@ -340,7 +454,7 @@ function ChangePassMain() {
                                 children: "Save Changes"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                                lineNumber: 180,
+                                lineNumber: 185,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CancelButton, {
@@ -348,19 +462,19 @@ function ChangePassMain() {
                                 children: "Cancel"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                                lineNumber: 183,
+                                lineNumber: 188,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                        lineNumber: 172,
+                        lineNumber: 173,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/ChangePassword/components/ChangePassMain.js",
-                lineNumber: 100,
+                lineNumber: 101,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
@@ -417,33 +531,33 @@ function ChangePassIndex() {
             display: 'flex',
             flexDirection: 'column',
             gap: {
-                xs: '16px',
-                sm: '24px',
+                xs: '8px',
+                sm: '16px',
                 md: '48px'
             },
             overflow: 'hidden',
             position: 'relative',
             paddingBottom: {
-                xs: '32px',
-                sm: '100px',
+                xs: '16px',
+                sm: '32px',
                 md: '200px'
             }
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
             sx: {
                 paddingLeft: {
-                    xs: '16px',
-                    sm: '24px',
+                    xs: '0px',
+                    sm: '16px',
                     md: '50px'
                 },
                 paddingRight: {
-                    xs: '16px',
-                    sm: '24px',
+                    xs: '0px',
+                    sm: '16px',
                     md: '32px'
                 },
                 paddingTop: {
-                    xs: '16px',
-                    sm: '24px',
+                    xs: '8px',
+                    sm: '16px',
                     md: '32px'
                 },
                 width: '100%',

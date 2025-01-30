@@ -15,7 +15,7 @@ export default function AboutUsIndex() {
       <OurMission />
       <WhyUs />
       <OurAgents/>
-      <ClientTestimonials/>
+      <ClientTestimonials title="Client Stories"/>
       <JoinUs/>
     </Box>
   )

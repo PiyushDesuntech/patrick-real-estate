@@ -24,7 +24,7 @@ export default function RecentBlog() {
     >
       <Container maxWidth="xl" sx={{ px: { md: 8 }, pb: 5 }}>
         <Grid container spacing={2}>
-          <Grid item md={6.5} xs={12} sx={{ color: "#fff" }}>
+          <Grid item lg={6.5} xs={12} sx={{ color: "#fff" }}>
             <Box
               sx={{
                 display: "flex",
@@ -34,7 +34,7 @@ export default function RecentBlog() {
                 mt: 2,
               }}
             >
-              <Typography sx={{ fontSize: "25px", fontWeight: 600 }}>
+              <Typography sx={{ fontSize: {xs:"18px",sm: "22px",md: "25px"}, fontWeight: 500 }}>
                 Recent Blog{" "}
               </Typography>
               <Box
@@ -46,8 +46,8 @@ export default function RecentBlog() {
               >
                 <Box
                   sx={{
-                    height: "147px",
-                    width: "213px",
+                    height: {xs: "100%", md: "147px"},
+                    width: {xs: "100%", md: "213px"},
                     overflow: "hidden",
                     mt: 2,
                     borderRadius: "5px",
@@ -56,9 +56,9 @@ export default function RecentBlog() {
                   <Image
                     src="/Images/RecentBlog.svg"
                     alt="Colonial Realty Associates"
-                    layout="intrinsic"
-                    width={250}
-                    height={100}
+                    layout="responsive"
+                    width={283}
+                    height={147}
                     style={{
                       objectFit: "contain",
                       maxWidth: "100%",
@@ -71,11 +71,11 @@ export default function RecentBlog() {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
-                    maxWidth: "403px",
+                    maxWidth: {xs: "100%", lg: "403px"},
                     mt: 4,
                   }}
                 >
-                  <Typography sx={{ fontSize: "23px", fontWeight: 500 }}>
+                  <Typography sx={{ fontSize: {xs:"15px",sm: "18px",md: "23px"}, fontWeight: 500 }}>
                     My Two Cents: How Tax Changes will Affect - Home Buying in
                     2019
                   </Typography>
@@ -86,7 +86,7 @@ export default function RecentBlog() {
                       mt: 2,
                     }}
                   >
-                    <Typography sx={{ fontSize: "16px" }}>
+                    <Typography sx={{ fontSize: {xs:"12px",sm: "14px",md: "16px"} }}>
                       05/17/2019
                     </Typography>
                     <Button
@@ -94,7 +94,7 @@ export default function RecentBlog() {
                       sx={{
                         color: "#fff",
                         textTransform: "none",
-                        fontSize: "16px",
+                        fontSize: {xs:"12px",sm: "14px",md: "16px"},
                         "&:hover": {color: "#E8E1C4"}
                       }}
                     >
@@ -105,8 +105,8 @@ export default function RecentBlog() {
               </Box>
             </Box>
           </Grid>
-          <Grid item md={5.5} xs={12} sx={{ display: "flex" }}>
-            <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Grid item lg={5.5} xs={12} sx={{ display: "flex" }}>
+            <Box sx={{ display: { xs: "none", lg: "flex" } }}>
               <Divider
                 sx={{
                   borderWidth: "2px",
@@ -124,19 +124,19 @@ export default function RecentBlog() {
                 // justifyContent: "center",
                 // alignItems: "center",
                 py: { xs: 2, md: 3 },
-                pl: { xs: 0, md: 8 },
+                pl: { xs: 0, lg: 8 },
                 color: "#fff",
                 gap: 3,
                 flexGrow: 1,
               }}
             >
               <Typography
-                sx={{ textAlign: "start", fontSize: "40px", fontWeight: 600 }}
+                sx={{ textAlign: "start", fontSize: {xs:"26px", md: "40px"}, fontWeight: 500 }}
               >
                 Never miss an opportunity.
               </Typography>
               <Typography
-                sx={{ textAlign: "start", fontSize: "18px", fontWeight: 500 }}
+                sx={{ textAlign: "start", fontSize: {xs:"12px",md: "16px"}, fontWeight: 500 }}
               >
                 Subscribeto our newsletter for all updates.
               </Typography>
@@ -156,7 +156,7 @@ export default function RecentBlog() {
                             color: "#fff",
                           },
                           color: "#4D4D4D",
-                          minWidth: "150px",
+                          minWidth: {xs: "fit-content", sm: "150px"},
                           height: "56px",
                           mr: -1.8,
                           borderRadius: "0px 4px 4px 0px",

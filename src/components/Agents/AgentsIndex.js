@@ -11,13 +11,13 @@ import AgentListView from "./components/AgentListView";
 export default function AgentsIndex() {
     const [viewMode, setViewMode] = useState("grid");
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 6, xs: 1 } }}>
+    <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 1 } }}>
       <Heading />
       <Box
         sx={{
           width: "100%",
           display: "flex",
-          gap: 2,
+          gap: {xs: 1, md: 2},
           justifyContent: "flex-end",
           mt: -7,
           mb: 1,
