@@ -59,17 +59,17 @@ const FooterIndex = () => {
               <Box
                 sx={{
                   px: { lg: 7, md: 0 },
-                  mt: 5,
+                  mt: {xs: 1, md: 5},
                 }}
               >
-                <Typography sx={{ fontWeight: 700, mb: 4, fontSize: "22px" }}>
+                <Typography sx={{ fontWeight: 700, mb: {xs: 2, md: 4}, fontSize: "22px" }}>
                   Quick Links
                 </Typography>
                 <Typography
                   sx={{
                     display: "block",
                     color: "inherit",
-                    mb: 2,
+                   mb: {xs: 1, md: 2},
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
@@ -82,7 +82,7 @@ const FooterIndex = () => {
                   sx={{
                     display: "block",
                     color: "inherit",
-                    mb: 2,
+                   mb: {xs: 1, md: 2},
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
@@ -95,7 +95,7 @@ const FooterIndex = () => {
                   sx={{
                     display: "block",
                     color: "inherit",
-                    mb: 2,
+                   mb: {xs: 1, md: 2},
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
@@ -108,7 +108,7 @@ const FooterIndex = () => {
                   sx={{
                     display: "block",
                     color: "inherit",
-                    mb: 2,
+                   mb: {xs: 1, md: 2},
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
@@ -121,7 +121,7 @@ const FooterIndex = () => {
                   sx={{
                     display: "block",
                     color: "inherit",
-                    mb: 2,
+                   mb: {xs: 1, md: 2},
                     fontSize: "16px",
                     fontWeight: 500,
                     "&:hover": { color: "#E8E1C4" },
@@ -138,16 +138,16 @@ const FooterIndex = () => {
               <Box
                 sx={{
                   //  px: {md: 7},
-                  mt: 5,
+                  mt: {xs: 1, md: 5},
                 }}
               >
-                <Typography sx={{ fontWeight: 700, mb: 4, fontSize: "22px" }}>
+                <Typography sx={{ fontWeight: 700, mb: {xs: 2, md: 4}, fontSize: "22px" }}>
                   Contact Us
                 </Typography>
                 <Typography
                   sx={{
                     fontSize: "16px",
-                    mb: 2,
+                    mb: {xs: 1, md: 2},
                     fontWeight: "500",
                     "&:hover": { color: "#E8E1C4" },
                     cursor: "pointer",
@@ -158,7 +158,7 @@ const FooterIndex = () => {
                 <Typography
                   sx={{
                     fontSize: "16px",
-                    mb: 2,
+                    mb: {xs: 1, md: 2},
                     fontWeight: "500",
                     "&:hover": { color: "#E8E1C4" },
                     cursor: "pointer",
@@ -169,7 +169,7 @@ const FooterIndex = () => {
                 <Typography
                   sx={{
                     fontSize: "16px",
-                    mb: 2,
+                    mb: {xs: 1, md: 2},
                     fontWeight: "500",
                     "&:hover": { color: "#E8E1C4" },
                     cursor: "pointer",
@@ -185,10 +185,10 @@ const FooterIndex = () => {
               <Box
                 sx={{
                   px: { lg: 3, md: 0 },
-                  mt: 5,
+                  mt: {xs: 1, md: 5},
                 }}
               >
-                <Typography sx={{ fontWeight: 700, mb: 2, fontSize: "22px" }}>
+                <Typography sx={{ fontWeight: 700, mb: {xs: 1, md: 2}, fontSize: "22px" }}>
                   Follow Us
                 </Typography>
                 <Box
@@ -197,32 +197,32 @@ const FooterIndex = () => {
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <FacebookIcon sx={{ fontSize: "32px" }} />
+                    <FacebookIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <XIcon sx={{ fontSize: "32px" }} />
+                    <XIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <TwitterIcon sx={{ fontSize: "32px" }} />
+                    <TwitterIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <InstagramIcon sx={{ fontSize: "32px" }} />
+                    <InstagramIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <PinterestIcon sx={{ fontSize: "32px" }} />
+                    <PinterestIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
                   </IconButton>
                   <IconButton
                     sx={{ color: "white", "&:hover": { color: "#E8E1C4" } }}
                   >
-                    <GoogleIcon sx={{ fontSize: "32px" }} />
+                    <GoogleIcon sx={{ fontSize: {md: "26px", lg: "32px"} }} />
                   </IconButton>
                 </Box>
                 <Typography
@@ -294,9 +294,10 @@ const FooterIndex = () => {
             <Box
               sx={{
                 display: { xs: "grid", sm: "flex" },
-                gap: { xs: 1, md: "30px" },
+                gap: { xs: 1,sm: "30px", md: "30px" },
                 flexWrap: "wrap,",
                 gridTemplateColumns: { xs: "repeat(4, 1fr)", sm: "none" },
+                textAlign: "center"
               }}
             >
               <Typography
@@ -418,9 +419,10 @@ const FooterIndex = () => {
                 flexWrap: "wrap",
                 gap: 2,
                 alignItems: "center",
-                mt: { xs: 1, sm: -2 },
+                mt: { xs: 1, sm: 0, md:-2 },
                 justifyContent: "space-between",
-                width: {xs: "fit-content", md: "100%", lg: "fit-content"}
+                width: {xs: "fit-content", md: "100%", lg: "fit-content"},
+                textAlign: "center"
               }}
             >
               <Typography variant="body2">

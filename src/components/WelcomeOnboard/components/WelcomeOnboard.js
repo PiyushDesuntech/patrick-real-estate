@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import StraightIcon from "@mui/icons-material/Straight";
 import React from "react";
 import Image from "next/image";
@@ -21,12 +21,6 @@ const useStyles = makeStyles(() => ({
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%)",
     width: "101px",
   },
-  button: {
-    marginTop: "15px",
-    textTransform: "none",
-    fontWeight: "bold",
-    color: "#007bff",
-  },
 }));
 
 export default function WelcomeOnboard() {
@@ -38,36 +32,39 @@ export default function WelcomeOnboard() {
       title: "Post Your Property",
       description:
         "Lorem ipsum dolor sit ametnsectetur adipiscing elitn ultricies interd.",
+      image: "/Images/step1.svg",
     },
     {
       step: "Step 2",
       title: "Add Genuine Photo & Info",
       description:
         "Lorem ipsum dolor sit ametnsectetur adipiscing elitn ultricies interd.",
+      image: "/Images/step2.svg",
     },
     {
       step: "Step 3",
       title: "Self-Verify Your Property",
       description:
         "Lorem ipsum dolor sit ametnsectetur adipiscing elitn ultricies interd.",
+      image: "/Images/step3.svg",
     },
   ];
 
   return (
-    <Box sx={{ p: { xs: 1, sm: 0 } }}>
+    <Box sx={{ px: { xs: 2,  }, mt: 2 }}>
       <Grid container spacing={2}>
         <Grid
           item
           xs={12}
           sm={6}
-          md={4}
+          lg={4}
           sx={{ display: "flex", alignItems: "center" }}
         >
           <Box>
             <Typography
               sx={{ fontSize: "37px", fontWeight: 600, color: "#484848" }}
             >
-              Welcome Onboard!
+              Property Onboard!
             </Typography>
             <Typography
               sx={{ fontSize: "18px", fontWeight: 500, color: "#616161" }}
@@ -85,25 +82,26 @@ export default function WelcomeOnboard() {
             >
               Go To My Dashboard
             </Button> */}
-            <Typography
+            {/* <Typography
+              // component="a"
+              // href="#"
               sx={{
                 color: "#BDB38B",
-                textTransform: "none",
+                // textTransform: "none",
                 fontSize: "18px",
-                fontWeight: 500,
-                textDecoration: "underline",
-                display: "flex",
-                alignItems: "center",
+                fontWeight: 700,
+                // textDecoration: "underline",
+                // display: "flex",
+                // alignItems: "center",
                 gap: "11px",
-                mt: "26px"
+                mt: "26px",
               }}
             >
-              Go To My Dashboard{" "}
-              <StraightIcon sx={{ transform: "rotate(90deg)" }} />
-            </Typography>
+              Welcome to My Dashboard
+            </Typography> */}
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} lg={4}>
           <Box
             style={{
               display: "flex",
@@ -124,7 +122,7 @@ export default function WelcomeOnboard() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}></Grid>
       </Grid>
-      <Box sx={{ flexGrow: 1, padding: "20px" }}>
+      {/* <Box sx={{ flexGrow: 1, padding: "20px" }}>
         <Typography
           sx={{
             fontSize: "26px",
@@ -149,7 +147,7 @@ export default function WelcomeOnboard() {
                     }}
                   >
                     <Image
-                      src="/Images/step1.svg"
+                      src={step.image}
                       alt="agent"
                       layout="responsive"
                       width={406}
@@ -164,16 +162,26 @@ export default function WelcomeOnboard() {
                     <Typography variant="body2" color="textSecondary">
                       {step.description}
                     </Typography>
-                    <Button className={classes.button} disableRipple>
+                    <Typography
+                      component="a"
+                      href="#"
+                      sx={{
+                        fontSize: "16px",
+                        fontWeight: 500,
+                        color: "#3E3E3E",
+                        textDecoration: "underline",
+                        textUnderlineOffset: "2px",
+                      }}
+                    >
                       Buy Now
-                    </Button>
+                    </Typography>
                   </Box>
                 </Box>
               </Box>
             </Grid>
           ))}
         </Grid>
-      </Box>
+      </Box> */}
     </Box>
   );
 }

@@ -1,3 +1,4 @@
+"use client"
 import {
   Box,
   Button,
@@ -6,39 +7,43 @@ import {
   InputAdornment,
   TextField,
   Typography,
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
 export default function WantCall() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"));
   return (
     <Container
       maxWidth="xl"
-      sx={{ px: { lg: "94px", md: 0, xs: 2 }, pt: { xs: 0,sm:2, lg: 5 } }}
+      sx={{ px: { lg: "94px", md: 1, xs: 2 }, pt: { xs: 0,sm:0, lg: 5 } }}
     >
       <Box
         sx={{
-          backgroundImage: "url(/Images/WantCallBG.svg)", // Path to your image
-          backgroundSize: "cover", // Ensures the image covers the entire area
-          backgroundRepeat: "no-repeat", // Prevents the image from repeating
-          backgroundPosition: "center", // Centers the image
-          height: "100%", // Adjust height as needed
-          width: "100%", // Adjust width as needed
-          mt: {xs: 0, sm: 3},
+          backgroundImage: "url(/Images/WantCallBG.svg)",
+          backgroundSize: "cover", 
+          backgroundRepeat: "no-repeat", 
+          backgroundPosition: {xs: "right", md: "center"}, 
+          height: "100%", 
+          width: "100%", 
+          mt: {xs: 0, lg: 3},
           display: "flex",
           justifyContent: "center",
           alignItems: "center,",
           flexDirection: "column",
-          py: {xs: 1, md: 6},
+          py: {xs: 4, md: 6},
         }}
       >
-        <Grid container sx={{px: {xs: 0, md: 2}}}>
+        <Grid container sx={{px: {xs: 0, md: 2}}} spacing={isMobile? 2: 0}>
           <Grid item xs={12} md={6.5}>
             <Grid container spacing={2}>
-              <Grid item sm={6} xs={12}>
+              <Grid item md={6} xs={12}>
                 <Box
                   sx={{
-                    display: { xs: "none", sm: "flex" },
+                    display: { xs: "none", md: "flex" },
                     justifyContent: "center",
                     alignItems: "center",
                     width: { xs: "95%", sm: "100%" },
@@ -55,10 +60,10 @@ export default function WantCall() {
                   />
                 </Box>
               </Grid>
-              <Grid item sm={6} xs={12}>
+              <Grid item md={6} xs={12}>
                 <Box
                   sx={{
-                    display: { xs: "none", sm: "flex" },
+                    display: { xs: "none", md: "flex" },
                     justifyContent: "center",
                     alignItems: "center",
                     width: { xs: "95%", sm: "100%" },
@@ -75,13 +80,11 @@ export default function WantCall() {
                 </Box>
 
                 <Box
-                  style={{
-                    display: "flex",
+                 sx={{
+                    display: { xs: "none", md: "flex" },
                     justifyContent: "center",
                     alignItems: "center",
                     width: { xs: "95%", sm: "100%" },
-                    // padding: "1rem",
-                    flexDirection: "column",
                   }}
                 >
                   <Image
@@ -96,15 +99,18 @@ export default function WantCall() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={5.5} sx={{ px: { xs: 2, md: 6 } }}>
+          <Grid item xs={12} md={5.5} sx={{ px: { xs: 0,sm: 1, md: 0, lg: 6 },display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center", }}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                // alignItems: "center",
-                py: { xs: 2, lg: 15 },
-                px: { xs: 0, md: 2 },
+                alignItems: "center",
+                py: { xs: 2, lg: 2 },
+                px: { xs: 0, lg: 2 },
                 gap: 3,
                 width: { lg: "500px", md: "100%" },
               }}

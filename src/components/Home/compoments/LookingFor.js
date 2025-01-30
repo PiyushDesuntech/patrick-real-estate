@@ -115,15 +115,16 @@ export default function LookingFor() {
             position: "relative",
             overflow: "hidden",
             paddingTop: {
-              xs: "60%", // Higher aspect ratio on small screens
+              xs: "50%", // Higher aspect ratio on small screens
               sm: "45%", // Adjusted for medium screens
               md: "40%", // Standard aspect ratio for larger screens
             },
             boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.25)", // Box shadow
             borderRadius: 2,
             border: "5px solid #fff",
-            mx: { md: 6 },
+            mx: { lg: 6 },
             mb: 2,
+            height: "400px",
           }}
         >
            {activeTab === "rent" && (

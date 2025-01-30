@@ -142,7 +142,7 @@ const AgentDetailsProfile = () => {
       </Typography>
 
       {/* Links Section */}
-      <Box mt={2} sx={{ display: "flex", alignItems: "center" }}>
+      {/* <Box mt={2} sx={{ display: "flex", alignItems: "center" }}>
         <Typography sx={{ fontSize: "12.86px", fontWeight: 500 }}>
           <Link
             href="#"
@@ -163,7 +163,7 @@ const AgentDetailsProfile = () => {
         <IconButton href="#" size="small" sx={{ color: "#00488A" }}>
           <Instagram />
         </IconButton>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

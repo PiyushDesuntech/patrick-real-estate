@@ -22,19 +22,19 @@ export default function RecentBlog() {
         mt: 8,
       }}
     >
-      <Container maxWidth="xl" sx={{ px: { md: 8 }, pb: 5 }}>
+      <Container maxWidth="xl" sx={{ px: {md: 3,lg: 8 }, pb: {xs: 1, lg: 5} }}>
         <Grid container spacing={2}>
-          <Grid item lg={6.5} xs={12} sx={{ color: "#fff" }}>
+          <Grid item lg={6.5} md={7} xs={12} sx={{ color: "#fff" }}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
+                justifyContent: {xs: "flex-start", md: "center"},
                 py: { xs: 2, md: 2 },
                 mt: 2,
               }}
             >
-              <Typography sx={{ fontSize: {xs:"18px",sm: "22px",md: "25px"}, fontWeight: 500 }}>
+              <Typography sx={{ fontSize: {xs:"18px",sm: "22px",lg: "25px"}, fontWeight: 500 }}>
                 Recent Blog{" "}
               </Typography>
               <Box
@@ -42,6 +42,7 @@ export default function RecentBlog() {
                   display: "flex",
                   gap: 2,
                   flexDirection: { xs: "column", md: "row" },
+                  alignItems: {xs: "flex-start", md: "center"}
                 }}
               >
                 <Box
@@ -70,12 +71,12 @@ export default function RecentBlog() {
                   sx={{
                     display: "flex",
                     flexDirection: "column",
-                    justifyContent: "center",
+                    justifyContent: {xs: "flex-start", md: "center"},
                     maxWidth: {xs: "100%", lg: "403px"},
-                    mt: 4,
+                    // mt: 4,
                   }}
                 >
-                  <Typography sx={{ fontSize: {xs:"15px",sm: "18px",md: "23px"}, fontWeight: 500 }}>
+                  <Typography sx={{ fontSize: {xs:"15px",sm: "18px",lg: "23px"}, fontWeight: 500 }}>
                     My Two Cents: How Tax Changes will Affect - Home Buying in
                     2019
                   </Typography>
@@ -83,6 +84,7 @@ export default function RecentBlog() {
                     sx={{
                       display: "flex",
                       justifyContent: "space-between",
+                      alignItems: "center",
                       mt: 2,
                     }}
                   >
@@ -105,7 +107,7 @@ export default function RecentBlog() {
               </Box>
             </Box>
           </Grid>
-          <Grid item lg={5.5} xs={12} sx={{ display: "flex" }}>
+          <Grid item lg={5.5} md={5} xs={12} sx={{ display: "flex" }}>
             <Box sx={{ display: { xs: "none", lg: "flex" } }}>
               <Divider
                 sx={{
@@ -123,7 +125,7 @@ export default function RecentBlog() {
                 flexDirection: "column",
                 // justifyContent: "center",
                 // alignItems: "center",
-                py: { xs: 2, md: 3 },
+                py: { xs: 1, md: 3 },
                 pl: { xs: 0, lg: 8 },
                 color: "#fff",
                 gap: 3,
@@ -131,7 +133,7 @@ export default function RecentBlog() {
               }}
             >
               <Typography
-                sx={{ textAlign: "start", fontSize: {xs:"26px", md: "40px"}, fontWeight: 500 }}
+                sx={{ textAlign: "start", fontSize: {xs:"26px", md: "30px",lg: "40px"}, fontWeight: 500 }}
               >
                 Never miss an opportunity.
               </Typography>

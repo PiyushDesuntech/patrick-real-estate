@@ -59,7 +59,7 @@ const HomeCards = ({ property, onCardClick }) => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            height: "100%", // Makes the card content fill the available space
+            height: "100%",
           }}
         >
           <Box sx={{display: "flex", justifyContent: "space-between"}}>
@@ -100,7 +100,7 @@ const HomeCards = ({ property, onCardClick }) => {
           </Box>
           <Typography
             variant="h6"
-            sx={{ color: "#222222", fontSize: "17px", fontWeight: 700 }}
+            sx={{ color: "#222222", fontSize: {xs: "16px", md: "14px", lg: "17px"}, fontWeight: 700 }}
           >
             {property.title}
           </Typography>
@@ -110,21 +110,30 @@ const HomeCards = ({ property, onCardClick }) => {
               alignItems: "center",
               mb: 1,
               color: "#484848",
-              fontSize: "11px",
+              fontSize: {xs: "11px", md: "9px", lg: "11px"},
             }}
           >
             <PlaceOutlinedIcon fontSize="small" sx={{ mr: 0.5 }} />
             {property.address}
           </Typography>
-          <Box sx={{ display: "flex", gap: 2, fontSize: "13px" }}>
-            <Typography sx={{fontSize: "13px", color: "#222222", fontWeight: 400}}>
-              Beds: {property.beds} | Baths: {property.baths}
+          <Box sx={{ display: "flex", gap: 2, fontSize: {xs: "13px", md: "10px", lg: "13px"}, height: "100%" }}>
+            <Typography sx={{fontSize: {xs: "13px", md: "10px", lg: "13px"}, color: "#222222", fontWeight: 400}}>
+              Beds: {property.beds}  
               {/* | Price: $
             {property.price} */}
             </Typography>
-            {property.type === "For Rent" && (
-              <Typography sx={{fontSize: "13px", color: "#222222", fontWeight: 400}}>
+            <Typography sx={{fontSize: {xs: "13px", md: "10px", lg: "13px"}, color: "#222222", fontWeight: 400}}>
+            Baths: {property.baths} 
+              {/* | Price: $
+            {property.price} */}
+            </Typography>
+            {property.type === "For Rent" ? (
+              <Typography sx={{fontSize: {xs: "13px", md: "10px", lg: "13px"}, color: "#222222", fontWeight: 400}}>
                 Available: {property.dateAvailable}
+              </Typography>
+            ):(
+              <Typography sx={{fontSize: {xs: "13px", md: "10px", lg: "13px"}, color: "#222222", fontWeight: 400}}>
+                Sqft: {property.sqft}
               </Typography>
             )}
           </Box>

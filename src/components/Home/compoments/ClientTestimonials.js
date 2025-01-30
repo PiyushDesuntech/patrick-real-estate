@@ -90,8 +90,9 @@ const ClientTestimonials = ({ title }) => {
   const sliderRef = React.useRef();
 
   return (
-    <Container maxWidth="xl" sx={{ px: { lg: 7, xs: 1 }, mt: {xs: 1}}}>
+    <Container maxWidth="xl" sx={{ px: { lg: 5, xs: 0 }, mt: {xs: 1, md: 3}}}>
       <Box sx={{ position: "relative", padding: "20px" }}>
+        <Box sx={{px: {xs: 0, sm: 1, md: 1, lg: 1}}}>
         <Typography
           sx={{
             fontSize: {xs:"26px", md: "40px"},
@@ -109,12 +110,13 @@ const ClientTestimonials = ({ title }) => {
         >
           Morbi at felis ullamcorper ipsum.
         </Typography>
+        </Box>
 
         <Box
           sx={{
             position: "absolute",
-            top: "10px",
-            right: "10px",
+            top: {xs: "20px", sm: "10px"},
+            right: {xs: "20px", sm: "25px",md: "25px", lg: "28px"},
             display: "flex",
             alignItems: "center",
             zIndex: 2,
@@ -133,29 +135,45 @@ const ClientTestimonials = ({ title }) => {
         {/* Slider */}
         <Slider {...settings} ref={sliderRef}>
           {testimonials.map((testimonial, index) => (
-            <Box key={index} sx={{ pr: { xs: 0, sm: 4 }, mt: 3 }}>
+            <Box key={index} sx={{ px: { xs: 0, sm: 1 }, mt: 3, }}>
               <Card
                 sx={{
-                  p: 2,
+                  p: {xs: 0,md: 1 ,lg: 2},
                   backgroundColor: "#fff",
                   //   boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
                   boxShadow: "none",
-                  border: "2px solid #D5D5D5",
+                  border: "1px solid #D5D5D5",
                   "&:hover": {
                     background: "#E8E1C4",
                     boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-                    border: "2px solid #E8E1C4",
+                    border: "1px solid #E8E1C4",
                   },
                 }}
               >
                 <CardContent>
-                  <Image
+                <Box
+                      sx={{
+                        width: {xs: "60px", sm: "80px", md: "90px", lg: "100px"},
+                        height: "100%",
+                        ml: {xs: -1, md: -2}
+                      }}
+                    >
+                      <Image
+                        src="/Images/comma.svg"
+                        alt="Colonial Realty Associates"
+                        width={100}
+                        height={100}
+                        layout="responsive"
+                        style={{ objectFit: "contain" }}
+                      />
+                    </Box>
+                  {/* <Image
                     src="/Images/comma.svg"
                     alt="Colonial Realty Associates"
                     width={100}
                     height={100}
                     style={{ objectFit: "contain" }}
-                  />
+                  /> */}
                   <Typography
                     sx={{ fontSize: {xs:"12px",md: "16px"}, fontWeight: 500, color: "#585858" }}
                     gutterBottom

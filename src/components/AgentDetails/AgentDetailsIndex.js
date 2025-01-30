@@ -19,7 +19,7 @@ export default function AgentDetailsIndex() {
       <Grid container spacing={2} sx={{mt: 3}}>
         <Grid item xs={12} md={8.2}>
             <AgentDetailsProfile/>
-            <TransactionHistory/>
+            {/* <TransactionHistory/> */}
             <ForRent/>
             <ListingAndSales/>
             <AgentSell/>

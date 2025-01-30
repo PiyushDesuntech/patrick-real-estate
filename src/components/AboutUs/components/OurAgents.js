@@ -111,18 +111,19 @@ const OurAgents = () => {
   };
 
   return (
-    <Container maxWidth="xl" sx={{px:{xs: 2, lg: 7}}}>
+    <Box sx={{background: "#F7F7F7"}}>
+      <Container maxWidth="xl" sx={{px:{xs: 2, lg: 7}, mt: {xs: 3, md: 0}, py: {xs: 2, md: 5}}}>
       <Box sx={{ textAlign: "center",  }}>
-      <Typography sx={{fontSize: "36.92px", fontWeight: 700, color: "#484848"}} gutterBottom>
+      <Typography sx={{ fontWeight: 500, fontSize: {xs:"26px", md: "40px"}, color: "#484848"}} gutterBottom>
         Our Agents
       </Typography>
-      <Typography  sx={{ mb: 3, color: "#484848", fontSize: "19.69px", fontWeight: 400 }}>
+      <Typography  sx={{ mb: 3, color: "#484848",fontSize: {xs:"12px",md: "16px"}, fontWeight: 400 }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </Typography>
       <Box sx={{ position: "relative" }}>
         <Slider {...settings}>
           {agents.map((agent, index) => (
-           <Box key={index} p={2}>
+           <Box key={index} sx={{p: {xs: 1, sm: 2}}}>
              <Box sx={{ margin: "0 auto", border: "2px solid #EBEBEB", borderRadius: "8px", p: 1 }}>
               <Box
                 style={{
@@ -142,8 +143,8 @@ const OurAgents = () => {
                 />
               </Box>
               <CardContent>
-                <Typography sx={{fontSize: "22px", cplor: "#484848", fontWeight: 500}}>{agent.name}</Typography>
-                <Typography sx={{fontSize: "17px", cplor: "#484848", fontWeight: 400}}>
+                <Typography sx={{fontSize: "22px", color: "#484848", fontWeight: 700}}>{agent.name}</Typography>
+                <Typography sx={{fontSize: "17px", color: "#484848", fontWeight: 400}}>
                   {agent.role}
                 </Typography>
               </CardContent>
@@ -154,6 +155,7 @@ const OurAgents = () => {
       </Box>
     </Box>
     </Container>
+    </Box>
   );
 };
 

@@ -205,13 +205,13 @@ const Filter = ({ filters, setFilters }) => {
                 color: "#484848",
                 boxShadow: "none",
               },
-              //  fontSize: "20px",
               textTransform: "none",
               borderRadius: "6.72px",
               whiteSpace: "nowrap",
               border: "1.12px solid #949494",
-              fontSize: "16px", 
-              fontWeight: 500
+              fontSize: {xs: "14px", md: "12px", lg: "16px"}, 
+              fontWeight: 500,
+              py: {xs: 1, md: 1, lg: 0.6}
             }}
           >
             All Filters
@@ -235,8 +235,9 @@ const Filter = ({ filters, setFilters }) => {
               textTransform: "none",
               borderRadius: "6.72px",
               whiteSpace: "nowrap",
-              fontSize: "16px",
+              fontSize: {xs: "14px", md: "12px", lg: "16px"},
               fontWeight: 500,
+              py: {xs: 1, md: 1, lg: 0.6}
             }}
           >
             Save Search
